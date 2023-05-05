@@ -1,5 +1,5 @@
 \documentclass[12pt, a4paper, oneside]{ctexbook}
-\usepackage{amsmath, amsthm, amssymb, bm, color, framed, graphicx, 
+\usepackage{amsmath, amsthm, amssymb, bm, color, framed, graphicx, imakeidx, 
 hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wallpaper}
 
 \title{{\Huge{\textbf{工程师学院数学分析笔记\\Notes d'Analyse de l'Ecole d'Ingénieur de Chimie Pékin}}}\\
@@ -7,6 +7,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
 \author{Augustin}
 \date{\today}
 \linespread{1.5}
+\makeindex
 \begin{document}
 \newrefformat{myref}{第\ref{#1} 节}
 \maketitle
@@ -17,7 +18,12 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
 \begin{center}
     \Huge\textbf{前言}
 \end{center}~\
+\noindent
+\textbf{特别声明:}
+本讲义目前为未完成版,存在大量问题等待修正,因此请在阅读时仔细甄别.如有发现错误或任何建议,欢迎发送至zyl@buct.edu.cn\\
 
+
+\indent
 这本东西起源于我自己的各种杂七杂八的笔记，我想把它们整理起来，系统化并且数字化，于是在大三上学期有了一个基本的雏形。
 后来我想，为什么不干脆再扩充一些，搞个讲义出来呢？这样还可以给别人看，多棒。
 于是大三寒假我开始慢慢扩充这本讲义，也许会一直写下去，直到哪天我没了兴趣。
@@ -33,7 +39,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
 书的线性内容决定了作者不可能一开始就默认读者知道某个概念的所有相关概念，所以延伸性和复杂性都远远不够;而对于维基百科，就会有各种延申，每一个不知道的概念都可以点进去学习，就像是查字典。
 因此任何一本书的内容都是一个线性的体系，后面的内容承接前面的内容，体现不了知识的复杂性，书的顺序也只是作者认为合理的顺序，不一定代表最适合每个读者的顺序。
 所以我给出的也只是我觉得可以说得通的顺序。事实上存在大量平行的内容，相互之间怎么排列都可以。
-(待更新)在本版讲义中，1-5章为基础的引入部分，6-8章为数列部分，9-14章为拓扑部分，15-章为矩阵部分。
+(待更新)
 
 讲义的定位一直在困扰我。究竟是写得简洁、方便复习的时候快速浏览知识点，还是写得详细，让没学过的人也能看懂，这是很难的取舍。
 我很喜欢普林斯顿的那套数学书，各种引入、例子、详细的解释和口语化的表述读起来赏心悦目。但是我自己又写不出那种东西。
@@ -47,6 +53,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
 出版物:
 \begin{itemize}
   \item Proofs from THE BOOK,Martin Aigner \& Günter M. Ziegler,Springer
+  \item The Princeton Companion to Applied Mathematics,Nicholas J. Higham,Princeton University Press
   \item 微积分和数学分析引论
   \item 数学分析原理,Walter Rudin,机械工业出版社
   \item 普林斯顿微积分读本,Adrian Banner,人民邮电出版社
@@ -60,10 +67,13 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   \item 泛函分析中的反例,汪林，高等教育出版社
   \item 拓扑学教程,G·肖盖,高等教育出版社
   \item 代数的历史,约翰·德比希尔,人民邮电出版社
+  \item 概率论基础教程,Sheldon M. Ross,机械工业出版社
+  \item 数学建模,Frank R. Giordano etc.,机械工业出版社
+  \item 数学分析,B.A.卓里奇,高等教育出版社
 \end{itemize}
 网络资料:
 \begin{itemize}
-  \item \href{https://space.bilibili.com/391930545}{Maki的完美算术教室}
+  \item \href{https://space.bilibili.com/391930545}{Maki的完美算术教室},以及\href{https://www.maki-math.com/#/}{Maki-math.com}
   \item \href{https://space.bilibili.com/1632276842}{Ayumu爱讲数学}
   \item \href{https://space.bilibili.com/29977151}{James课后习题解答}
   \item \href{https://space.bilibili.com/6073855}{Druid小德}
@@ -116,7 +126,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
 \setcounter{page}{1}
 \pagenumbering{arabic}
 
-
+\part{基础知识}
 \chapter{逻辑与证明\\ Logique et Démonstration}
   这一章内容是数学最基本的、最底层的概念.对于绝大多数阅读这份讲义的人而言,这些概念都是已经学习过了,或者显而易见的.
   但这并不意味着这一章的内容就很好写,或者很好讲明白.\\
@@ -148,7 +158,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   $(p\lor q)\Rightarrow (q\lor p)$是真的.这说明,如果$(p\lor q)$为真,则$(q\lor p)$为真.
   \subsubsection{$AL_4$}
   $(p\Rightarrow q)\Rightarrow [(p\lor r)\Rightarrow(q\lor r)]$是真的.
-  \subsection{De Morgan定律}
+  \subsection{De Morgan定律}\index{De Morgan 定律}
   数学家Augustus De Morgan发现了命题逻辑中存在着如下关系:
   \begin{itemize}
     \item $\lnot (p\wedge q)\equiv (\lnot p)\vee (\lnot q) $
@@ -221,7 +231,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
 \chapter{集合\\ Ensembles}
   我们先从数学最基础的内容开始.前面这一部分内容在大一就已经讲过了,然而为了保持本讲义的连贯与严谨,不突兀地出现公理化集合论之类的东西,我们还是从头开始讲起.
 \section{集合}
-  为了便于你的理解,我们先给出集合的定义,并且顺着这些定义讨论,随后会在\prettyref{myref:公理化}这里把这些概念全部公理化,以求得到更深刻的理解.
+  为了便于你的理解,我们先给出集合的定义,并且顺着这些定义讨论,随后会在\prettyref{myref:gonglihua}这里把这些概念全部公理化,以求得到更深刻的理解.
   事实上,本讲义的许多内容,都是先讲个基础的概念,随后在某个内容里将这个概念公理化.
   \subsection{Définition}
   我们朴素地认为,一个集合就是将对象归类而分成为一个或数个形态各异的大小整体。
@@ -233,7 +243,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
       当然,如果我们在集合上定义了序,那么元素之间就可以按照序关系排序.但就集合本身的特性而言,元素之间没有必然的序.序关系将在后续阐明.
     }
     \item 互异性:一个集合中,每个元素只能出现一次,没有相同的元素出现.
-    \item 确定性:给定一个集合,任给一个元素,该元素或者属于或者不属于该集合.\label{myref:确定性}
+    \item 确定性:给定一个集合,任给一个元素,该元素或者属于或者不属于该集合.\label{myref:quedingxing}
   \end{itemize}
   \subsection{索引族 Famille Indexée}
   若集合$I$中的每个元素,比如$i$,都对应着一个集合$A_i$,那么称$\mathscr{A}=\{A_i|i\in I\}$为集合$A$的索引族,集合$I$是其索引集.
@@ -355,9 +365,9 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
 
   \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.05]{Produit_Cartésien.png}
+    \includegraphics[scale=0.05]{Produit_Cartesien.png}
     \caption{Produit Cartésien(图源wiki)}
-    \label{myref:Produit_Cartésien}
+    \label{myref:Produit_Cartesien}
   \end{figure}
   \subsubsection{Exemple}
   我们最熟悉的平面直角坐标系就是$\mathbb{R}^2$.
@@ -372,11 +382,11 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   在经典命题逻辑的外延中,此二元性依然有效.即对于任意的逻辑运算符,我们都能找他它的对偶.
   这导致了基于传统逻辑的逻辑学的一个重要性质,即否定范式的存在性:如果其中否定仅出现在作用于公式中非逻辑的原子,任何公式都有它的等价公式.
 
-  \section{公理化的集合论}\label{myref:公理化}
+  \section{公理化的集合论}\label{myref:gonglihua}
   主观意义上说,无论是ZF还是ZFC,在本讲义(或学院的课程)的“使用体验”上与原来朴素的直观的集合论没有什么区别,并且,有很多概念我们没有清晰.
   因此其实不必看懂这一章讲了什么,它不会影响你对后续章节内容的理解.
   \subsection{Russell悖论}
-  现在,回头看看\prettyref{myref:确定性},尝试回答以下问题:\\
+  现在,回头看看\prettyref{myref:quedingxing},尝试回答以下问题:\\
   设集合$A$是所有不属于自身的集合的集合,即$A=\{x | x\notin x\}$.那么请问$A$是否属于它自己?
   \begin{itemize}
     \item $A\in A$,说明$A$满足不满足其定义的不属于自身的性质,则$A\notin A$.
@@ -435,7 +445,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
 
 
 \chapter{映射\\ Applications}%同样这一张可以删除,或者放到前面去
-内容调整中。良定义，单射满射双射，逆映射
+内容调整中。
 
 \chapter{可数性\\ Dénoembrabilité}
   本章将研究两种不同类型的无限集：可数集和不可数集，并阐明什么是可数，什么不可数。
@@ -470,7 +480,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   对集合$A$,若$A\sim\mathbb{N} $称它是可数的(Dénoembrable)。\\
   若集合$A$有限或可数，称$A$是至多可数的；\\
   若集合$A$无限且不可数，称$A$是不可数的。
-  \subsection{Exemple}\label{myref:Z可数}
+  \subsection{Exemple}\label{myref:Zkeshu}
   $\mathbb{Z}$是可数的。我们可以找到双射$f:\mathbb{N}\rightarrow\mathbb{Z}$:
   $$
     f(n)=\begin{cases}
@@ -531,7 +541,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   设$E\subseteq A$,则有:\\
   $A\text{至多可数}\Rightarrow E\text{至多可数}$\\
   $E\text{不可数}\Rightarrow A\text{不可数}$
-  \subsection{Proposition:可数集可数并可数}\label{myref:可数集可数并可数}
+  \subsection{Proposition:可数集可数并可数}\label{myref:keshujikeshubingkeshu}%可数集可数并可数%
   考虑可数个集合$E_i$:
   $$
   E_i\sim\mathbb{N},S=\bigcup_{i=1}^\infty E_i\Rightarrow S\sim\mathbb{N}
@@ -544,19 +554,19 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   可数集任意可数并可数。
   \subsubsection{Proposition}
   $\mathbb{R}$不可数。
-  \subsection{Proposition:可数集元组可数}\label{myref:Rn可数}
+  \subsection{Proposition:可数集元组可数}\label{myref:Rnkeshu}
   设$A$是可数集,$A^n$是由$A$中元素构成的全体$n$元组的集合，那么$A^n$是可数的。
   \subsubsection{Démonstration}
   数学归纳法，先证明$A^1$可数，再假设$A^{i+1}$可数，得出$A^n$是可数集的可数并，于是$A^n$至多可数。
   详细证明留给读者。
   \subsection{Proposition:有理数集可数}
   一个简化的证明过程:我们知道任何有理数都可以写成$\frac{p}{q},(p,q)\in\mathbb{Z}^2$的形式，
-  并且\prettyref{myref:Z可数}告诉我们$\mathbb{Z}$是可数的，\prettyref{myref:Rn可数}告诉我们$\mathbb{Z}^2$是可数的。
+  并且\prettyref{myref:Zkeshu}告诉我们$\mathbb{Z}$是可数的，\prettyref{myref:Rnkeshu}告诉我们$\mathbb{Z}^2$是可数的。
   显然$\mathbb{Z}^2$的一个子集可以与$\mathbb{Q}$构造双射，所以$\mathbb{Q}$是可数的。
 
   \subsection{Proposition:无理数集不可数}
   一个简单的证明过程:我们知道$\mathbb{R}=\mathbb{Q}\cup\mathbb{I}$,且$\mathbb{Q}$是可数的。
-  若$\mathbb{I}$是至多可数的，则根据\prettyref{myref:可数集可数并可数}可知$\mathbb{R}$是至多可数的,这显然矛盾。
+  若$\mathbb{I}$是至多可数的，则根据\prettyref{myref:keshujikeshubingkeshu}可知$\mathbb{R}$是至多可数的,这显然矛盾。
   故$\mathbb{I}$是不可数的。
 
   %结束了，2023新年快乐！
@@ -569,7 +579,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   这些东西都被称为运算.有些运算是一元的,例如$\cos x$和$|x|$,我们输入一个变量,得到一个返回结果;有些运算是二元(多元)的,例如$a^b$或者$A \times B$.本章里我们主要讨论二元运算.
   有些运算与数没有关系,例如逻辑运算里,$1\vee 0=1$,这里1和0只是表示逻辑上的真和假,与具体的数字无关.
   此外,还有一种题目叫做“定义新运算”,一般会给出一个自定义的算符,比如$\star $,然后解释这个算符怎么计算,比如说$a\star b=114a+\frac{514}{b}-19^{\frac{a}{b}}$,让你求解一些具体的返回值.
-  这些统统都是运算.为了应付日益复杂的数学,我们需要把运算统一起来研究,以便于尝试找到普适性的规律.\label{myref:传统运算}
+  这些统统都是运算.为了应付日益复杂的数学,我们需要把运算统一起来研究,以便于尝试找到普适性的规律.\label{myref:traditionalcalculate}
   \subsection{Définition}
   给定集合$X$,所有$f:X\times X\rightarrow X$的映射称为集合$X$上的运算.直观上看,运算将$X$上的有序点对映射为$X$的元素.
   我们姑且将运算符号记为$\star $.
@@ -674,7 +684,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   想象一个没有封闭性的代数结构上的运算,比如$\mathbb{R}$上,某个运算结果为:$1\star 4=\text{西红柿炒鸡蛋}$.
   显然,1和4都在$\mathbb{R}$上,但是西红柿炒鸡蛋不属于$\mathbb{R}$,我们也并不清楚西红柿炒鸡蛋有什么性质,它与$\mathbb{R}$上的元素有什么关系,也不能拿来继续运算.这样的性质就很糟糕.\\
   
-  现在,我希望你假装忘记掉曾经学习的这些运算,也就是\prettyref{myref:传统运算}开头我提到的那些以前的东西(特别是加法和乘法),以便我们从另一个角度重新出发学习它们.
+  现在,我希望你假装忘记掉曾经学习的这些运算,也就是\prettyref{myref:traditionalcalculate}开头我提到的那些以前的东西(特别是加法和乘法),以便我们从另一个角度重新出发学习它们.
 
 \section{群 Groupe}
   \subsection{Définition}
@@ -703,7 +713,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
 
   \subsection{乘法表}
   乘法表常被用来表示简单的群上的元素和运算,它列举了群内任意两个元素的乘积.下面我们通过一个简单的例子来理解乘法表.
-  \subsubsection{$C_3$群}\label{myref:C_3群}
+  \subsubsection{$C_3$群}\label{myref:C_3}
   想象一个等边三角形$\Delta ABC$,我们将它绕着垂直于几何中心的州进行旋转操作：
   \begin{itemize}
     \item 操作a:顺时针旋转120°
@@ -729,7 +739,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
         \textbf{e} & a & b & e \\ 
     \end{tabular}
     \caption{$C_3$群的乘法表}
-    \label{C_3群的乘法表}
+    \label{C_3times}
   \end{table}
   \subsection{重排定理}
   考虑代数结构$(A,\star)$,对$a\in A$,定义$a\star A=\{ a\star a_\alpha|a_\alpha \in A \}$.对群$G$,有:
@@ -743,7 +753,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   生成元是描述一个群的重要方式.下面我们由循环群开始逐渐介绍生成元和其应用方法.
   \subsubsection{循环群}
   由一个元素$R$及其幂次构成的有限群称为由$R$生成的循环群,记为$C_n$,其中$n$为循环群的阶,$R$称为循环群的生成元.
-  这就是为什么\prettyref{myref:C_3群}介绍的群叫$C_3$群.在$C_3$群中,a和b都是其生成元.对于$n$阶循环群, 其阶数等于其生成元的阶数.
+  这就是为什么\prettyref{myref:C_3}介绍的群叫$C_3$群.在$C_3$群中,a和b都是其生成元.对于$n$阶循环群, 其阶数等于其生成元的阶数.
   \subsubsection{有限群的生成元与秩}
   对任一有限群, 是否同样有生成元呢?答案是肯定的,由此还能引出有限群的秩的概念.对有限群$G$,任取一元素$R_1$,得到其幂次构成的集合$\mathbf{R_1}$.
   若$\mathbf{R_1}^C\neq \varnothing$,即无法填满整个群,则在$\mathbf{R_1}^C$内任取一元素$R_2$并得到$\mathbf{R_2}$,以此类推.
@@ -773,14 +783,14 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
     \centering
     \includegraphics[scale=0.13]{magma_groupe.png}
     \caption{从原群到群(图源wiki)}
-    \label{myref:群与原群}
+    \label{myref:groupe_magma}
   \end{figure}
 
   \section{群论基础 La Théorie Rudimentaire des Groupes}
   在数学中，特别是在一般代数中，群论是研究群的代数结构的学科。群论的发展起源于数论、代数方程理论和几何学,在理论物理、化学、材料科学和非对称密码学中有多种应用.
   本章只对群论内容做一个基础的、入门的介绍.事实上,关于群、环和域相关的知识在本讲义中并不怎么重要,很多结论也不会有后续应用(所以有相当多平凡的推论我没有写出证明,摸了).但是有些概念和定义还是会用上的,因此我还是简单地列出来.
 
-  \subsection{共轭关系 Conjugaison}\label{myref:共轭关系}
+  \subsection{共轭关系 Conjugaison}\label{myref:conjugaison}
   定义二元关系~为:对$(a,b)\in G\times G, \exists g\in G$使得$b=g^{-1}\cdot a\cdot g$.称该关系为共轭关系,a~b为a与b共轭.
   \subsubsection{Proposition}
   共轭关系是等价关系.
@@ -903,7 +913,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   \subsubsection{Proposition}
   若$(G,\cdot)$是Abel群/循环群/有限生成群,则$G/H$也是.
 
-  \subsection{同态 Homomorphisme}    \label{myref:同态}
+  \subsection{同态 Homomorphisme}    \label{myref:Homomorphisme}
   \subsubsection{Définition}
   同态是两个群之间的一种特殊的映射,其概念非常直观.“同”表示映射的两端有什么东西是一样的,或者不变的.“态”就是群的某种“状态”.
   群只有集合和运算两个要素,集合映射过去后不可能保持不变,那能保持的也就只有运算了.因此,同态就是两个群之间保持乘法运算的映射,即
@@ -919,7 +929,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   群$(G,\cdot)$到自身上的同态映射称为自同态.
   \subsubsection{态射 Morphisme}
   同态的推广被称为态射.在讨论群的内容时,法语有时直接用态射指代同态,记住两者在此时是同一概念.
-  \subsection{同构 Isomorphisme}    \label{myref:同构}
+  \subsection{同构 Isomorphisme}    \label{myref:Isomorphisme}
   若同态映射$f$为双射,则称为同构映射,两个群是同构的,记作$G\cong H$.
   \subsubsection{Proposition}
   同构是等价关系.
@@ -1034,7 +1044,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   \subsection{域的性质}
   \subsubsection{非零元素的集合}
   域$\mathbb{K}$上所有非零元素构成的集合$\mathbb{K}^x$是一个关于乘法的Abel群,其每个有限子群都是循环群.
-  \subsubsection{特征 Caractéristique}    \label{myref:特征}
+  \subsubsection{特征 Caractéristique}    \label{myref:tezheng}
   若存在$n\in \mathbb{N}$使得$n\cdot 1=0$,则称最小的$n$为域的特征.$n=0$表示特征不存在.
   \subsubsection{有序域 Corps Ordonné}
   若可以在域$\mathbb{K}$上定义序关系,则称该域是一个有序域.例如有理数域和实数域上具有通常的序关系.
@@ -1044,25 +1054,13 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
 
 
   关于群、环和域的更多内容将在代数课程中详细展开.
+  \chapter{多项式理论基础}
 
 
 
 
 
-\chapter{\textbf{Bonus:}对称群与分子对称性\\ Groupe Symétrique et Symétrie Moléculaire}
-  内容正在整理中,这一章的东西需要很多图片,我还没画完/找完.
-  \begin{figure}[H]%插入题目的图片
-    \centering
-    \includegraphics[scale=0.15]{groupe_chimie.png}
-    \caption{群论与化学(图片源自法语wiki)}
-    \label{myref:群与化学}
-  \end{figure}
-
-
-
-
-
-
+\part{空间研究}
 \chapter{实数\\ Nombre Reél}%扩展多个章节
   \section{实数域}
   \section{稠密性}
@@ -1070,7 +1068,10 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   \section{复数域}
   \section{向量空间}
   \section{Euclide空间}
+
+
 \chapter{$\mathbb{R}$上的一元函数}
+
 \chapter{复数与Euclide空间\\Nombre Complexe et Espace Euclidien}%扩展多个章节
 
 \chapter{数列与数项级数\\Suites et Séries}
@@ -1334,7 +1335,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   $$
   的实数集合是一个度量空间。
 
-  \subsection{Exemple:离散度量}     \label{myref:离散度量}
+  \subsection{Exemple:离散度量}     \label{myref:lisanduliang}
   定义度量
   $$
   d(x,y)=
@@ -1375,7 +1376,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   \subsubsection{Remarque}
   对于有界集无限并，该命题不成立。
 
-  \subsection{邻域 Le voisinage}     \label{myref:邻域}
+  \subsection{邻域 Le voisinage}     \label{myref:voisinage}
   这是一个很简单但是很重要的概念，它表示一个点"附近"的空间。
   度量空间$(X,d)$中点$p$的邻域$N_r(p)=\{q\in X | d(p,q)<r\}$。例如$\mathbb{R}^2$中任何一个圆的内部都是围绕圆心的邻域。
   \subsection{极限点}
@@ -1444,7 +1445,6 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   \begin{figure}[H]%插入题目的图片
     \centering
     \includegraphics[scale=0.5]{linyushikaiji.png}
-    \label{邻域是开集的几何解释}
   \end{figure}
 
   \subsection{开集的补集}
@@ -1517,7 +1517,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   $$
   E=G\cap Y\Leftrightarrow E\text{是}Y\text{的相对开集}
   $$
-  这个概念非常像\prettyref{myref:子空间拓扑}提到的子空间拓扑.
+  这个概念非常像\prettyref{myref:soustopo}提到的子空间拓扑.
   一个大空间里某个集合的性质仍属于这个集合和一个小空间交出来的集合.
   \subsection{相对闭集}
   对度量空间$X$种的集合$E$和一点$p\in X$,若:
@@ -1623,7 +1623,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   \subsection{平移不变性}
 
 
-\section{$L^P$范数}
+\section{$L^P$范数}\label{myref:LPnorme}
 与讲义上的顺序不同，我打算直接定义$L^P$范数(又称为$P$范数)并研究它的性质，而不是通过需要的性质去定义三个范数。
   \subsection{Définition}
   对线性空间里的向量$\alpha=(a_1,a_2,\dots,a_n$),定义范数：
@@ -1642,7 +1642,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   $$
     B(q,r)=\{x\in E |\Vert x-q \Vert<r \}
   $$
-  称$B$是以$q$为中兴半径$r$的开球。请对照\prettyref{myref:邻域},开球与邻域的区别，其实就是度量和范数的差异。
+  称$B$是以$q$为中兴半径$r$的开球。请对照\prettyref{myref:voisinage},开球与邻域的区别，其实就是度量和范数的差异。
   \subsection{单位球与等距线}
   称$B(0,1)$为赋范空间$(E,\Vert \cdot \Vert)$上的单位球(boule unité)。作距离为1的各范数的等距线:
   \begin{figure}[H]%插入题目的图片
@@ -1737,7 +1737,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
 
   把一个度量空间加上其Cauchy列的极限点组成的最小度量空间这一过程称为对度量空间的完备化。例如，有理数集的完备化就是实数集。
 
-\section{等价度量与等价范数}
+\section{等价度量与等价范数}  \label{myref:normeq}
   \subsection{双Lipschitz条件}
   给定两个度量空间$(E_1,d_1),(E_2,d_2)$，集合$U\subseteq E_1$。
   若对于函数$f:U\rightarrow E_2$存在常数$K$使得对任意集合$U$中的元素$(a,b)$有:
@@ -1812,12 +1812,12 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   
   \subsection{度量诱导的拓扑}
   对$(X,\tau)$，若存在度量$d$可以定义拓扑的开集，称$(X,\tau)$是可度量的(英:metrizable)。
-  例如，\prettyref{myref:离散度量}的离散度量可以诱导离散拓扑，此时邻域$N_\frac{1}{2}=\{X\}$就是开集。
+  例如，\prettyref{myref:lisanduliang}的离散度量可以诱导离散拓扑，此时邻域$N_\frac{1}{2}=\{X\}$就是开集。
   而对于card$(X)>1$的密着拓扑就无法被度量。
   \subsection{有限补拓扑 Topologie des compléments finis}
   有限补拓扑中，补集有限的集合是开集。即$\tau=\{U|U\subseteq X,U^C\text{是有限集} \}\cup \{\varnothing\}$
 
-  \subsection{子空间拓扑}\label{myref:子空间拓扑}
+  \subsection{子空间拓扑}\label{myref:soustopo}
   提前预告一下，这是个简单但是非常重要的概念，我们在后面的证明中会多次用到这个概念。\\
   对$(X,\tau)$,$Y$是$X$的子集,则存在一个拓扑$\tau_y=\{Y\cap U| U\in\tau\}$,也就是说，拓扑与子集的交集可以组成一个新的拓扑。
   \subsubsection{Démonstration}
@@ -2055,7 +2055,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   \subsubsection{Démonstration}
   \begin{figure}[H]%插入题目的图片
     \centering
-    \includegraphics[scale=0.2]{证明留给读者.jpg}
+    \includegraphics[scale=0.2]{proofforreader.jpg}
   \end{figure}
 
 
@@ -2073,7 +2073,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   则称$f$是$X$到$Y$上的一个同胚映射,此时$X$和$Y$是同胚的.显然,同胚是一个等价关系.
   \subsection{Exemple}
   \subsection{Remarque}
-  请回顾我们在\prettyref{myref:同态}和\prettyref{myref:同构}里提到的同态和同构,它们有什么相似的地方?\\
+  请回顾我们在\prettyref{myref:Homomorphisme}和\prettyref{myref:Isomorphisme}里提到的同态和同构,它们有什么相似的地方?\\
 
   在拓扑空间上前两条无法推出第三条性质,我们讲马上给出一个经典的反例用来说明这一点.
   \subsection{Exemple: 反例}
@@ -2161,7 +2161,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   \subsubsection{3.  $\{0\}\cup \{\frac{1}{n}|n\in\mathbb{N}\}$既紧,也列紧}
   \begin{figure}[H]%插入题目的图片
     \centering
-    \includegraphics[scale=0.2]{证明留给读者.jpg}
+    \includegraphics[scale=0.2]{proofforreader.jpg}
   \end{figure}
   \subsection{紧集的投影}
   定义投影算子$\mathcal{P}:X^2\rightarrow X$
@@ -2249,7 +2249,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   $E_\lambda=\{x\in E\}$为矩阵$M$的特征空间，
   称特征值集$\sigma_{\mathbb{K}}(M)$为矩阵$M$的谱。事实上，如果$E$是有限维空间，两种定义是等价的。
   \subsubsection{Remarque}
-  还记得\prettyref{myref:特征}介绍的“特征”的概念吗?想一下我们为什么要管这里的$\lambda$叫“特征”值.
+  还记得\prettyref{myref:tezheng}介绍的“特征”的概念吗?想一下我们为什么要管这里的$\lambda$叫“特征”值.
   \subsection{Proposition:特征空间的性质}
   \subsubsection{线性子空间}
   $E_\lambda$是一个线性子空间(sous-espace vectoriel)，满足:
@@ -2369,7 +2369,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   $$
   称$A$和$B$是相似的(semblable)。易知相似是一种等价关系。
   \subsubsection{Remarque}
-  嘿!还记得\prettyref{myref:共轭关系}提到的共轭关系吗?这就是共轭关系在矩阵里的应用!
+  嘿!还记得\prettyref{myref:conjugaison}提到的共轭关系吗?这就是共轭关系在矩阵里的应用!
   \subsection{Proposition:相似矩阵的特征多项式相等}
   设$A$和$B$是相似矩阵，$\chi_A(X)$和$\chi_B(X)$分别是他们的特征多项式，则有：
   $$
@@ -2515,16 +2515,16 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   $$
   \forall(i,j)\in[\![1,n]\!]^2,\text{{ }}m_{i,j}=m_{j,i}
   $$
-  则称$M$为实对称矩阵。显然对于实对称矩阵$M=M^t$。$n$阶实对称矩阵组成的集合记为$S_n(\mathbb{R})$。
+  则称$M$为实对称矩阵。显然对于实对称矩阵$M=^\top M$。$n$阶实对称矩阵组成的集合记为$S_n(\mathbb{R})$。
   \subsection{实特征值}
   实对称矩阵的所有特征值都是实数。
   \subsubsection{Démonstration}
   \begin{flalign*}
     \begin{aligned}
       & Ax=\lambda x\\
-      & \Rightarrow ^t\bar{x} Ax=^t\bar{x}\lambda x=\lambda^t\bar{x}x\\
-      & \Rightarrow \lambda^t\bar{x}x=A^t\bar{x}x=\overline{A^t\bar{x}x} =A^tx\bar{x}=\bar{\lambda}^tx\bar{x}\\
-      & \Rightarrow \lambda^t\bar{x}x=\bar{\lambda}^tx\bar{x}\\
+      & \Rightarrow ^\top \bar{x} Ax=^\top \bar{x}\lambda x=\lambda^\top \bar{x}x\\
+      & \Rightarrow \lambda^\top \bar{x}x=A^\top \bar{x}x=\overline{A^\top \bar{x}x} =A^\top x\bar{x}=\bar{\lambda}^\top x\bar{x}\\
+      & \Rightarrow \lambda^\top \bar{x}x=\bar{\lambda}^\top x\bar{x}\\
       & \Rightarrow \lambda=\bar{\lambda}\in\mathbb{R}
       \end{aligned}
   \end{flalign*}
@@ -2533,12 +2533,12 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   \subsubsection{Démonstration}
   \begin{flalign*}
     \begin{aligned}%怎么输入左上角标？这样打起来很不好看啊
-      & ^taMb=^{t}(^taMb)=^tb^tMa=^tbMa \Rightarrow ^ta\lambda_bb=^tb\lambda_aa\\
-      & \Rightarrow \lambda_b\cdot^tab=\lambda_a\cdot^tba\\
-      & \neg(^tab=0)\\
-      & \Rightarrow \frac{\lambda_b}{\lambda_a}=\frac{^tba}{^tab}=\frac{^t(^tba)}{^tab}=1\\
+      & ^\top aMb=^{t}(^\top aMb)=^\top b^\top Ma=^\top bMa \Rightarrow ^\top a\lambda_bb=^\top b\lambda_aa\\
+      & \Rightarrow \lambda_b\cdot^\top ab=\lambda_a\cdot^\top ba\\
+      & \neg(^\top ab=0)\\
+      & \Rightarrow \frac{\lambda_b}{\lambda_a}=\frac{^\top ba}{^\top ab}=\frac{^\top (^\top ba)}{^\top ab}=1\\
       & \Rightarrow \lambda_b=\lambda_a\Rightarrow \perp \\
-      & \Rightarrow ^tab=0
+      & \Rightarrow ^\top ab=0
       \end{aligned}
   \end{flalign*}
   
@@ -2591,7 +2591,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
       \end{aligned}
   \end{flalign*}
 
-
+\part{微分理论}
   \chapter{概率论入门\\Introduction: La Probabilité}
 \chapter{多元函数微分学\\ Différenciation Multifonctionnelle}
   \section{Introduction}
@@ -2692,7 +2692,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   
   $f:D\rightarrow \mathbb{R}$, $D$是$\mathbb{R}$上的开集,若极限
   $$
-  \lim_{t \to 0}\frac{f(x_1,\dots,x_i+t,\dots,x_n)-f(x_1,\dots,x_i,\dots,x_n)}{t}=l
+  \lim_{t \to 0}\frac{f(x_1,\cdots,x_i+t,\cdots,x_n)-f(x_1,\cdots,x_i,\cdots,x_n)}{t}=l
   $$
   则$l$为$f$在$x_0$处关于$x_i$的偏导数.
   \subsection{Remarque: 偏导数不可看作两项相除}
@@ -2708,19 +2708,225 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   \frac{\partial p}{\partial V}\cdot\frac{\partial V}{\partial T}\cdot\frac{\partial T}{\partial p}=-\frac{RT}{V^2}\cdot\frac{R}{p}\cdot\frac{V}{R}=-\frac{RT}{pV}=-1
   $$
   \subsection{偏导与连续性}
-  需要大修
-
-
+  对$f(x,y)$,若$\frac{\partial f}{\partial x},\, \frac{\partial f}{\partial y}$在点$(x_0,y_0)$的某个邻域内存在且有界,则$f$在该点连续
+  \subsubsection{Démonstration}
 
 
   \section{多元函数的微分}
   \subsection{全增量}
   \subsection{可微函数}
   \subsection{梯度}
+  \subsection{可微一定可导}
+
+  \subsection{Exemple: Vandermonde 行列式}
+    定义n阶 Vandermonde 行列式为:
+    $$
+    u=\begin{vmatrix}
+      1 &1   &\cdots & 1 \\
+      x_1 &x_2 & \cdots & x_n  \\
+      x_1^2 &x_2^2 & \cdots & x_n^2  \\
+      \vdots &\vdots & \vdots & \vdots   \\
+      x_1^{n-1} & x_1^{n-1} &\cdots &x_n^{n-1} \\
+      \end{vmatrix}
+      =\prod _{1\leq i\leq j\leq n}(x_i-x_j)
+    $$
+    求证:\\
+    1.
+    $$
+      \sum_{i = 1}^{n}  \frac{\partial u}{\partial x_i}=0
+    $$
+    2.
+    $$
+    \sum_{i = 1}^{n}  x_i \frac{\partial u}{\partial x_i}=\frac{n(n-1)}{2}u
+    $$
+    \subsubsection{Démonstration.1}
+    $$
+    u(x_0+h)-u(x_0)=(\frac{\partial u}{\partial x_1},\cdots,\frac{\partial u}{\partial x_n})
+    \begin{pmatrix}
+      h_1\\
+      \vdots\\
+      h_n
+     \end{pmatrix}+o(\left\lVert h\right\rVert )
+    $$
+    设 $h=^\top(h,\cdots,h)$,则有:
+    $$
+    u(x)=\prod _{1\leq i\leq j\leq n}(x_i-x_j)=\prod _{1\leq i\leq j\leq n}(x_i+h-x_j-h)=u(x+h)
+    $$
+    即
+    $$
+    0=(\frac{\partial u}{\partial x_1},\cdots,\frac{\partial u}{\partial x_n})h+o(\left\lVert h\right\rVert )=\sum_{i = 1}^{n}  \frac{\partial u}{\partial x_i}+o(1)
+    $$
+    \subsubsection{Démonstration.2}
+    设$h=^\top(x_1h,x_2h,\cdots,x_nh)$,则
+    $$
+    u(x+h)=\prod _{1\leq i\leq j\leq n}[(x_i+x_ih)-(x_j+x_jh)]=\prod _{1\leq i\leq j\leq n}(h+1)(x_i-x_j)
+    $$
+    $$
+    =(h+1)^{\binom{n}{2} }\prod _{1\leq i\leq j\leq n}(x_i-x_j)=(h+1)^{\binom{n}{2} }u
+    $$
+    即
+    $$
+    [(h+1)^{\binom{n}{2} }-1]u=h\sum_{i = 1}^{n}  x_i \frac{\partial u}{\partial x_i}+0(\left\lVert h\right\rVert )\xrightarrow[h\rightarrow 0]{}{\binom{n}{2} }u
+    $$
+  \section{向量值函数的微分}
+    \subsection{Définition}
+    设$D\subseteq \mathbb{R}^n$,对映射$f:D\rightarrow \mathbb{R}^m$,有:
+    $$
+    f=\begin{pmatrix}
+      f_1\\
+      f_2\\
+      \vdots\\
+     f_m
+     \end{pmatrix}
+    $$
+    对点$x=(x_1,x_2,\cdots,x_n)$,若有
+    $$
+    f(x+h)-f(x)=Ah+r(h),\left\lVert r(h) \right\rVert =o\left\lVert r(h) \right\rVert 
+    $$
+    则称$f$在点$x$处可微.$Ah$称其微分,记为$df$.此时又称$A$为线性主部,$r(h)$为余项.
+    \subsection{线性主部}
+    显然对于$\forall (m,n)\in\mathbb{R}^2$, $A$是一个$m\times n$矩阵,其中每一项都是某个方向函数对于某个方向的向量的偏导,即:
+    $$
+     A=\begin{pmatrix}
+      \frac{\partial f_1}{\partial x_1}&\frac{\partial f_1}{\partial x_2}  &\cdots  &\frac{\partial f_1}{\partial x_n} \\
+      \frac{\partial f_2}{\partial x_1}&\frac{\partial f_2}{\partial x_2}  & \cdots & \frac{\partial f_2}{\partial x_n}\\ 
+      \vdots& \vdots & \ddots  & \vdots\\
+      \frac{\partial f_m}{\partial x_1}&\frac{\partial f_m}{\partial x_2} &\cdots & \frac{\partial f_m}{\partial x_n} 
+    \end{pmatrix}
+    $$
+
+    \subsection{分量函数的可微性}
+    设$D\subseteq \mathbb{R}^n$,对向量值函数$f:D\rightarrow \mathbb{R}^m$,若$f$在$x$处可微,则其每个分量函数$f_1,\cdots,f_m$在$x$处同样可微.
+    \subsubsection{Démonstration}
+    首先我们需要回顾\prettyref{myref:normeq}中等价范数的概念,$\mathbb{R}^n$空间中所有范数等价的推论,以及\prettyref{myref:LPnorme}里提到的$L^P$范数的概念.
+    基于此,结合范数的定义,可以得到
+    $$
+    \max v_{i,i\in[\![1,n]\!] }\leq \left\lVert v\right\rVert 
+    $$
+    现在,考虑全微分的定义,有
+    $$
+    \left\lVert f(x+h)-f(x)-Ah\right\rVert =o\left\lVert r(h) \right\rVert 
+    $$
+    则可推出
+    $$
+    \forall i \in [\![1,m]\!],\,\left\lvert f_i(x+h)-f_i(x)-A_ih \right\rvert =o\left\lVert r(h) \right\rVert
+    $$
+    故$f_1,\cdots,f_m$在$x$处可微.
+    \subsubsection{Proposition: Fréchet可微}
+    在刚才的证明中,我们并没有用到什么实质上$\mathbb{R}^n$里向量值函数的性质,而是直接通过范数证明.该情况可推广至一般的赋范空间中.\\
+
+    设赋范空间中的映射$f:(V_1,N_1)\rightarrow (V_2,N_2)$,对$x\in (V_1,N_1)$,若有
+    $$
+      f(x+h)-f(x)=\mathcal{A} h+r(h)
+    $$
+    其中$\mathcal{A}$是$(V_1,N_1)$到$ (V_2,N_2)$上的线性映射,$N_2(r(h))=oN_1(r(h))$,则称$f$在$x$处Fréchet可微.
+    \subsection{一阶微分形式不变性}
+    一阶微分形式不变性其实就是可以把某个自变量看作另一个变量的函数,非常直观.但是从重要性来说,这又是非常严谨而不可或缺的一环.
+    因此我们还需证明这个trival的结论.
+    $$
+    u=f(x_1,x_2,\cdots,x_n) \text{ 且 }\forall x_{i,i\in [\![1,n]\!]}, x_i=(t_1,t_2,\cdots,t_m)
+    $$
+    若以$x$为自变量,则有:
+    $$
+      du=\sum_{i=1}^{n}\frac{\partial f}{\partial x_i}dx_i
+    $$
+    若以$t$为自变量,则有:
+    $$
+      du=\sum_{j=1}^{m}(\sum_{i=1}^{n}\frac{\partial f}{\partial x_i}\frac{\partial x_i}{\partial t_j})dt_j
+    $$
+    $$
+      =\sum_{i=1}^{n}\frac{\partial f}{\partial x_i}\sum_{j=1}^{m}\frac{\partial x_i}{\partial t_j}dt_j
+    $$
+    考虑后面的求和部分,有:
+    $$
+    \sum_{j=1}^{m}\frac{\partial x_i}{\partial t_j}dt_j=dx_i
+    $$
+    即该式等于
+    $$
+    \sum_{i=1}^{n}\frac{\partial f}{\partial x_i}\sum_{j=1}^{m}\frac{\partial x_i}{\partial t_j}dt_j = \sum_{i=1}^{n}\frac{\partial f}{\partial x_i}dx_i
+    $$
+    该式成为多元函数的一阶微分形式不变性.至此,我们对于多元函数的求导才有了严谨性.
+    \subsubsection{Exemple}
+    设$f(x,y)=\arctan(\frac{x}{y})$,求$\frac{\partial f}{\partial x}$和$\frac{\partial f}{\partial x}$.\\
+
+
+    $$df=d \arctan(\frac{x}{y})=\frac{1}{1+(\frac{x}{y})^2}d(\frac{x}{y})=\frac{ydx-xdy}{x^2+y^2}=\frac{y}{x^2+y^2}dx+\frac{x}{x^2+y^2}dy$$
+    又
+    $$df=\frac{\partial f}{\partial x}dx+ \frac{\partial f}{\partial y}dy$$
+    则可求出偏导.
+    \section{Jacobi算子}
+    \subsection{Définition}
+    考虑到前文提到的线性主部
+    $$
+     A=\begin{pmatrix}
+      \frac{\partial f_1}{\partial x_1}&\frac{\partial f_1}{\partial x_2}  &\cdots  &\frac{\partial f_1}{\partial x_n} \\
+      \frac{\partial f_2}{\partial x_1}&\frac{\partial f_2}{\partial x_2}  & \cdots & \frac{\partial f_2}{\partial x_n}\\ 
+      \vdots& \vdots & \ddots  & \vdots\\
+      \frac{\partial f_m}{\partial x_1}&\frac{\partial f_m}{\partial x_2} &\cdots & \frac{\partial f_m}{\partial x_n} 
+     \end{pmatrix}
+     =\begin{pmatrix}
+      \nabla f_1\\
+      \nabla f_2\\
+      \vdots\\
+      \nabla f_m
+     \end{pmatrix}
+    $$
+    称其为Jacobi矩阵,或Jacobi算子,记作$J$.
+    若$J\in\mathcal{M}_n(\mathbb{R}) $,则称$\det(J)$为Jacobi行列式,记作$\det(J)=\frac{\partial(f_1,f_2,\cdots,f_n)}{\partial(x_1,x_2,\cdots,x_n)}$
+    \subsection{线性映射的微分}
+    $f:\mathbb{R}^n\rightarrow \mathbb{R}^m$,若有$f(x)=Ax$,则$A=J_f$.
+    \subsubsection{Démonstration}
+    设单位向量$h$
+    $$
+      \lim_{t \to 0}\frac{\left\lVert f(x+th)-f(x)-A(th) \right\rVert }{t}  =\lim_{t \to 0}\frac{\left\lVert A(x+th)-A(x)-A(th) \right\rVert }{t} =0 
+    $$
+    \subsection{Jacobi算子的运算法则}
+    Jacobi算子满足以下运算法则:
+    对$f,g:D\rightarrow \mathbb{R}^m, D\subseteq\mathbb{R}^n,A\in\mathcal{M}_{p\times m}(\mathbb{R})$,有:
+    \begin{itemize}
+      \item $J(Af)=AJf$
+      \item $J(f+g)=Jf+Jg$
+      \item $J(^\top f\cdot g)=^\top g\cdot Jf+^\top f\cdot Jg$
+    \end{itemize}
+  \section{高阶偏导数问题}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   \chapter{微分方程入门\\Introduction: Équations Différentielles}
   \chapter{Lebesgue测度与Lebesgue积分\\ Mesure de Lebesgue et Intégrale de Lebesgue}
   \chapter{测度论初步}
   \chapter{概率与位势}  
 
+  \part{数学应用}
+  \chapter{误差与不确定度}
+  \section{全微分误差估计}
+  \chapter{应用}  
+  \section{}
+  \chapter{对称群与分子对称性\\ Groupe Symétrique et Symétrie Moléculaire}
+  \begin{figure}[H]%插入题目的图片
+    \centering
+    \includegraphics[scale=0.15]{groupe_chimie.png}
+    \caption{群论与化学(图片源自法语wiki)}
+    \label{myref:groupechimie}
+  \end{figure}
+
+  \part{附录}
+  \appendix
+  \chapter{114}
+  \chapter{附录:三段论}
+  \chapter{附录:证明方法}
+  \chapter{代码}
+
+  \printindex
 \end{document}
 
