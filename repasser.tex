@@ -1,9 +1,9 @@
 \documentclass[12pt, a4paper, oneside]{ctexbook}
-\usepackage{amsmath, amsthm, amssymb, bm, color, framed, graphicx, imakeidx, 
-hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wallpaper}
+\usepackage{amsmath, esint,amsthm, amssymb, bm, color, framed, graphicx, imakeidx, 
+hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref}
 
 \title{{\Huge{\textbf{工程师学院数学分析笔记\\Notes d'Analyse de l'Ecole d'Ingénieur de Chimie Pékin}}}\\
-版本0.1.11(持续更新中)}
+版本0.1.12(持续更新中)}
 \author{Augustin}
 \date{\today}
 \linespread{1.5}
@@ -41,9 +41,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
 所以我给出的也只是我觉得可以说得通的顺序。事实上存在大量平行的内容，相互之间怎么排列都可以。
 (待更新)
 
-讲义的定位一直在困扰我。究竟是写得简洁、方便复习的时候快速浏览知识点，还是写得详细，让没学过的人也能看懂，这是很难的取舍。
-我很喜欢普林斯顿的那套数学书，各种引入、例子、详细的解释和口语化的表述读起来赏心悦目。但是我自己又写不出那种东西。
-所以最后我决定开摆，写得简单并且口语化一些。本讲义大概有两种内容，即课程内容和课程的前置与延申内容。
+本讲义大概有两种内容，即课程内容和课程的前置与延申内容。
 对于课程内容，还是希望上课好好听讲，因此写的东西仅仅作为一个参考预习、复习的样例，说白了就是让你知道你学的是什么。方便读者在详细的不懂得地方可以多问老师或者自己找课程学习；
 对于课外的内容，由于学院本身对于数学的要求不高，所以也只是介绍一下，并不深入。有兴趣的自己去找课程和书就行。这部分更像是一个简介，让你知道还有什么是我们没有学的，其中有哪些学一下更好。
 对于讲义的参考资料，欢迎大家自己去找来看，这些东西远远比我写的精彩。我做的一点微小的工作其实就是把这些精华筛选一下，挑出我们课程用得上的东西，然后排列组合罢了。\\
@@ -54,7 +52,13 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
 \begin{itemize}
   \item Proofs from THE BOOK,Martin Aigner \& Günter M. Ziegler,Springer
   \item The Princeton Companion to Applied Mathematics,Nicholas J. Higham,Princeton University Press
-  \item 微积分和数学分析引论
+  \item Calcul Différentiel et Équations Différentielles,Sylvie Benzoni-Gavage,DUNOD
+  \item Algèbre Linéaire, Algèbre Bilinéaire,Mohamed Houimdi,Ellipses
+  \item Graduate Texts in Mathematics 73,S.Axler et al.,Springer
+  \item Précis d'analyse réelle,Vilmos KOMORNIK, Ellipses
+  \item The Princeton Companion to Applied Mathematics,Nicholas j. Higham,Princeton University Press
+  \item VECTOR CALCULUS, LINEAR ALGEBRA, AND DIFFERENTIAL FORMS: A Unified Approach,John H, Hubbard,Matrix Editions
+  \item 微积分和数学分析引论,R.科朗 \& F.约翰,科学出版社
   \item 数学分析原理,Walter Rudin,机械工业出版社
   \item 普林斯顿微积分读本,Adrian Banner,人民邮电出版社
   \item 普林斯顿线性代数读本,拉菲·格林贝格,人民邮电出版社
@@ -66,6 +70,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   \item 实分析中的反例,汪林，高等教育出版社
   \item 泛函分析中的反例,汪林，高等教育出版社
   \item 拓扑学教程,G·肖盖,高等教育出版社
+  \item 抽象代数基础,丘维声,高等教育出版社
   \item 代数的历史,约翰·德比希尔,人民邮电出版社
   \item 概率论基础教程,Sheldon M. Ross,机械工业出版社
   \item 数学建模,Frank R. Giordano etc.,机械工业出版社
@@ -106,15 +111,16 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
 \textbf{更新内容:}\\
 1.调整了章节顺序。\\
 2.添加了数个章节。\\
+3.正在更新多元微积分内容\\
 
 \noindent
 \textbf{计划中的更新:}\\
 1.句号由"。"改为".",逗号由"，"改为","。\\
-2.尝试加入图片。等我学会matlab再说。Manim也行。\\
+2.尝试加入更多图片。等我学会matlab再说。Manim也行。\\
 3.尝试给出一些习题。\\
 4.补充证明。\\
 5.Bonus。\\
-6.规范映射的符号$\rightarrow,\mapsto $
+6.规范符号$\rightarrow,\mapsto $等等。
 
 
 
@@ -2658,16 +2664,17 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
     $$
 
 \section{多元函数的导数}
-  \subsection{方向导数}
-  对开集$D\subseteq \mathbb{R^n}$上一点$x_0$,方向向量$\textbf{u}$,有
-  $$
-  f:D\rightarrow \mathbb{R}
-  $$
+  \subsection{方向导数 Dérivée Directionnelle}
+  %方向导数与连续/可导的关系,这里还有几个结论没有给.记得补充.
+  对开集$D\subseteq \mathbb{R^n}$上一点$x_0$,方向向量$\textbf{u}$,有$f:D\rightarrow \mathbb{R}$
   若存在$l\in\mathbb{R}$使得:
   $$
   \lim_{t \to 0} \frac{f(x_0+t\textbf{u})-f(x_0)}{t} =l
   $$
-  则称$l$为函数$f$在$x_0$处沿$\textbf{u}$的方向导数.记为$\frac{\partial f}{\partial \textbf{u}}(x_0)$
+  则称$l$为函数$f$在$x_0$处沿$\textbf{u}$的方向导数.记为$\frac{\partial f}{\partial \textbf{u}}(x_0)$.
+  有些书籍中会较为严格地定义方向导数为函数在某一点沿单位长度向量的方向导数,在这样的上下文中,
+  "函数在某点沿向量$\mathbf{a}$ 方向上的导数"指的是函数在这一点沿着$\mathbf{a}$对应的单位向量$\hat{\mathbf{a}}=\frac{\mathbf{a}}{\left\lVert \mathbf{a}\right\rVert }$的方向导数.
+  本节中只对方向导数做基础介绍,不进行深入讨论.
   \subsubsection{Remarque}
   要求$D$是开集,这是为了让每个点都有一个包含在定义域内的领域,使得$x_0+t\textbf{u}$仍然有定义.
   \subsection{方向导数的化简}
@@ -2681,6 +2688,8 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   \subsection{偏导数}
   方向导数讨论的是任意方向上的导数.为了方便统一研究与运算,我们规定一些特殊的方向导数,也即沿着单位向量的方向导数称为偏导数.
   对$f:D\rightarrow \mathbb{R}$, $D$是$\mathbb{R}$上的开集,若$f$在点$x_0$处沿第$i$个单位向量的$d$方向导数称为$f$在$x_0$处的第$i$个偏导数.\\
+  
+  
   一般采用的偏导数符号有三种:
   \begin{itemize}
     \item $$\frac{\partial f}{\partial x_i}(x_0)\text{ 称为Leibniz符号}$$ 
@@ -2712,10 +2721,9 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
   \subsubsection{Démonstration}
 
 
-  \section{多元函数的微分}
+\section{多元函数的微分}
   \subsection{全增量}
   \subsection{可微函数}
-  \subsection{梯度}
   \subsection{可微一定可导}
 
   \subsection{Exemple: Vandermonde 行列式}
@@ -2768,7 +2776,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
     $$
     [(h+1)^{\binom{n}{2} }-1]u=h\sum_{i = 1}^{n}  x_i \frac{\partial u}{\partial x_i}+0(\left\lVert h\right\rVert )\xrightarrow[h\rightarrow 0]{}{\binom{n}{2} }u
     $$
-  \section{向量值函数的微分}
+\section{向量值函数的微分}
     \subsection{Définition}
     设$D\subseteq \mathbb{R}^n$,对映射$f:D\rightarrow \mathbb{R}^m$,有:
     $$
@@ -2812,14 +2820,30 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
     \forall i \in [\![1,m]\!],\,\left\lvert f_i(x+h)-f_i(x)-A_ih \right\rvert =o\left\lVert r(h) \right\rVert
     $$
     故$f_1,\cdots,f_m$在$x$处可微.
-    \subsubsection{Proposition: Fréchet可微}
-    在刚才的证明中,我们并没有用到什么实质上$\mathbb{R}^n$里向量值函数的性质,而是直接通过范数证明.该情况可推广至一般的赋范空间中.\\
+    \subsection{Proposition: Fréchet可微}
+    在刚才的证明中,我们并没有用到什么实质上$\mathbb{R}^n$里向量值函数的性质,而是直接通过范数证明.该情况可推广至一般的赋范空间中.
+    在我所找到的几本数学书里,都采用了这种定义用来表示可微性.\\
 
     设赋范空间中的映射$f:(V_1,N_1)\rightarrow (V_2,N_2)$,对$x\in (V_1,N_1)$,若有
     $$
       f(x+h)-f(x)=\mathcal{A} h+r(h)
     $$
     其中$\mathcal{A}$是$(V_1,N_1)$到$ (V_2,N_2)$上的线性映射,$N_2(r(h))=oN_1(r(h))$,则称$f$在$x$处Fréchet可微.
+    
+
+    该定义的等价表述为:\\
+
+    La fonction $f$ est différentiable en un point $x\in U$ s'il existe $l\in \mathcal{L}(E; F) $ tel que 
+    $$
+      \lim_{h \to 0_E}\frac{\left\lVert f(x+h)-f(x)-l(h)\right\rVert _F }{\left\lVert h\right\rVert _E}  =0
+    $$
+    
+    
+    在常见的法语教材里,称$\frac{\left\lVert f(x+h)-f(x)-l(h)\right\rVert _F }{\left\lVert h\right\rVert _E}  =\varepsilon (h)$,
+    并认为$\varepsilon (h)\xrightarrow[h\rightarrow 0]{}0$.注意区分两种表达方式.事实上,显然$r(h)$与$\left\lVert h\right\rVert\varepsilon (h)$两者是等价的.
+    故自此之后,我们将统一采用这种方式定义函数的可微性.
+    \subsubsection{Exemple}
+    
     \subsection{一阶微分形式不变性}
     一阶微分形式不变性其实就是可以把某个自变量看作另一个变量的函数,非常直观.但是从重要性来说,这又是非常严谨而不可或缺的一环.
     因此我们还需证明这个trival的结论.
@@ -2854,7 +2878,7 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
     又
     $$df=\frac{\partial f}{\partial x}dx+ \frac{\partial f}{\partial y}dy$$
     则可求出偏导.
-    \section{Jacobi算子}
+\section{Jacobi算子}
     \subsection{Définition}
     考虑到前文提到的线性主部
     $$
@@ -2864,15 +2888,14 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
       \vdots& \vdots & \ddots  & \vdots\\
       \frac{\partial f_m}{\partial x_1}&\frac{\partial f_m}{\partial x_2} &\cdots & \frac{\partial f_m}{\partial x_n} 
      \end{pmatrix}
-     =\begin{pmatrix}
-      \nabla f_1\\
-      \nabla f_2\\
-      \vdots\\
-      \nabla f_m
-     \end{pmatrix}
     $$
-    称其为Jacobi矩阵,或Jacobi算子,记作$J$.
+    称其为Jacobi矩阵(Matrice Jacobienne),或Jacobi算子,记作$J$.
     若$J\in\mathcal{M}_n(\mathbb{R}) $,则称$\det(J)$为Jacobi行列式,记作$\det(J)=\frac{\partial(f_1,f_2,\cdots,f_n)}{\partial(x_1,x_2,\cdots,x_n)}$
+    \subsubsection{Remarque}
+    另有一些教材将Matrice Jacobienne记为$D$(特别是在与物理相关的内容中!):
+    $$
+     (Df(x))_{i,j}=\frac{\partial f_i(x)}{\partial x_j}
+    $$
     \subsection{线性映射的微分}
     $f:\mathbb{R}^n\rightarrow \mathbb{R}^m$,若有$f(x)=Ax$,则$A=J_f$.
     \subsubsection{Démonstration}
@@ -2888,7 +2911,74 @@ hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,wa
       \item $J(f+g)=Jf+Jg$
       \item $J(^\top f\cdot g)=^\top g\cdot Jf+^\top f\cdot Jg$
     \end{itemize}
-  \section{高阶偏导数问题}
+\section{$\nabla$ 算子 Opérateur $\ll$ nabla $\gg$ }%符号输入问题$\nabla$ 算子 Opérateur $\ll$ nabla $\gg$ 无法识别,怎么回事
+    大家好啊,我是说$\nearrow $的$\nearrow $物$\searrow $理$\rightsquigarrow $,今天给大家来点想看的东西.
+  \subsection{梯度 Gradient}
+    设标量值函数(标量场)$\varphi:U\subseteq \mathbb{R}^p \rightarrow \mathbb{R}$,
+    其梯度是一个$p$维矢量函数(矢量场),即$\mathbb{R}^p$上的自同态(?),记为$\nabla \varphi$或者$\overrightarrow{grad} (\varphi)$, $\text{grad } \varphi$:
+    $$
+    \nabla \varphi=
+    \begin{pmatrix}
+      \frac{\partial \varphi(x)}{\partial x_1}\\
+      \frac{\partial \varphi(x)}{\partial x_2}\\
+      \vdots \\
+      \frac{\partial \varphi(x)}{\partial x_p}
+    \end{pmatrix}
+    $$
+    几何意义上,标量场中某一点的梯度指向这一点上标量场增长最快的方向.
+    \subsubsection{Exemple}
+    考虑一阶连续的标量场:\\
+
+
+    三维直角坐标系中$\phi(x,y,z)$的梯度为:
+    $$
+    \overrightarrow{grad} (\phi)=\nabla \phi=\frac{\partial \phi}{\partial x}\overrightarrow{e_x}+\frac{\partial \phi}{\partial y}\overrightarrow{e_y}+\frac{\partial \phi}{\partial z}\overrightarrow{e_z}
+    $$
+
+    柱坐标系中$\phi(r,\varphi ,z)$的梯度为:
+    $$
+    \overrightarrow{grad} (\phi)=\nabla \phi=\frac{\partial \phi}{\partial r}\overrightarrow{e_r}+\frac{1}{r}\frac{\partial \phi}{\partial \varphi}\overrightarrow{e_\varphi}+\frac{\partial \phi}{\partial z}\overrightarrow{e_z}
+    $$
+
+    球坐标系中$\phi(r,\theta,\varphi)$的梯度为:
+    $$
+      \overrightarrow{grad} (\phi)=\nabla \phi=\frac{\partial \phi}{\partial r}\overrightarrow{e_r}+\frac{1}{r}\frac{\partial \phi}{\partial \theta}\overrightarrow{e_\theta}+\frac{1}{r\sin\theta}\frac{\partial \phi}{\partial \varphi}\overrightarrow{e_\varphi}
+    $$
+  \subsection{散度 Divergence}
+    设向量值函数(矢量场)$f:U\subseteq \mathbb{R}^p \rightarrow \mathbb{R}^p$,
+    其散度是一个$\mathbb{R}$上的标量,记为$\nabla \cdot f$或$\text{div }f$:
+    $$
+      \nabla \cdot f=\text{tr}(Df(x))=\sum_{i=1}^{p}\frac{\partial f_i(x)}{\partial x_i}
+    $$
+    物理意义上,散度用于描述场中一点的有源性,散度大于0说明该点有新的通量产生,小于0说明有通量汇聚湮灭,等于零说明无源.
+    例如不可压缩流体散度为0,说明流体内的粒子不会凭空产生或消失.
+    \subsubsection{Exemple}
+    考虑一阶连续的矢量场:\\
+
+
+    三维直角坐标系中$\textbf{A}(x,y,z)=P(x,y,z)\overrightarrow{e_x}+Q(x,y,z)\overrightarrow{e_y}+R(x,y,z)\overrightarrow{e_z}$的散度为:
+    $$
+      \text{div } \textbf{A}=\nabla \cdot \textbf{A}=\frac{\partial P}{\partial x}+\frac{\partial Q}{\partial y}+\frac{\partial R}{\partial z}
+    $$
+
+    柱坐标系中$\textbf{A}(r,\varphi ,z)=A_r(r,\varphi ,z)\overrightarrow{e_r}+A_\varphi(r,\varphi ,z)\overrightarrow{e_\varphi}+A_z(r,\varphi ,z)\overrightarrow{e_z}$的散度为:
+    $$
+      \text{div } \textbf{A}=\nabla \cdot \textbf{A}=\frac{1}{r}\frac{\partial rA_r}{\partial r}+\frac{1}{r}\frac{\partial A_\varphi}{\partial \varphi}+\frac{\partial A_z}{\partial z}
+    $$
+
+    球坐标系中$\textbf{A}(r,\theta ,\varphi)=A_r(r,\theta ,\varphi)\overrightarrow{e_r}+A_\theta(r,\theta ,\varphi)\overrightarrow{e_\theta}+A_\varphi(r,\theta ,\varphi)\overrightarrow{e_\varphi}$的散度为:
+    $$
+      \text{div } \textbf{A}=\nabla \cdot \textbf{A}=\frac{1}{r^2}\frac{\partial r^2A_r}{\partial r}+\frac{1}{r\sin \theta}\frac{\partial\sin\theta A_\theta}{\partial \theta}+\frac{1}{r\sin\theta}\frac{\partial A_\varphi}{\partial\varphi}
+    $$
+  \subsection{旋度 Rotationnel}
+  
+  \subsection{Gauss散度定理 Théorème de flux-divergence}
+    Gauss 散度定理,法语称 Théorème de flux-divergence 或者 Théorème de Green-Ostrogradski\footnote{在物理中偶尔会称Théorème de Gauss}.其说明矢量场穿过曲面的通量等于散度在曲面围起来的体积上的积分,即净流出量等于所有源点的和减去所有汇点的和.
+    其在一维情况下等价于微积分基本定理,二维情况下等价于Green公式.
+    $$
+      \iiint \limits_{V} \text{div } \vec{F}\,dV=\oiint\limits_{\partial V}\vec{F} d\vec{S}  
+    $$
+  \section{高阶偏导数 Dérivées Partielles d'Ordre Supérieur}
   
   
   

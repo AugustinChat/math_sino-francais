@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.12)  28 APR 2023 16:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.12)  8 MAY 2023 18:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -244,6 +244,9 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
+) (d:/latex/texlive/2023/texmf-dist/tex/latex/esint/esint.sty
+Package: esint 
+\symlargesymbolsA=\mathgroup4
 ) (d:/latex/texlive/2023/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks23
@@ -259,17 +262,18 @@ Package: amsthm 2020/05/29 v2.20.6
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
  (d:/latex/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (d:/latex/texlive/2023/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2022/01/05 v1.2f Bold Symbol Support (DPC/FMi)
-\symboldoperators=\mathgroup6
-\symboldletters=\mathgroup7
-\symboldsymbols=\mathgroup8
+\symboldoperators=\mathgroup7
+\symboldletters=\mathgroup8
+\symboldsymbols=\mathgroup9
 Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \U/esint/m/n, using \pmb.
 Package bm Info: No bold for \U/msa/m/n, using \pmb.
 Package bm Info: No bold for \U/msb/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
@@ -496,7 +500,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip61
 ) (d:/latex/texlive/2023/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
-\symrsfs=\mathgroup9
+\symrsfs=\mathgroup10
 ) (d:/latex/texlive/2023/texmf-dist/tex/latex/lipsum/lipsum.sty (d:/latex/texlive/2023/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
 )
@@ -544,35 +548,6 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box104
 ) (d:/latex/texlive/2023/texmf-dist/tex/latex/prettyref/prettyref.sty
 Package: prettyref 1998/07/09 v3.0
-) (d:/latex/texlive/2023/texmf-dist/tex/latex/wallpaper/wallpaper.sty
-Package: wallpaper 2005/01/18, v1.01 easy wallpaper formatting (MHFW)
- (d:/latex/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
-) (d:/latex/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count310
-\calc@Bcount=\count311
-\calc@Adimen=\dimen179
-\calc@Bdimen=\dimen180
-\calc@Askip=\skip73
-\calc@Bskip=\skip74
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count312
-\calc@Cskip=\skip75
-) (d:/latex/texlive/2023/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2023/03/23 v3.0b eso-pic (RN)
-\ESO@tempdima=\dimen181
-\ESO@tempdimb=\dimen182
-)
-\wpXoffset=\skip76
-\wpYoffset=\skip77
-\tileXoffset=\skip78
-\tileYoffset=\skip79
-\tilewidth=\skip80
-\tileheight=\skip81
-\tileX=\skip82
-\tileY=\skip83
 )
 \repasser@idxfile=\write3
 \openout3 = `repasser.idx'.
@@ -670,16 +645,16 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
  (d:/latex/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count313
-\scratchdimen=\dimen183
+\scratchcounter=\count310
+\scratchdimen=\dimen179
 \scratchbox=\box105
-\nofMPsegments=\count314
-\nofMParguments=\count315
+\nofMPsegments=\count311
+\nofMParguments=\count312
 \everyMPshowfont=\toks36
-\MPscratchCnt=\count316
-\MPscratchDim=\dimen184
-\MPnumerator=\count317
-\makeMPintoPDFobject=\count318
+\MPscratchCnt=\count313
+\MPscratchDim=\dimen180
+\MPnumerator=\count314
+\makeMPintoPDFobject=\count315
 \everyMPtoPDFconversion=\toks37
 ) (d:/latex/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -695,6 +670,10 @@ Package hyperref Info: Link coloring OFF on input line 11.
 LaTeX Font Info:    Trying to load font information for C70+rm on input line 14.
  (d:/latex/texlive/2023/texmf-dist/tex/latex/ctex/fd/c70rm.fd
 File: c70rm.fd 2022/07/14 v2.5.10 Chinese font definition (CTEX)
+)
+LaTeX Font Info:    Trying to load font information for U+esint on input line 14.
+ (d:/latex/texlive/2023/texmf-dist/tex/latex/esint/uesint.fd
+File: uesint.fd 
 )
 LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
  (d:/latex/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -718,7 +697,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--24
  []
 
 Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (quanjiao) on input line 27.
-<abstract.png, id=1471, 784.1929pt x 544.24382pt>
+<abstract.png, id=1496, 784.1929pt x 544.24382pt>
 File: abstract.png Graphic file (type png)
 <use abstract.png>
 Package pdftex.def Info: abstract.png  used on input line 33.
@@ -734,22 +713,32 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.0.1}) h
                                                   \__shipout_drop_firstpage_...
 l.43 
       <./abstract.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 44--50
+Underfull \hbox (badness 10000) in paragraph at lines 44--48
 
  []
 
 
-Overfull \hbox (52.19682pt too wide) in paragraph at lines 56--57
+Overfull \hbox (52.19682pt too wide) in paragraph at lines 54--55
 []\OT1/cmr/m/n/12 The Prince-ton Com-pan-ion to Ap-plied Math-e-mat-ics,Nicholas J. Higham,Princeton
  []
 
-[2{d:/latex/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+Overfull \hbox (36.77618pt too wide) in paragraph at lines 55--56
+[]\OT1/cmr/m/n/12 Calcul Diff^^Serentiel et []Equations Diff^^Serentielles,Sylvie Benzoni-Gavage,DUNOD 
+ []
+
+[2{d:/latex/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Overfull \hbox (51.92691pt too wide) in paragraph at lines 59--60
+[]\OT1/cmr/m/n/12 The Prince-ton Com-pan-ion to Ap-plied Math-e-mat-ics,Nicholas j. Higham,Princeton
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 105--109
+Underfull \hbox (badness 10000) in paragraph at lines 110--115
 
  []
 
@@ -763,44 +752,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--109
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.129 \part{Âü∫Á°ÄÁü•ËØÜ}
+l.135 \part{Âü∫Á°ÄÁü•ËØÜ}
                           [1
 
 ]
 Á¨¨‰∏ÄÁ´†
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 130.
+(hyperref)                removing `\\' on input line 136.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--133
+Underfull \hbox (badness 10000) in paragraph at lines 137--139
 
  []
 
 [2
 
 ] [3]
-Overfull \hbox (13.45366pt too wide) in paragraph at lines 170--171
+Overfull \hbox (13.45366pt too wide) in paragraph at lines 176--177
 []\C70/rm/m/n/12/51 h \C70/rm/m/n/12/79  \C70/rm/m/n/12/91 œ \C70/rm/m/n/12/8b Õ$\OMS/cmsy/m/n/12 8$\C70/rm/m/n/12/88 h \C70/rm/m/n/12/79 : |\C70/rm/m/n/12/20 ^^\|\C70/rm/m/n/12/5b ˘ \C70/rm/m/n/12/62 @ \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/76 Ñ\OT1/cmr/m/n/12 (pour tout)|\C70/rm/m/n/12/20 ^^]| \OT1/cmr/m/n/12 .\C70/rm/m/n/12/75 1\OT1/cmr/m/n/12 Gerhard Gentzen\C70/rm/m/n/12/99 ñ \C70/rm/m/n/12/51 H \C70/rm/m/n/12/4e é\OT1/cmr/m/n/12 1933\C70/rm/m/n/12/5e t
  []
 
 [4]
-Overfull \hbox (26.36382pt too wide) in paragraph at lines 184--187
+Overfull \hbox (26.36382pt too wide) in paragraph at lines 190--193
 []\C70/rm/m/n/12/85 t \C70/rm/m/n/12/54 + } \C70/rm/m/n/12/98 ò$\OML/cmm/m/it/12 p \OMS/cmsy/m/n/12 ) \OML/cmm/m/it/12 q$\C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/54 & } \C70/rm/m/n/12/98 ò \C70/rm/m/n/12/4e :$\OMS/cmsy/m/n/12 :\OML/cmm/m/it/12 p \OMS/cmsy/m/n/12 ) :\OML/cmm/m/it/12 q$\OT1/cmr/m/n/12 . \C70/rm/m/n/12/51 h \C70/rm/m/n/12/79  \C70/rm/m/n/12/54 } \C70/rm/m/n/12/98 ò$\OMS/cmsy/m/n/12 8\OML/cmm/m/it/12 x; p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )$\C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/54 & } \C70/rm/m/n/12/98 ò \C70/rm/m/n/12/4e :$\OMS/cmsy/m/n/12 9\OML/cmm/m/it/12 x; \OMS/cmsy/m/n/12 :\OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )$,
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
 [6]
-Overfull \hbox (54.86081pt too wide) in paragraph at lines 219--223
+Overfull \hbox (54.86081pt too wide) in paragraph at lines 225--229
 []\C70/rm/m/n/12/4f ã \C70/rm/m/n/12/59 Ç\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/62 ^^Q \C70/rm/m/n/12/4e Ï \C70/rm/m/n/12/89 Å \C70/rm/m/n/12/8b ¡ \C70/rm/m/n/12/66 ^^N \C70/rm/m/n/12/7d   \C70/rm/m/n/12/65 p \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/65 ‡ \C70/rm/m/n/12/96 P \C70/rm/m/n/12/4e *\OT1/cmr/m/n/12 .\C70/rm/m/n/12/91 « \C70/rm/m/n/12/75 ( \C70/rm/m/n/12/53 Õ \C70/rm/m/n/12/8b ¡ \C70/rm/m/n/12/6c ’\OT1/cmr/m/n/12 :$\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/12 ([]) \OMS/cmsy/m/n/12 ) []$\OT1/cmr/m/n/12 .\C70/rm/m/n/12/8b æ
  []
 
 
-Overfull \hbox (2.33075pt too wide) in paragraph at lines 219--223
+Overfull \hbox (2.33075pt too wide) in paragraph at lines 225--229
 \C70/rm/m/n/12/51 h \C70/rm/m/n/12/4f S \C70/rm/m/n/12/7d   \C70/rm/m/n/12/65 p \C70/rm/m/n/12/7e ƒ \C70/rm/m/n/12/62 ^^P \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H$\U/msb/m/n/12 P \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 p[]; p[]; [] ; p[]\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 , \C70/rm/m/n/12/8b æ$\OML/cmm/m/it/12 n \OT1/cmr/m/n/12 = 1 + [][] \OML/cmm/m/it/12 p[]$\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/66 > \C70/rm/m/n/12/71 6$\OML/cmm/m/it/12 n [] \U/msb/m/n/12 P$\OT1/cmr/m/n/12 .\C70/rm/m/n/12/82 Â$\OML/cmm/m/it/12 n$\C70/rm/m/n/12/66 /
  []
 
@@ -808,79 +797,79 @@ Overfull \hbox (2.33075pt too wide) in paragraph at lines 219--223
 Á¨¨‰∫åÁ´†
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 231.
+(hyperref)                removing `\\' on input line 237.
 
 [8
 
 ]
-Overfull \hbox (10.01614pt too wide) in paragraph at lines 253--255
+Overfull \hbox (10.01614pt too wide) in paragraph at lines 259--261
 []\C70/rm/m/n/12/82 Â \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H$\OML/cmm/m/it/12 B$\C70/rm/m/n/12/4e - \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/6b œ \C70/rm/m/n/12/4e * \C70/rm/m/n/12/51 C \C70/rm/m/n/12/7d   \C70/rm/m/n/12/90 ˝ \C70/rm/m/n/12/5c ^ \C70/rm/m/n/12/4e é \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H$\OML/cmm/m/it/12 A$\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/52 ^^Y \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H$\OML/cmm/m/it/12 B$\C70/rm/m/n/12/66 / \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H$\OML/cmm/m/it/12 A$\C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/5b P \C70/rm/m/n/12/96 ∆\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/52 ^^Y \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H$\OML/cmm/m/it/12 A$\C70/rm/m/n/12/66 /
  []
 
 
-Overfull \hbox (39.68564pt too wide) in paragraph at lines 258--260
+Overfull \hbox (39.68564pt too wide) in paragraph at lines 264--266
 []\C70/rm/m/n/12/5b ˘ \C70/rm/m/n/12/4e é ˚ \C70/rm/m/n/12/61 ^^O \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H$\OML/cmm/m/it/12 A$\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/51 v \C70/rm/m/n/12/5e B \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/4e : \C70/rm/m/n/12/75 1 \C70/rm/m/n/12/8b Â \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H \C70/rm/m/n/12/51 h \C70/rm/m/n/12/90 Ë \C70/rm/m/n/12/5b P \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/4e : \C70/rm/m/n/12/51 C \C70/rm/m/n/12/7d   \C70/rm/m/n/12/67 Ñ \C70/rm/m/n/12/62 ^^P \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/8b ∞ \C70/rm/m/n/12/4e :$\OMS/cmsy/m/n/12 P\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 A\OT1/cmr/m/n/12 ) =
  []
 
 [9]
-Overfull \hbox (17.38727pt too wide) in paragraph at lines 270--272
+Overfull \hbox (17.38727pt too wide) in paragraph at lines 276--278
 []\C70/rm/m/n/12/4e å \C70/rm/m/n/12/51 C s \C70/rm/m/n/12/7c ˚ \C70/rm/m/n/12/5c ^^F \C70/rm/m/n/12/4e ^^@ * \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/51 C \C70/rm/m/n/12/7d   \C70/rm/m/n/12/4e ^^N \C70/rm/m/n/12/53 Ê \C70/rm/m/n/12/4e ^^@ * \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/51 C \C70/rm/m/n/12/7d   \C70/rm/m/n/12/76 ¯ \C70/rm/m/n/12/51 s \C70/rm/m/n/12/80 T\OT1/cmr/m/n/12 .\C70/rm/m/n/12/4f ã \C70/rm/m/n/12/59 Ç \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H$\OML/cmm/m/it/12 X$\C70/rm/m/n/12/54 å$\OML/cmm/m/it/12 Y$\C70/rm/m/n/12/4e 
 
  []
 
 [10]
-Overfull \hbox (3.49562pt too wide) in paragraph at lines 289--290
+Overfull \hbox (3.49562pt too wide) in paragraph at lines 295--296
 []\C70/rm/m/n/12/82 Â \C70/rm/m/n/12/4e å \C70/rm/m/n/12/51 C s \C70/rm/m/n/12/7c ˚$\U/msb/m/n/12 s$\C70/rm/m/n/12/6e · \C70/rm/m/n/12/8d ≥ \C70/rm/m/n/12/81 Í \C70/rm/m/n/12/53 Õ \C70/rm/m/n/12/60 '|\C70/rm/m/n/12/30 ^^A| \C70/rm/m/n/12/4f   \C70/rm/m/n/12/90 ^^R \C70/rm/m/n/12/60 ' \C70/rm/m/n/12/54 å \C70/rm/m/n/12/5b ˘ \C70/rm/m/n/12/79  \C70/rm/m/n/12/60 '\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/52 ^^Y \C70/rm/m/n/12/79  \C70/rm/m/n/12/51 v \C70/rm/m/n/12/4e : \C70/rm/m/n/12/7b I \C70/rm/m/n/12/4e ˜ \C70/rm/m/n/12/51 s \C70/rm/m/n/12/7c ˚\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/8b ∞ \C70/rm/m/n/12/4f \$\OML/cmm/m/it/12 a \U/msb/m/n/12 s
  []
 
 [11]
-Overfull \hbox (48.21631pt too wide) in paragraph at lines 304--306
+Overfull \hbox (48.21631pt too wide) in paragraph at lines 310--312
 []\C70/rm/m/n/12/82 Â \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H$\OML/cmm/m/it/12 X$\C70/rm/m/n/12/4e 
  \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/51 s \C70/rm/m/n/12/7c ˚$\OMS/cmsy/m/n/12 ^^T$\C70/rm/m/n/12/6e · \C70/rm/m/n/12/8d ≥ \C70/rm/m/n/12/81 Í \C70/rm/m/n/12/53 Õ \C70/rm/m/n/12/60 '|\C70/rm/m/n/12/30 ^^A| \C70/rm/m/n/12/4f   \C70/rm/m/n/12/90 ^^R \C70/rm/m/n/12/60 ' \C70/rm/m/n/12/54 å \C70/rm/m/n/12/53 Õ \C70/rm/m/n/12/5b ˘ \C70/rm/m/n/12/79  \C70/rm/m/n/12/60 '\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/5e v \C70/rm/m/n/12/4e ^^T \C70/rm/m/n/12/66 / |\C70/rm/m/n/12/20 ^^\|\C70/rm/m/n/12/5b å \C70/rm/m/n/12/51 h \C70/rm/m/n/12/76 Ñ\OT1/cmr/m/n/12 (Totalit^^Se)|\C70/rm/m/n/12/20 ^^]|
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--306
+Underfull \hbox (badness 10000) in paragraph at lines 310--312
 
  []
 
 [12]
-Overfull \hbox (1.66776pt too wide) in paragraph at lines 322--323
+Overfull \hbox (1.66776pt too wide) in paragraph at lines 328--329
 []\C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H$\OML/cmm/m/it/12 A$\C70/rm/m/n/12/54 å$\OML/cmm/m/it/12 B$\C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/4e § \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/66 / \C70/rm/m/n/12/4e $ \C70/rm/m/n/12/80 ^^E \C70/rm/m/n/12/51 q \C70/rm/m/n/12/54 ^^L \C70/rm/m/n/12/53 ^^E \C70/rm/m/n/12/54 + \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/51 C \C70/rm/m/n/12/7d   \C70/rm/m/n/12/7e ƒ \C70/rm/m/n/12/62 ^^P \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/75 ( \C70/rm/m/n/12/7b & \C70/rm/m/n/12/53 ˜$\OMS/cmsy/m/n/12 \$\C70/rm/m/n/12/88 h \C70/rm/m/n/12/79 :|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/53 s\OT1/cmr/m/n/12 : 
  []
 
 [13]
-Overfull \hbox (2.70139pt too wide) in paragraph at lines 352--354
+Overfull \hbox (2.70139pt too wide) in paragraph at lines 358--360
 []\C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H$\OML/cmm/m/it/12 A$\C70/rm/m/n/12/5b ˘ \C70/rm/m/n/12/4e é \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H$\OML/cmm/m/it/12 B$\C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/88 e \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/66 / \C70/rm/m/n/12/5c ^ \C70/rm/m/n/12/4e é$\OML/cmm/m/it/12 B$\C70/rm/m/n/12/53 t \C70/rm/m/n/12/4e ^^M \C70/rm/m/n/12/5c ^ \C70/rm/m/n/12/4e é$\OML/cmm/m/it/12 A$\C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/51 C \C70/rm/m/n/12/7d   \C70/rm/m/n/12/7e ƒ \C70/rm/m/n/12/62 ^^P \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H\OT1/cmr/m/n/12 , \C70/rm/m/n/12/8b ∞ \C70/rm/m/n/12/4e :$\OMS/cmsy/m/n/12 C[]$
  []
 
-<Produit_Cartesien.png, id=2197, 2569.6pt x 1954.30125pt>
+<Produit_Cartesien.png, id=2223, 2569.6pt x 1954.30125pt>
 File: Produit_Cartesien.png Graphic file (type png)
 <use Produit_Cartesien.png>
-Package pdftex.def Info: Produit_Cartesien.png  used on input line 368.
+Package pdftex.def Info: Produit_Cartesien.png  used on input line 374.
 (pdftex.def)             Requested size: 128.48752pt x 97.72078pt.
 [14] [15
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.388   \subsection
+l.394   \subsection
                    {RussellÊÇñËÆ∫} <./Produit_Cartesien.png>] [16]
-Overfull \hbox (13.30556pt too wide) in paragraph at lines 412--415
+Overfull \hbox (13.30556pt too wide) in paragraph at lines 418--421
 \C70/rm/m/n/12/5b P \C70/rm/m/n/12/96 ∆$\OML/cmm/m/it/12 Z$\C70/rm/m/n/12/53 ^^E \C70/rm/m/n/12/54 +$\U/msb/m/n/12 Z$\C70/rm/m/n/12/51 Ö \C70/rm/m/n/12/6e · \C70/rm/m/n/12/8d ≥ \C70/rm/m/n/12/8f Ÿ \C70/rm/m/n/12/4e * \C70/rm/m/n/12/60 ' \C70/rm/m/n/12/8d ( \C70/rm/m/n/12/76 Ñ$\OML/cmm/m/it/12 x$\OT1/cmr/m/n/12 . $\OMS/cmsy/m/n/12 8f\OML/cmm/m/it/12 x\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 ^^^\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 g ^^R \U/msb/m/n/12 Z\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 9\OML/cmm/m/it/12 Z \OMS/cmsy/m/n/12 ^^R \U/msb/m/n/12 Z\OML/cmm/m/it/12 ; Z \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 x\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 ^^^\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 . 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--415
+Underfull \hbox (badness 10000) in paragraph at lines 418--421
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 438--442
+Underfull \hbox (badness 10000) in paragraph at lines 444--448
 
  []
 
 
-Overfull \hbox (4.8129pt too wide) in paragraph at lines 443--444
+Overfull \hbox (4.8129pt too wide) in paragraph at lines 449--450
 []\C70/rm/m/n/12/5b ˘ \C70/rm/m/n/12/4e é\OT1/cmr/m/n/12 Zermelo-Fraenkel\C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H \C70/rm/m/n/12/8b ∫\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/82 Â \C70/rm/m/n/12/8b ® ∫ \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/66 / \C70/rm/m/n/12/51 v \C70/rm/m/n/12/4e ^^M \C70/rm/m/n/12/53 ^^E \C70/rm/m/n/12/54 + \C70/rm/m/n/12/5b f \C70/rm/m/n/12/90 	 \C70/rm/m/n/12/62 È \C70/rm/m/n/12/51 l \C70/rm/m/n/12/74 ^^F \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/5f b ^^O\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/52 ^^Y
  []
 
@@ -888,7 +877,7 @@ Overfull \hbox (4.8129pt too wide) in paragraph at lines 443--444
 Á¨¨‰∏âÁ´†
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 447.
+(hyperref)                removing `\\' on input line 453.
 
 [19
 
@@ -896,27 +885,27 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Á¨¨ÂõõÁ´†
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 450.
+(hyperref)                removing `\\' on input line 456.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 460--462
+Underfull \hbox (badness 10000) in paragraph at lines 466--468
 
  []
 
 [20
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 470--474
+Underfull \hbox (badness 10000) in paragraph at lines 476--480
 
  []
 
 [21] [22]
-Underfull \hbox (badness 10000) in paragraph at lines 508--509
+Underfull \hbox (badness 10000) in paragraph at lines 514--515
 
  []
 
 
-Overfull \hbox (2.17455pt too wide) in paragraph at lines 510--512
+Overfull \hbox (2.17455pt too wide) in paragraph at lines 516--518
 []\C70/rm/m/n/12/90 £ \C70/rm/m/n/12/4e H|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/59 Ç \C70/rm/m/n/12/4f U \C70/rm/m/n/12/8b ¡ \C70/rm/m/n/12/66 ^^N$\OML/cmm/m/it/12 S$\C70/rm/m/n/12/66 / \C70/rm/m/n/12/4e ^^M \C70/rm/m/n/12/53 Ô \C70/rm/m/n/12/65 p \C70/rm/m/n/12/96 ∆|\C70/rm/m/n/12/ff ^^_| \C70/rm/m/n/12/59 Ç \C70/rm/m/n/12/67 ú$\OML/cmm/m/it/12 S$\C70/rm/m/n/12/66 / \C70/rm/m/n/12/4e ^^M \C70/rm/m/n/12/53 Ô \C70/rm/m/n/12/65 p \C70/rm/m/n/12/96 ∆|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/90 £ \C70/rm/m/n/12/4e H \C70/rm/m/n/12/5f S \C70/rm/m/n/12/62 ^^Q \C70/rm/m/n/12/4e Ï \C70/rm/m/n/12/90 	 \C70/rm/m/n/12/53 ÷$\OML/cmm/m/it/12 S$\C70/rm/m/n/12/76 Ñ
  []
 
@@ -924,57 +913,57 @@ Overfull \hbox (2.17455pt too wide) in paragraph at lines 510--512
 Á¨¨‰∫îÁ´†
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 575.
+(hyperref)                removing `\\' on input line 581.
 
 [26
 
 ]
-Overfull \hbox (1.23125pt too wide) in paragraph at lines 612--613
+Overfull \hbox (1.23125pt too wide) in paragraph at lines 618--619
 []$\U/msb/m/n/12 R$\C70/rm/m/n/12/4e 
  \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/52 † \C70/rm/m/n/12/6c ’ \C70/rm/m/n/12/53 U \C70/rm/m/n/12/4f M \C70/rm/m/n/12/51 C \C70/rm/m/n/12/4e :\OT1/cmr/m/n/12 0,\C70/rm/m/n/12/4e X \C70/rm/m/n/12/6c ’ \C70/rm/m/n/12/53 U \C70/rm/m/n/12/4f M \C70/rm/m/n/12/51 C \C70/rm/m/n/12/4e :\OT1/cmr/m/n/12 1.\C70/rm/m/n/12/5e B \C70/rm/m/n/12/8f – \C70/rm/m/n/12/7b ó$\OML/cmm/m/it/12 a ? b \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 a[]$\C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/53 Û U \C70/rm/m/n/12/4f M \C70/rm/m/n/12/51 C \C70/rm/m/n/12/4e :\OT1/cmr/m/n/12 1,\C70/rm/m/n/12/6c °
  []
 
 [27] [28]
-Overfull \hbox (7.9589pt too wide) in paragraph at lines 644--645
+Overfull \hbox (7.9589pt too wide) in paragraph at lines 650--651
 []\C70/rm/m/n/12/7b & \C70/rm/m/n/12/54 ^^H \C70/rm/m/n/12/7e ” \C70/rm/m/n/12/54 ^^H \C70/rm/m/n/12/5f ã \C70/rm/m/n/12/4e ^^T \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/53 U \C70/rm/m/n/12/4f M \C70/rm/m/n/12/51 C \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/8f – \C70/rm/m/n/12/7b ó \C70/rm/m/n/12/51 w \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/4e ^^@ õ \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/8d £ \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/60 ' \C70/rm/m/n/12/8d (\OT1/cmr/m/n/12 .\C70/rm/m/n/12/67 , \C70/rm/m/n/12/82 Ç \C70/rm/m/n/12/8b ® ∫ \C70/rm/m/n/12/57 G \C70/rm/m/n/12/50 G \C70/rm/m/n/12/8b æ$\OML/cmm/m/it/12 X$\C70/rm/m/n/12/4e 
 
  []
 
 [29] [30]
-Overfull \hbox (0.5277pt too wide) in paragraph at lines 679--681
+Overfull \hbox (0.5277pt too wide) in paragraph at lines 685--687
 []\C70/rm/m/n/12/5f S \C70/rm/m/n/12/62 ^^Q \C70/rm/m/n/12/4e Ï \C70/rm/m/n/12/60 Û \C70/rm/m/n/12/4f ^^? \C70/rm/m/n/12/75 ( \C70/rm/m/n/12/4e ^^@ * „ \C70/rm/m/n/12/65 p \C70/rm/m/n/12/7e ” \C70/rm/m/n/12/67 Ñ\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/4e _ \C70/rm/m/n/12/5c 1 \C70/rm/m/n/12/66 / \C70/rm/m/n/12/5b ˘ \C70/rm/m/n/12/4e ^^@ * \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H \C70/rm/m/n/12/4e 
  \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/51 C \C70/rm/m/n/12/7d   \C70/rm/m/n/12/8f € \C70/rm/m/n/12/88 L \C70/rm/m/n/12/8f – \C70/rm/m/n/12/7b ó \C70/rm/m/n/12/65 ˆ\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/4e :
  []
 
 
-Overfull \hbox (0.20813pt too wide) in paragraph at lines 684--686
+Overfull \hbox (0.20813pt too wide) in paragraph at lines 690--692
 []\C70/rm/m/n/12/60 Û \C70/rm/m/n/12/8c a \C70/rm/m/n/12/4e ^^@ * \C70/rm/m/n/12/6c ° \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/5c ^^A \C70/rm/m/n/12/95 Ì \C70/rm/m/n/12/60 ' \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/4e „ \C70/rm/m/n/12/65 p \C70/rm/m/n/12/7e ” \C70/rm/m/n/12/67 Ñ \C70/rm/m/n/12/4e 
  \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/8f – \C70/rm/m/n/12/7b ó\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/6b ‘ \C70/rm/m/n/12/59 Ç$\U/msb/m/n/12 R$\C70/rm/m/n/12/4e 
 \OT1/cmr/m/n/12 ,\C70/rm/m/n/12/67 – \C70/rm/m/n/12/4e * \C70/rm/m/n/12/8f – \C70/rm/m/n/12/7b ó \C70/rm/m/n/12/7e ” \C70/rm/m/n/12/67 ú \C70/rm/m/n/12/4e :\OT1/cmr/m/n/12 :$1 \OML/cmm/m/it/12 ?
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 684--686
+Underfull \hbox (badness 10000) in paragraph at lines 690--692
 
  []
 
 
-Overfull \hbox (20.4619pt too wide) in paragraph at lines 691--694
+Overfull \hbox (20.4619pt too wide) in paragraph at lines 697--700
 \C70/rm/m/n/12/80 ^^E$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 G; \OMS/cmsy/m/n/12 ^^A\OT1/cmr/m/n/12 )$(\C70/rm/m/n/12/67 	 \C70/rm/m/n/12/65 ˆ \C70/rm/m/n/12/8f – \C70/rm/m/n/12/7b ó & \C70/rm/m/n/12/53 ˜ Ô \C70/rm/m/n/12/77 ^^A \C70/rm/m/n/12/75 e\OT1/cmr/m/n/12 ). \C70/rm/m/n/12/4e : Ü \C70/rm/m/n/12/90 ^^? \C70/rm/m/n/12/51 M \C70/rm/m/n/12/4e ^^N \C70/rm/m/n/12/7b ^^[ \C70/rm/m/n/12/53 a \C70/rm/m/n/12/5c ^^T \C70/rm/m/n/12/79 Ô \C70/rm/m/n/12/6d ˜ ∆\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/62 ^^Q \C70/rm/m/n/12/4e Ï \C70/rm/m/n/12/7e ﬂ \C70/rm/m/n/12/4e ^^@ \C70/rm/m/n/12/91 « \C70/rm/m/n/12/75 ($\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 G; \OMS/cmsy/m/n/12 ^^A\OT1/cmr/m/n/12 )$\C70/rm/m/n/12/8b ∞
  []
 
 [31]
-Overfull \hbox (3.1798pt too wide) in paragraph at lines 704--705
+Overfull \hbox (3.1798pt too wide) in paragraph at lines 710--711
 []\C70/rm/m/n/12/65 t p \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/90 ^^Z \C70/rm/m/n/12/5e 8 \C70/rm/m/n/12/61 ^^O \C70/rm/m/n/12/4e I \C70/rm/m/n/12/52 † \C70/rm/m/n/12/6c ’$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 +)$\C70/rm/m/n/12/67 Ñ \C70/rm/m/n/12/62 ^^P \C70/rm/m/n/12/7f §\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/4f F \C70/rm/m/n/12/66 / \C70/rm/m/n/12/90 ^^Z \C70/rm/m/n/12/5e 8 \C70/rm/m/n/12/61 ^^O \C70/rm/m/n/12/4e I X \C70/rm/m/n/12/6c ’$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 ^^A\OT1/cmr/m/n/12 )$\C70/rm/m/n/12/4e ^^M \C70/rm/m/n/12/67 Ñ \C70/rm/m/n/12/62 ^^P \C70/rm/m/n/12/7f §\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/56 ‡
  []
 
 
-Overfull \hbox (23.18341pt too wide) in paragraph at lines 711--713
+Overfull \hbox (23.18341pt too wide) in paragraph at lines 717--719
 []\C70/rm/m/n/12/57 ( \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/96 P \C70/rm/m/n/12/7f § \C70/rm/m/n/12/83 ^^C \C70/rm/m/n/12/56 Ù \C70/rm/m/n/12/51 Ö\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/7f §$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 G; \OMS/cmsy/m/n/12 ^^A\OT1/cmr/m/n/12 )$\C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/96 6 \C70/rm/m/n/12/7b I \C70/rm/m/n/12/4e é \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H$\OML/cmm/m/it/12 G$\C70/rm/m/n/12/91 Ã \C70/rm/m/n/12/51 C \C70/rm/m/n/12/7d   \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/4e * \C70/rm/m/n/12/65 p\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/4e _ \C70/rm/m/n/12/5c 1 \C70/rm/m/n/12/66 /$\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 G\OMS/cmsy/m/n/12 j \OT1/cmr/m/n/12 = []\OML/cmm/m/it/12 G$\OT1/cmr/m/n/12 .
  []
 
 [32]
-Overfull \hbox (19.42424pt too wide) in paragraph at lines 723--726
+Overfull \hbox (19.42424pt too wide) in paragraph at lines 729--732
 \C70/rm/m/n/12/62 ^^Q \C70/rm/m/n/12/4e Ï \C70/rm/m/n/12/53 — \C70/rm/m/n/12/73 ∞\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/7e œ \C70/rm/m/n/12/8f « \C70/rm/m/n/12/64 Õ \C70/rm/m/n/12/4f \\OT1/cmr/m/n/12 a\C70/rm/m/n/12/54 ^^N\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/53 ü \C70/rm/m/n/12/67 e \C70/rm/m/n/12/76 Ñ\OT1/cmr/m/n/12 A\C70/rm/m/n/12/70 π \C70/rm/m/n/12/53 ÿ \C70/rm/m/n/12/62 ^^P \C70/rm/m/n/12/4e Ü\OT1/cmr/m/n/12 B\C70/rm/m/n/12/70 π\OT1/cmr/m/n/12 ,B\C70/rm/m/n/12/70 π \C70/rm/m/n/12/53 ÿ \C70/rm/m/n/12/62 ^^P \C70/rm/m/n/12/4e Ü\OT1/cmr/m/n/12 C\C70/rm/m/n/12/70 π\OT1/cmr/m/n/12 ,C\C70/rm/m/n/12/70 π \C70/rm/m/n/12/53 ÿ \C70/rm/m/n/12/62 ^^P \C70/rm/m/n/12/4e Ü\OT1/cmr/m/n/12 A\C70/rm/m/n/12/70 π\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/5f ó
  []
 
@@ -982,7 +971,7 @@ Overfull \hbox (19.42424pt too wide) in paragraph at lines 723--726
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [33]
-Overfull \hbox (13.33871pt too wide) in paragraph at lines 758--761
+Overfull \hbox (13.33871pt too wide) in paragraph at lines 764--767
 \C70/rm/m/n/12/7f § \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/79 È \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/69 Ç \C70/rm/m/n/12/5f ı\OT1/cmr/m/n/12 .\C70/rm/m/n/12/5b ˘ \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/96 P \C70/rm/m/n/12/7f §$\OML/cmm/m/it/12 G$\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/4e ˚ \C70/rm/m/n/12/53 ÷ \C70/rm/m/n/12/4e ^^@ \C70/rm/m/n/12/51 C \C70/rm/m/n/12/7d  $\OML/cmm/m/it/12 R[]$\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/5f ó \C70/rm/m/n/12/52 0 \C70/rm/m/n/12/51 v \C70/rm/m/n/12/5e B \C70/rm/m/n/12/6b ! \C70/rm/m/n/12/67 Ñ \C70/rm/m/n/12/62 ^^P \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H$[]$\OT1/cmr/m/n/12 . \C70/rm/m/n/12/82 Â$[][] \OMS/cmsy/m/n/12 6\OT1/cmr/m/n/12 =
  []
 
@@ -990,15 +979,15 @@ Overfull \hbox (13.33871pt too wide) in paragraph at lines 758--761
 pdfTeX warning (ext4): destination with the same identifier (name{table.5.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.761   \subsubsection
+l.767   \subsubsection
                       {Proposition}] [35]
-<magma_groupe.png, id=2368, 1927.2pt x 1743.51375pt>
+<magma_groupe.png, id=2394, 1927.2pt x 1743.51375pt>
 File: magma_groupe.png Graphic file (type png)
 <use magma_groupe.png>
-Package pdftex.def Info: magma_groupe.png  used on input line 784.
+Package pdftex.def Info: magma_groupe.png  used on input line 790.
 (pdftex.def)             Requested size: 250.5448pt x 226.66475pt.
 
-Overfull \hbox (9.66649pt too wide) in paragraph at lines 790--792
+Overfull \hbox (9.66649pt too wide) in paragraph at lines 796--798
 \C70/rm/m/n/12/59 ^^Z \C70/rm/m/n/12/7e ” \C70/rm/m/n/12/8b ∫ \C70/rm/m/n/12/4e _ ^^M \C70/rm/m/n/12/4f ^^Z \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/54 ^^N \C70/rm/m/n/12/7e Ì \C70/rm/m/n/12/5e î \C70/rm/m/n/12/75 (\OT1/cmr/m/n/12 (\C70/rm/m/n/12/62 @ \C70/rm/m/n/12/4e Â \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/76 ¯ \C70/rm/m/n/12/5f S \C70/rm/m/n/12/59 ^^Z \C70/rm/m/n/12/5e s \C70/rm/m/n/12/51 · \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/63 ® \C70/rm/m/n/12/8b ∫ \C70/rm/m/n/12/62 ^^Q \C70/rm/m/n/12/6c ° \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/51 ô ˙ \C70/rm/m/n/12/8b ¡ \C70/rm/m/n/12/66 ^^N\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/64 x \C70/rm/m/n/12/4e Ü\OT1/cmr/m/n/12 ).\C70/rm/m/n/12/4f F
  []
 
@@ -1006,89 +995,89 @@ Overfull \hbox (9.66649pt too wide) in paragraph at lines 790--792
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.793   \subsection
+l.799   \subsection
                    {ÂÖ±ËΩ≠ÂÖ≥Á≥ª Conjugaison}\label{myref:conjugaison} <./magma_groupe.png>]
-Overfull \hbox (28.97382pt too wide) in paragraph at lines 804--805
+Overfull \hbox (28.97382pt too wide) in paragraph at lines 810--811
 []\OT1/cmr/m/n/12 a\C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/51 q \C70/rm/m/n/12/8f m \C70/rm/m/n/12/7c { \C70/rm/m/n/12/66 / \C70/rm/m/n/12/7f § \C70/rm/m/n/12/51 Ö \C70/rm/m/n/12/62 @ \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/4e ^^N \C70/rm/m/n/12/51 v q \C70/rm/m/n/12/8f m \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/51 C \C70/rm/m/n/12/7d   \C70/rm/m/n/12/7e ƒ \C70/rm/m/n/12/62 ^^P \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/8b ∞ \C70/rm/m/n/12/4e :$\OML/cmm/m/it/12 Cl\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a\OT1/cmr/m/n/12 )$\C70/rm/m/n/12/62 ^^V$\OML/cmm/m/it/12 C[]$\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/53 s$\OML/cmm/m/it/12 Cl\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a\OT1/cmr/m/n/12 ) =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 804--805
+Underfull \hbox (badness 10000) in paragraph at lines 810--811
 
  []
 
 [37]
-Overfull \hbox (11.446pt too wide) in paragraph at lines 823--825
+Overfull \hbox (11.446pt too wide) in paragraph at lines 829--831
 []$\OML/cmm/m/it/12 G$\C70/rm/m/n/12/54 å$\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 e\OMS/cmsy/m/n/12 g$\C70/rm/m/n/12/66 > \C70/rm/m/n/12/71 6 \C70/rm/m/n/12/90 ˝ \C70/rm/m/n/12/66 / \C70/rm/m/n/12/5b P \C70/rm/m/n/12/7f §\OT1/cmr/m/n/12 .\C70/rm/m/n/12/5b É \C70/rm/m/n/12/4e Ï \C70/rm/m/n/12/88 ´ \C70/rm/m/n/12/79  \C70/rm/m/n/12/4e : \C70/rm/m/n/12/5e s \C70/rm/m/n/12/51 · \C70/rm/m/n/12/5b P \C70/rm/m/n/12/7f §\OT1/cmr/m/n/12 (sous-groupe triv-ial)\C70/rm/m/n/12/62 ^^V \C70/rm/m/n/12/80 ^^E \OT1/cmr/m/n/12 sous-
  []
 
 [38]
-Overfull \hbox (1.21408pt too wide) in paragraph at lines 831--832
+Overfull \hbox (1.21408pt too wide) in paragraph at lines 837--838
 []\C70/rm/m/n/12/6c ’ \C70/rm/m/n/12/8b Ì \C70/rm/m/n/12/91 Ã \C70/rm/m/n/12/5e v \C70/rm/m/n/12/6c ° \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/4e ^^S \C70/rm/m/n/12/95 Ë \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/96 j ∆ \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/4e ^^S \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/54 ^^M \C70/rm/m/n/12/8b Õ\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/80 ^^L \C70/rm/m/n/12/66 / \C70/rm/m/n/12/76 Ù \C70/rm/m/n/12/63 • \C70/rm/m/n/12/53 Î\OT1/cmr/m/n/12 classe suiv-ant un sous-
  []
 
 [39]
-Overfull \hbox (48.28972pt too wide) in paragraph at lines 855--857
+Overfull \hbox (48.28972pt too wide) in paragraph at lines 861--863
 []\OT1/cmr/m/n/12 Lagrange\C70/rm/m/n/12/5b ö \C70/rm/m/n/12/74 ^^F \C70/rm/m/n/12/76 Ñ Ù \C70/rm/m/n/12/63 • \C70/rm/m/n/12/53 Ÿ \C70/rm/m/n/12/8f  \C70/rm/m/n/12/4e :\OT1/cmr/m/n/12 :\C70/rm/m/n/12/5b P \C70/rm/m/n/12/7f § \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/96 6 \C70/rm/m/n/12/65 t \C70/rm/m/n/12/96 d \C70/rm/m/n/12/7f § \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/96 6\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/53 s\OT1/cmr/m/n/12 :\C70/rm/m/n/12/82 Â \C70/rm/m/n/12/7f §$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 G; \OMS/cmsy/m/n/12 ^^A\OT1/cmr/m/n/12 )$\C70/rm/m/n/12/67 	 \C70/rm/m/n/12/5b P \C70/rm/m/n/12/7f §$\OML/cmm/m/it/12 H$\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/52 ^^Y$\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 G\OMS/cmsy/m/n/12 j \OT1/cmr/m/n/12 =
  []
 
 
-Overfull \hbox (155.39442pt too wide) in paragraph at lines 858--860
+Overfull \hbox (155.39442pt too wide) in paragraph at lines 864--866
 []\C70/rm/m/n/12/80 ^^C \C70/rm/m/n/12/86 Q \C70/rm/m/n/12/5b P \C70/rm/m/n/12/7f §$\OML/cmm/m/it/12 H$\C70/rm/m/n/12/51 s \C70/rm/m/n/12/4e é$\OML/cmm/m/it/12 G$\C70/rm/m/n/12/51 Ö \C70/rm/m/n/12/62 @ \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/51 C \C70/rm/m/n/12/7d   \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/5d Ê \C70/rm/m/n/12/96 j ∆ \C70/rm/m/n/12/7e ƒ \C70/rm/m/n/12/62 ^^P \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/65 œ$\U/msb/m/n/12 H \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 g[]H\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 g[] \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 G\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; []\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 g[]H\OMS/cmsy/m/n/12 j \OT1/cmr/m/n/12 =
  []
 
 [40] [41] [42]
-Overfull \hbox (1.3064pt too wide) in paragraph at lines 923--924
+Overfull \hbox (1.3064pt too wide) in paragraph at lines 929--930
 \C70/rm/m/n/12/66 / \C70/rm/m/n/12/53 U \C70/rm/m/n/12/5c ^^D\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/52 ^^Y \C70/rm/m/n/12/79  \C70/rm/m/n/12/53 U \C70/rm/m/n/12/54 ^^L \C70/rm/m/n/12/60 ^^A\OT1/cmr/m/n/12 (Monomorphisme),\C70/rm/m/n/12/82 Â \C70/rm/m/n/12/4e : \C70/rm/m/n/12/6e · \C70/rm/m/n/12/5c ^^D \C70/rm/m/n/12/52 ^^Y \C70/rm/m/n/12/79  \C70/rm/m/n/12/6e · \C70/rm/m/n/12/54 ^^L \C70/rm/m/n/12/60 ^^A\OT1/cmr/m/n/12 ([]Epimorphisme). 
  []
 
 
-Overfull \hbox (19.86858pt too wide) in paragraph at lines 925--926
+Overfull \hbox (19.86858pt too wide) in paragraph at lines 931--932
 []\C70/rm/m/n/12/6b c \C70/rm/m/n/12/5b û \C70/rm/m/n/12/65 p \C70/rm/m/n/12/4e 
  \C70/rm/m/n/12/90 ^^Z \C70/rm/m/n/12/5e 8 \C70/rm/m/n/12/52 † \C70/rm/m/n/12/6c ’ \C70/rm/m/n/12/7f § \C70/rm/m/n/12/52 0 \C70/rm/m/n/12/90 ^^Z \C70/rm/m/n/12/5e 8 \C70/rm/m/n/12/4e X \C70/rm/m/n/12/6c ’ \C70/rm/m/n/12/7f § \C70/rm/m/n/12/4e 
  \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/66   \C70/rm/m/n/12/5c ^^D$\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 e[]$\C70/rm/m/n/12/5c 1 \C70/rm/m/n/12/66 / \C70/rm/m/n/12/4e ^^@ * \C70/rm/m/n/12/54 ^^L \C70/rm/m/n/12/60 ^^A\OT1/cmr/m/n/12 .$\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 =
  []
 
 [43]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 941.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 947.
  (d:/latex/texlive/2023/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 941.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 947.
 
-Underfull \hbox (badness 10000) in paragraph at lines 954--955
+Underfull \hbox (badness 10000) in paragraph at lines 960--961
 
  []
 
 [44]
-Overfull \hbox (10.37767pt too wide) in paragraph at lines 962--964
+Overfull \hbox (10.37767pt too wide) in paragraph at lines 968--970
 \C70/rm/m/n/12/52 + \C70/rm/m/n/12/88 ´ \C70/rm/m/n/12/79  \C70/rm/m/n/12/4e : |\C70/rm/m/n/12/20 ^^\|\C70/rm/m/n/12/52 † \C70/rm/m/n/12/6c ’|\C70/rm/m/n/12/20 ^^]| \C70/rm/m/n/12/54 å |\C70/rm/m/n/12/20 ^^\|\C70/rm/m/n/12/4e X \C70/rm/m/n/12/6c ’|\C70/rm/m/n/12/20 ^^]| \OT1/cmr/m/n/12 .\C70/rm/m/n/12/54 ^^L \C70/rm/m/n/12/68 7 \C70/rm/m/n/12/5c ^^F \C70/rm/m/n/12/4e X \C70/rm/m/n/12/6c ’ \C70/rm/m/n/12/7b & \C70/rm/m/n/12/53 ˜ \C70/rm/m/n/12/8b ∞ \C70/rm/m/n/12/4e :$\OMS/cmsy/m/n/12 ^^A$\OT1/cmr/m/n/12 , \C70/rm/m/n/12/52 ^^Y \C70/rm/m/n/12/4e ^^@ * \C70/rm/m/n/12/73 Ø \C70/rm/m/n/12/51 ô \C70/rm/m/n/12/4f \$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 R; \OT1/cmr/m/n/12 +\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 ^^A\OT1/cmr/m/n/12 )$.\C70/rm/m/n/12/51 v
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 962--964
+Underfull \hbox (badness 10000) in paragraph at lines 968--970
 
  []
 
 [45]
-Overfull \hbox (28.20734pt too wide) in paragraph at lines 999--1000
+Overfull \hbox (28.20734pt too wide) in paragraph at lines 1005--1006
 []\C70/rm/m/n/12/5b û \C70/rm/m/n/12/65 p \C70/rm/m/n/12/4e 
  \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/90 ^^Z \C70/rm/m/n/12/5e 8 \C70/rm/m/n/12/52 † \C70/rm/m/n/12/6c ’ \C70/rm/m/n/12/54 å \C70/rm/m/n/12/4e X \C70/rm/m/n/12/6c ’ \C70/rm/m/n/12/53 Ô \C70/rm/m/n/12/4e Â \C70/rm/m/n/12/67 Ñ \C70/rm/m/n/12/62 ^^P \C70/rm/m/n/12/5f à \C70/rm/m/n/12/59 ^^Z \C70/rm/m/n/12/73 Ø\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/59 Ç$\OT1/cmr/m/n/12 (\U/msb/m/n/12 R\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 +\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 ^^B\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 +\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 ^^B\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (\U/msb/m/n/12 Q\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 +\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 ^^B\OT1/cmr/m/n/12 )$\C70/rm/m/n/12/90 ˝
  []
 
 [46]
-Underfull \hbox (badness 10000) in paragraph at lines 1028--1029
+Underfull \hbox (badness 10000) in paragraph at lines 1034--1035
 
  []
 
 [47]
-Overfull \hbox (1.40208pt too wide) in paragraph at lines 1040--1041
+Overfull \hbox (1.40208pt too wide) in paragraph at lines 1046--1047
 []\C70/rm/m/n/12/57 ﬂ \C70/rm/m/n/12/53 Ô \C70/rm/m/n/12/4e Â \C70/rm/m/n/12/8b Ù \C70/rm/m/n/12/66 / \C70/rm/m/n/12/62 ^^Q \C70/rm/m/n/12/4e Ï \C70/rm/m/n/12/67 ^^@ \C70/rm/m/n/12/71 ü \C70/rm/m/n/12/60 â \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/4e „ \C70/rm/m/n/12/65 p \C70/rm/m/n/12/7e ” \C70/rm/m/n/12/67 Ñ \C70/rm/m/n/12/4e Ü\OT1/cmr/m/n/12 .\C70/rm/m/n/12/5b û \C70/rm/m/n/12/65 p \C70/rm/m/n/12/57 ﬂ$\OT1/cmr/m/n/12 (\U/msb/m/n/12 R\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 +\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 ^^A\OT1/cmr/m/n/12 )$,\C70/rm/m/n/12/59 ^^M \C70/rm/m/n/12/65 p \C70/rm/m/n/12/57 ﬂ$\OT1/cmr/m/n/12 (\U/msb/m/n/12 C\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 +\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 ^^A\OT1/cmr/m/n/12 )$,\C70/rm/m/n/12/67 	
  []
 
 
-Overfull \hbox (5.41074pt too wide) in paragraph at lines 1042--1044
+Overfull \hbox (5.41074pt too wide) in paragraph at lines 1048--1050
 []\C70/rm/m/n/12/4e ^^@ * \C70/rm/m/n/12/57 ﬂ \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/51 C \C70/rm/m/n/12/7d   \C70/rm/m/n/12/59 Ç \C70/rm/m/n/12/67 ú \C70/rm/m/n/12/66 / \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/96 P \C70/rm/m/n/12/4e *\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/52 ^^Y \C70/rm/m/n/12/88 ´ \C70/rm/m/n/12/79  \C70/rm/m/n/12/4e : \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/96 P \C70/rm/m/n/12/57 ﬂ\OT1/cmr/m/n/12 .\C70/rm/m/n/12/4f ã \C70/rm/m/n/12/59 Ç \C70/rm/m/n/12/67 ^^@ \C70/rm/m/n/12/5c ^^O \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/96 P \C70/rm/m/n/12/57 ﬂ\OT1/cmr/m/n/12 Boole\C70/rm/m/n/12/50 <
  []
 
@@ -1102,7 +1091,7 @@ Overfull \hbox (5.41074pt too wide) in paragraph at lines 1042--1044
 Á¨¨‰∏ÉÁ´†
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 1064.
+(hyperref)                removing `\\' on input line 1070.
 
 [52
 
@@ -1110,11 +1099,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Á¨¨ÂÖ´Á´†
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1073.
+(hyperref)                removing `math shift' on input line 1079.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1073.
+(hyperref)                removing `math shift' on input line 1079.
 
 [53
 
@@ -1122,7 +1111,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Á¨¨‰πùÁ´†
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 1075.
+(hyperref)                removing `\\' on input line 1081.
 
 [54
 
@@ -1130,7 +1119,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Á¨¨ÂçÅÁ´†
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 1077.
+(hyperref)                removing `\\' on input line 1083.
 
 [55
 
@@ -1138,38 +1127,38 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Á¨¨ÂçÅ‰∏ÄÁ´†
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 1080.
+(hyperref)                removing `\\' on input line 1086.
 
 
-Overfull \hbox (37.77272pt too wide) in paragraph at lines 1081--1085
+Overfull \hbox (37.77272pt too wide) in paragraph at lines 1087--1091
 \C70/rm/m/n/12/4e Ü \C70/rm/m/n/12/75 ( \C70/rm/m/n/12/4e ^^@ \C70/rm/m/n/12/79 Õ \C70/rm/m/n/12/51 h \C70/rm/m/n/12/65 ∞ \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/65 π \C70/rm/m/n/12/6c ’ \C70/rm/m/n/12/5b ö \C70/rm/m/n/12/4e I \C70/rm/m/n/12/51 ˝ \C70/rm/m/n/12/65 p|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/5e v \C70/rm/m/n/12/8b ® ∫ \C70/rm/m/n/12/51 ˝ \C70/rm/m/n/12/65 p \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/60 ' \C70/rm/m/n/12/8d (|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/72 y \C70/rm/m/n/12/52 + \C70/rm/m/n/12/66 / \C70/rm/m/n/12/65 6 [ \C70/rm/m/n/12/60 '\OT1/cmr/m/n/12 (convergence)\C70/rm/m/n/12/54 å
  []
 
 
-Overfull \hbox (8.19754pt too wide) in paragraph at lines 1088--1092
+Overfull \hbox (8.19754pt too wide) in paragraph at lines 1094--1098
 []\C70/rm/m/n/12/51 ˝ \C70/rm/m/n/12/65 p \C70/rm/m/n/12/52 ^^W \C70/rm/m/n/12/63 ^^G \C70/rm/m/n/12/54 ^^D \C70/rm/m/n/12/98 y \C70/rm/m/n/12/4e : \C70/rm/m/n/12/51 w \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/76 ¯ \C70/rm/m/n/12/54 ^^L \C70/rm/m/n/12/5b ö \C70/rm/m/n/12/4e I \C70/rm/m/n/12/57 ﬂ \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/51 ˝ \C70/rm/m/n/12/65 p \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/5e è \C70/rm/m/n/12/52 ^^W|\C70/rm/m/n/12/30 ^^B|  \OT1/cmr/m/n/12 I\C70/rm/m/n/12/66 /$\U/msb/m/n/12 R$\C70/rm/m/n/12/4e 
  \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/53 : \C70/rm/m/n/12/95 Ù|\C70/rm/m/n/12/ff ^^L| $\OMS/cmsy/m/n/12 F\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 I\OT1/cmr/m/n/12 )$\C70/rm/m/n/12/66 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1088--1092
+Underfull \hbox (badness 10000) in paragraph at lines 1094--1098
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1093--1095
+Underfull \hbox (badness 10000) in paragraph at lines 1099--1101
 
  []
 
 
-Overfull \hbox (11.26282pt too wide) in paragraph at lines 1096--1100
+Overfull \hbox (11.26282pt too wide) in paragraph at lines 1102--1106
 \C70/rm/m/n/12/4e * \C70/rm/m/n/12/51 ˝ \C70/rm/m/n/12/65 p \C70/rm/m/n/12/98 y \C70/rm/m/n/12/7e ß \C70/rm/m/n/12/65 p \C70/rm/m/n/12/53 Ô \C70/rm/m/n/12/4e Â \C70/rm/m/n/12/8b § \C70/rm/m/n/12/4e : \C70/rm/m/n/12/66 / \C70/rm/m/n/12/67 – \C70/rm/m/n/12/4e * \C70/rm/m/n/12/51 ˝ \C70/rm/m/n/12/65 p \C70/rm/m/n/12/52 ^^W \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/67 Ñ \C70/rm/m/n/12/62 ^^P \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/65 p \C70/rm/m/n/12/52 ^^W \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/52 M$\OML/cmm/m/it/12 n$\C70/rm/m/n/12/98 y \C70/rm/m/n/12/54 å|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/80 ^^L \C70/rm/m/n/12/51 ˝ \C70/rm/m/n/12/65 p \C70/rm/m/n/12/52 ^^W$[]$\C70/rm/m/n/12/53 Ô
  []
 
 [56
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1120--1122
+Underfull \hbox (badness 10000) in paragraph at lines 1126--1128
 
  []
 
@@ -1177,75 +1166,75 @@ Underfull \hbox (badness 10000) in paragraph at lines 1120--1122
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.2.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1122   \subsubsection
+l.1128   \subsubsection
                        {ÊûÅÈôêÁÆóÂ≠ê}]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1124   \begin{equation}
+l.1130   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1124   \begin{equation}
+l.1130   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1124   \begin{equation}
+l.1130   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1124   \begin{equation}
+l.1130   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1132   \begin{equation}
+l.1138   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1132   \begin{equation}
+l.1138   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1132   \begin{equation}
+l.1138   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1132   \begin{equation}
+l.1138   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1142   \begin{equation}
+l.1148   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1142   \begin{equation}
+l.1148   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1142   \begin{equation}
+l.1148   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1142   \begin{equation}
+l.1148   \begin{equation}
                           [58]
-Overfull \hbox (13.342pt too wide) in paragraph at lines 1165--1168
+Overfull \hbox (13.342pt too wide) in paragraph at lines 1171--1174
 \C70/rm/m/n/12/6b d \C70/rm/m/n/12/65 ˆ \C70/rm/m/n/12/79  \C70/rm/m/n/12/51 ˝ \C70/rm/m/n/12/65 p \C70/rm/m/n/12/52 ^^W$\OML/cmm/m/it/12 f[]$\C70/rm/m/n/12/57 ( \C70/rm/m/n/12/53 : \C70/rm/m/n/12/95 Ù$\OML/cmm/m/it/12 I$\C70/rm/m/n/12/4e 
  ^^@ \C70/rm/m/n/12/81 Ù \C70/rm/m/n/12/65 6 [ \C70/rm/m/n/12/4e é$\OML/cmm/m/it/12 f$ \OT1/cmr/m/n/12 (La suite $\OML/cmm/m/it/12 f[]$ \OT1/cmr/m/n/12 con-ver-gence uni-form^^Sement
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1171--1173
+Underfull \hbox (badness 10000) in paragraph at lines 1177--1179
 
  []
 
@@ -1253,31 +1242,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 1171--1173
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1188   \subsection
+l.1194   \subsection
                     {Âà§Êñ≠‰∏ÄËá¥Êî∂Êïõ}]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1191   \begin{equation}
-                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1191   \begin{equation}
-                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1191   \begin{equation}
-                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1191   \begin{equation}
-                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
 l.1197   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
@@ -1295,7 +1264,27 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.
                    \relax 
 l.1197   \begin{equation}
                          
-Overfull \hbox (26.28484pt too wide) in paragraph at lines 1204--1206
+pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1203   \begin{equation}
+                         
+pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1203   \begin{equation}
+                         
+pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1203   \begin{equation}
+                         
+pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1203   \begin{equation}
+                         
+Overfull \hbox (26.28484pt too wide) in paragraph at lines 1210--1212
 []\C70/rm/m/n/12/82 Â \C70/rm/m/n/12/51 ˝ \C70/rm/m/n/12/65 p \C70/rm/m/n/12/52 ^^W$\OML/cmm/m/it/12 f[]$\C70/rm/m/n/12/57 ( \C70/rm/m/n/12/53 : \C70/rm/m/n/12/95 Ù$\OML/cmm/m/it/12 I$\C70/rm/m/n/12/4e 
  ^^@ \C70/rm/m/n/12/81 Ù \C70/rm/m/n/12/65 6 [ \C70/rm/m/n/12/4e é$\OML/cmm/m/it/12 f$|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/4e ^^T$\OMS/cmsy/m/n/12 8\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 N\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 9\OML/cmm/m/it/12 l[] \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 R$\C70/rm/m/n/12/4f ^^? \C70/rm/m/n/12/5f ó $[][] \OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) =
  []
@@ -1304,44 +1293,44 @@ Overfull \hbox (26.28484pt too wide) in paragraph at lines 1204--1206
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1206   \begin{equation}
+l.1212   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1206   \begin{equation}
+l.1212   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1206   \begin{equation}
+l.1212   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1206   \begin{equation}
+l.1212   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1216   \begin{equation}
+l.1222   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1216   \begin{equation}
+l.1222   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1216   \begin{equation}
+l.1222   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1216   \begin{equation}
+l.1222   \begin{equation}
                           [60]
-Overfull \hbox (2.79276pt too wide) in paragraph at lines 1222--1224
+Overfull \hbox (2.79276pt too wide) in paragraph at lines 1228--1230
 []\C70/rm/m/n/12/82 Â \C70/rm/m/n/12/51 ˝ \C70/rm/m/n/12/65 p \C70/rm/m/n/12/52 ^^W$\OML/cmm/m/it/12 f[]$\C70/rm/m/n/12/57 ( \C70/rm/m/n/12/53 : \C70/rm/m/n/12/95 Ù$\OML/cmm/m/it/12 I \OT1/cmr/m/n/12 = [\OML/cmm/m/it/12 a; b\OT1/cmr/m/n/12 ]\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a; b\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 R[]$ \C70/rm/m/n/12/4e 
  ^^@ \C70/rm/m/n/12/81 Ù \C70/rm/m/n/12/65 6 [ \C70/rm/m/n/12/4e é$\OML/cmm/m/it/12 f$|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/4e ^^T$\OMS/cmsy/m/n/12 8\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 N\OML/cmm/m/it/12 ; f[] \OMS/cmsy/m/n/12 2
  []
@@ -1350,44 +1339,44 @@ Overfull \hbox (2.79276pt too wide) in paragraph at lines 1222--1224
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1224   \begin{equation}
+l.1230   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1224   \begin{equation}
+l.1230   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1224   \begin{equation}
+l.1230   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1224   \begin{equation}
+l.1230   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1233   \begin{equation}
+l.1239   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1233   \begin{equation}
+l.1239   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1233   \begin{equation}
+l.1239   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1233   \begin{equation}
+l.1239   \begin{equation}
                          
-Underfull \hbox (badness 10000) in paragraph at lines 1243--1247
+Underfull \hbox (badness 10000) in paragraph at lines 1249--1253
 
  []
 
@@ -1395,12 +1384,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1243--1247
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.4.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1271 \chapter
+l.1277 \chapter
                {‰∏ÄËá¥Êî∂ÊïõÂà§Âà´Ê≥ï}
 pdfTeX warning (ext4): destination with the same identifier (name{equation.11.4.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1271 \chapter
+l.1277 \chapter
                {‰∏ÄËá¥Êî∂ÊïõÂà§Âà´Ê≥ï}]
 Á¨¨ÂçÅ‰∫åÁ´†
 [63
@@ -1409,19 +1398,19 @@ l.1271 \chapter
 pdfTeX warning (ext4): destination with the same identifier (name{equation.12.1.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1304 \section
+l.1310 \section
                {Abel-DirichletÂà§Âà´Ê≥ï}
 pdfTeX warning (ext4): destination with the same identifier (name{equation.12.1.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1304 \section
+l.1310 \section
                {Abel-DirichletÂà§Âà´Ê≥ï}
 pdfTeX warning (ext4): destination with the same identifier (name{equation.12.1.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1304 \section
+l.1310 \section
                {Abel-DirichletÂà§Âà´Ê≥ï}]
-Underfull \hbox (badness 10000) in paragraph at lines 1309--1311
+Underfull \hbox (badness 10000) in paragraph at lines 1315--1317
 
  []
 
@@ -1429,7 +1418,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1309--1311
 Á¨¨ÂçÅ‰∏âÁ´†
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 1315.
+(hyperref)                removing `\\' on input line 1321.
 
 [65
 
@@ -1437,30 +1426,30 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Á¨¨ÂçÅÂõõÁ´†
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 1317.
+(hyperref)                removing `\\' on input line 1323.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1331.
+(hyperref)                removing `math shift' on input line 1337.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1331.
+(hyperref)                removing `math shift' on input line 1337.
 
 [66
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1351--1357
+Underfull \hbox (badness 10000) in paragraph at lines 1357--1363
 
  []
 
 [67]
-Overfull \hbox (15.45781pt too wide) in paragraph at lines 1375--1376
+Overfull \hbox (15.45781pt too wide) in paragraph at lines 1381--1382
 []\C70/rm/m/n/12/52 ) \C70/rm/m/n/12/75 ( \C70/rm/m/n/12/5e v \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/96 P \C70/rm/m/n/12/60 '|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/80 ^^C \C70/rm/m/n/12/86 Q$\OML/cmm/m/it/12 q$\C70/rm/m/n/12/4e ^^N \C70/rm/m/n/12/67 ^^@ \C70/rm/m/n/12/8f ‹ \C70/rm/m/n/12/76 Ñ$\OML/cmm/m/it/12 p[]$\C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/8d › \C70/rm/m/n/12/79 ª|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/5c 1 \C70/rm/m/n/12/80 ˝ \C70/rm/m/n/12/62 ~ \C70/rm/m/n/12/52 0 \C70/rm/m/n/12/4e ^^@ *$\OML/cmm/m/it/12 M[] \OMS/cmsy/m/n/12 ^^U \OML/cmm/m/it/12 d\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 p; q\OT1/cmr/m/n/12 )$|\C70/rm/m/n/12/30 ^^B|
  []
 
 [68]
-Overfull \hbox (12.1184pt too wide) in paragraph at lines 1389--1391
+Overfull \hbox (12.1184pt too wide) in paragraph at lines 1395--1397
 []$\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 114\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 514)$\C70/rm/m/n/12/4e - \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/6b œ \C70/rm/m/n/12/4e * \C70/rm/m/n/12/70 π \C70/rm/m/n/12/90 ˝ \C70/rm/m/n/12/66 / \C70/rm/m/n/12/51 v \C70/rm/m/n/12/67 Å \C70/rm/m/n/12/96 P \C70/rm/m/n/12/70 π|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/5e v \C70/rm/m/n/12/4e ^^T\OT1/cmr/m/n/12 "\C70/rm/m/n/12/7d ' \C70/rm/m/n/12/8d 4 \C70/rm/m/n/12/77 @\OT1/cmr/m/n/12 "\C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/70 π$\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 114$\C70/rm/m/n/12/54 å \C70/rm/m/n/12/70 π$\OT1/cmr/m/n/12 514$\C70/rm/m/n/12/4e _
  []
 
@@ -1469,39 +1458,39 @@ Missing character: There is no Ñ in font cmr12!
 Missing character: There is no Å in font cmr12!
 Missing character: There is no π in font cmr12!
 [70]
-<linyushikaiji.png, id=2623, 289.08pt x 296.97504pt>
+<linyushikaiji.png, id=2650, 289.08pt x 296.97504pt>
 File: linyushikaiji.png Graphic file (type png)
 <use linyushikaiji.png>
-Package pdftex.def Info: linyushikaiji.png  used on input line 1447.
+Package pdftex.def Info: linyushikaiji.png  used on input line 1453.
 (pdftex.def)             Requested size: 144.53964pt x 148.48715pt.
  [71] [72 <./linyushikaiji.png>] [73] [74] [75]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1554.
+(hyperref)                removing `math shift' on input line 1560.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1554.
+(hyperref)                removing `math shift' on input line 1560.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1565.
+(hyperref)                removing `math shift' on input line 1571.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1565.
+(hyperref)                removing `math shift' on input line 1571.
 
 [76]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1573.
+(hyperref)                removing `math shift' on input line 1579.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1573.
+(hyperref)                removing `math shift' on input line 1579.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1588--1591
+Underfull \hbox (badness 10000) in paragraph at lines 1594--1597
 
  []
 
@@ -1509,10 +1498,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1588--1591
 Á¨¨ÂçÅ‰∫îÁ´†
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 1604.
+(hyperref)                removing `\\' on input line 1610.
 
 
-Overfull \hbox (1.70673pt too wide) in paragraph at lines 1612--1619
+Overfull \hbox (1.70673pt too wide) in paragraph at lines 1618--1625
 \OT1/cmr/m/n/12 2.\C70/rm/m/n/12/7e › \C70/rm/m/n/12/5b ˘ \C70/rm/m/n/12/9f P \C70/rm/m/n/12/6b ! \C70/rm/m/n/12/60 '\OT1/cmr/m/n/12 (homog^^Sen^^Seit^^Se)|\C70/rm/m/n/12/ff ^^Z| $\OMS/cmsy/m/n/12 8\OML/cmm/m/it/12  \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 E\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 k\OML/cmm/m/it/12 k\OMS/cmsy/m/n/12 k \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 k\OMS/cmsy/m/n/12 jk\OML/cmm/m/it/12 \OMS/cmsy/m/n/12 k$|\C70/rm/m/n/12/30 ^^B| \C70/rm/m/n/12/8f Ÿ \C70/rm/m/n/12/91 Ã$\OML/cmm/m/it/12 k$\C70/rm/m/n/12/5c ^ \C70/rm/m/n/12/4e é$\U/msb/m/n/12 R$\C70/rm/m/n/12/62 ^^V \C70/rm/m/n/12/80 ^^E$\U/msb/m/n/12 C$\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/51 w
  []
 
@@ -1521,59 +1510,59 @@ Overfull \hbox (1.70673pt too wide) in paragraph at lines 1612--1619
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1626.
+(hyperref)                removing `math shift' on input line 1632.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1626.
+(hyperref)                removing `superscript' on input line 1632.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1626.
+(hyperref)                removing `math shift' on input line 1632.
 
 [80]
-<danweiqiu.png, id=2691, 757.70578pt x 309.02953pt>
+<danweiqiu.png, id=2718, 757.70578pt x 309.02953pt>
 File: danweiqiu.png Graphic file (type png)
 <use danweiqiu.png>
-Package pdftex.def Info: danweiqiu.png  used on input line 1650.
+Package pdftex.def Info: danweiqiu.png  used on input line 1656.
 (pdftex.def)             Requested size: 454.62698pt x 185.41914pt.
 
-Overfull \hbox (64.62698pt too wide) in paragraph at lines 1650--1652
+Overfull \hbox (64.62698pt too wide) in paragraph at lines 1656--1658
  [][] 
  []
 
 [81]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1654.
+(hyperref)                removing `math shift' on input line 1660.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1654.
+(hyperref)                removing `superscript' on input line 1660.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1654.
+(hyperref)                removing `math shift' on input line 1660.
 
 
-Overfull \hbox (7.58084pt too wide) in paragraph at lines 1664--1666
+Overfull \hbox (7.58084pt too wide) in paragraph at lines 1670--1672
 \C70/rm/m/n/12/65 p$\OML/cmm/m/it/12 f$\C70/rm/m/n/12/57 ($\OML/cmm/m/it/12 I$\C70/rm/m/n/12/4e 
  \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/4e 
  \C70/rm/m/n/12/78 n \C70/rm/m/n/12/75 L|\C70/rm/m/n/12/30 ^^B| \C70/rm/m/n/12/73 ∞ \C70/rm/m/n/12/57 ( \C70/rm/m/n/12/56 ﬁ \C70/rm/m/n/12/98 ~ \C70/rm/m/n/12/4e K \C70/rm/m/n/12/52 M \C70/rm/m/n/12/62 ^^Q \C70/rm/m/n/12/4e Ï \C70/rm/m/n/12/5b ˘ \C70/rm/m/n/12/4e ^^@ \C70/rm/m/n/12/81 Ù \C70/rm/m/n/12/65 6 [ \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/5b ö \C70/rm/m/n/12/4e I|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/90 £ \C70/rm/m/n/12/91 Ã \C70/rm/m/n/12/63 – \C70/rm/m/n/12/52 0 \C70/rm/m/n/12/76 Ñ$\OMS/cmsy/m/n/12 k\OML/cmm/m/it/12 f[] \OMS/cmsy/m/n/12 ^^@
  []
 
 [82 <./danweiqiu.png>] [83] [84]
-Underfull \hbox (badness 10000) in paragraph at lines 1715--1716
+Underfull \hbox (badness 10000) in paragraph at lines 1721--1722
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1717--1731
+Underfull \hbox (badness 10000) in paragraph at lines 1723--1737
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1735--1737
+Underfull \hbox (badness 10000) in paragraph at lines 1741--1743
 
  []
 
@@ -1581,7 +1570,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1735--1737
 Á¨¨ÂçÅÂÖ≠Á´†
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 1766.
+(hyperref)                than one, level fixed on input line 1772.
 
 [87
 
@@ -1589,7 +1578,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 Á¨¨ÂçÅ‰∏ÉÁ´†
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 1772.
+(hyperref)                removing `\\' on input line 1778.
 
 [88
 
@@ -1597,127 +1586,127 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Missing character: There is no Ì in font cmr12!
 Missing character: There is no ∆ in font cmr12!
 [89]
-Underfull \hbox (badness 10000) in paragraph at lines 1808--1809
+Underfull \hbox (badness 10000) in paragraph at lines 1814--1815
 
  []
 
 
-Overfull \hbox (59.53098pt too wide) in paragraph at lines 1814--1817
+Overfull \hbox (59.53098pt too wide) in paragraph at lines 1820--1823
 []\C70/rm/m/n/12/5b ˘$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 X; ^^\\OT1/cmr/m/n/12 )$|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/82 Â \C70/rm/m/n/12/5b X \C70/rm/m/n/12/57 ( \C70/rm/m/n/12/5e ¶ \C70/rm/m/n/12/91 œ$\OML/cmm/m/it/12 d$\C70/rm/m/n/12/53 Ô \C70/rm/m/n/12/4e Â \C70/rm/m/n/12/5b ö \C70/rm/m/n/12/4e I \C70/rm/m/n/12/62 ” Q \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/5f ^^@ \C70/rm/m/n/12/96 ∆|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/79 $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 X; ^^\\OT1/cmr/m/n/12 )$\C70/rm/m/n/12/66 / \C70/rm/m/n/12/53 Ô \C70/rm/m/n/12/5e ¶ \C70/rm/m/n/12/91 œ \C70/rm/m/n/12/76 Ñ\OT1/cmr/m/n/12 (\C70/rm/m/n/12/82 Ò\OT1/cmr/m/n/12 :metrizable)|\C70/rm/m/n/12/30 ^^B|
  []
 
 
-Overfull \hbox (19.31166pt too wide) in paragraph at lines 1818--1819
+Overfull \hbox (19.31166pt too wide) in paragraph at lines 1824--1825
 []\C70/rm/m/n/12/67 	 \C70/rm/m/n/12/96 P \C70/rm/m/n/12/88 e \C70/rm/m/n/12/62 ” Q \C70/rm/m/n/12/4e -|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/88 e \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/96 P \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/96 ∆ \C70/rm/m/n/12/54 ^^H \C70/rm/m/n/12/66 / \C70/rm/m/n/12/5f ^^@ \C70/rm/m/n/12/96 ∆|\C70/rm/m/n/12/30 ^^B| \C70/rm/m/n/12/53 s$\OML/cmm/m/it/12 ^^\ \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 U\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 U \OMS/cmsy/m/n/12 ^^R \OML/cmm/m/it/12 X; U[][]\OMS/cmsy/m/n/12 g [
  []
 
 [90] [91] [92] [93]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1878.
+(hyperref)                removing `math shift' on input line 1884.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1878.
+(hyperref)                removing `subscript' on input line 1884.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1878.
+(hyperref)                removing `math shift' on input line 1884.
 
 
-Overfull \hbox (0.53125pt too wide) in paragraph at lines 1882--1884
+Overfull \hbox (0.53125pt too wide) in paragraph at lines 1888--1890
 \C70/rm/m/n/12/52 ^^Y \C70/rm/m/n/12/79 $\OML/cmm/m/it/12 X$\C70/rm/m/n/12/66 / \C70/rm/m/n/12/4e ^^@ *\OT1/cmr/m/n/12 Hausdorff\C70/rm/m/n/12/7a z \C70/rm/m/n/12/95 Ù\OT1/cmr/m/n/12 .\C70/rm/m/n/12/8b Â \C70/rm/m/n/12/67 a \C70/rm/m/n/12/4e ˆ \C70/rm/m/n/12/53 » \C70/rm/m/n/12/79  \C70/rm/m/n/12/4e : \C70/rm/m/n/12/62 ” Q \C70/rm/m/n/12/7a z \C70/rm/m/n/12/95 Ù \C70/rm/m/n/12/91 Ã \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/52 ^^F \C70/rm/m/n/12/79 ª \C70/rm/m/n/12/51 l \C70/rm/m/n/12/74 ^^F\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/62 ^^V \C70/rm/m/n/12/80 ^^E$\OML/cmm/m/it/12 T[]$\C70/rm/m/n/12/51 l
  []
 
 [94]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1913.
+(hyperref)                removing `math shift' on input line 1919.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1913.
+(hyperref)                removing `subscript' on input line 1919.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1913.
+(hyperref)                removing `math shift' on input line 1919.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1925.
+(hyperref)                removing `math shift' on input line 1931.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1925.
+(hyperref)                removing `subscript' on input line 1931.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1925.
+(hyperref)                removing `math shift' on input line 1931.
 
 [95] [96] [97]
-Overfull \hbox (11.9562pt too wide) in paragraph at lines 2008--2012
+Overfull \hbox (11.9562pt too wide) in paragraph at lines 2014--2018
 \C70/rm/m/n/12/4e _ \C70/rm/m/n/12/66 / \C70/rm/m/n/12/8f ﬁ \C70/rm/m/n/12/7e Ì \C70/rm/m/n/12/66   \C70/rm/m/n/12/5c ^^D\OT1/cmr/m/n/12 .$\OMS/cmsy/m/n/12 8[]\OML/cmm/m/it/12 U \OMS/cmsy/m/n/12 ^^R \OML/cmm/m/it/12 Z; g[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 U\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^R \OML/cmm/m/it/12 Y[] \OMS/cmsy/m/n/12 ) \OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 g[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 U\OT1/cmr/m/n/12 )) \OMS/cmsy/m/n/12 ^^R \OML/cmm/m/it/12 X[] \OMS/cmsy/m/n/12 )
  []
 
 [98]
-<proofforreader.jpg, id=2808, 971.12813pt x 1178.15157pt>
+<proofforreader.jpg, id=2835, 971.12813pt x 1178.15157pt>
 File: proofforreader.jpg Graphic file (type jpg)
 <use proofforreader.jpg>
-Package pdftex.def Info: proofforreader.jpg  used on input line 2058.
+Package pdftex.def Info: proofforreader.jpg  used on input line 2064.
 (pdftex.def)             Requested size: 194.22218pt x 235.62613pt.
  [99]
-Underfull \hbox (badness 10000) in paragraph at lines 2063--2064
+Underfull \hbox (badness 10000) in paragraph at lines 2069--2070
 
  []
 
 [100 <./proofforreader.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 2076--2077
+Underfull \hbox (badness 10000) in paragraph at lines 2082--2083
 
  []
 
 
-Overfull \hbox (9.31923pt too wide) in paragraph at lines 2091--2092
+Overfull \hbox (9.31923pt too wide) in paragraph at lines 2097--2098
 []\C70/rm/m/n/12/5b ˘$\U/msb/m/n/12 R$\C70/rm/m/n/12/4e 
  \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/4e ^^@ \C70/rm/m/n/12/51 C ˝ \C70/rm/m/n/12/65 p$\OML/cmm/m/it/12 f \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 X \OMS/cmsy/m/n/12 ! \OML/cmm/m/it/12 Y$\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/67 	\OT1/cmr/m/n/12 :$\OML/cmm/m/it/12 X; Y$\C70/rm/m/n/12/66 /$\U/msb/m/n/12 R$\C70/rm/m/n/12/4e 
  \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/4e $ * \C70/rm/m/n/12/53 : \C70/rm/m/n/12/95 Ù\OT1/cmr/m/n/12 (\C70/rm/m/n/12/4e ^^M \C70/rm/m/n/12/80 ˝ \C70/rm/m/n/12/66 / \C70/rm/m/n/12/5b P \C70/rm/m/n/12/96 ∆\OT1/cmr/m/n/12 !).\C70/rm/m/n/12/82 Â\OT1/cmr/m/n/12 : 
  []
 
 [101] [102]
-Underfull \hbox (badness 10000) in paragraph at lines 2125--2126
+Underfull \hbox (badness 10000) in paragraph at lines 2131--2132
 
  []
 
 
-Overfull \hbox (9.9178pt too wide) in paragraph at lines 2132--2134
+Overfull \hbox (9.9178pt too wide) in paragraph at lines 2138--2140
 []\C70/rm/m/n/12/5b ˘ \C70/rm/m/n/12/62 ” Q \C70/rm/m/n/12/7a z \C70/rm/m/n/12/95 Ù$\OML/cmm/m/it/12 X$\C70/rm/m/n/12/4e 
  \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/4e ˚ \C70/rm/m/n/12/61 ^^O \C70/rm/m/n/12/4e ^^@ * \C70/rm/m/n/12/5f ^^@ \C70/rm/m/n/12/89 Ü \C70/rm/m/n/12/76 ÷\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/82 Â \C70/rm/m/n/12/90 ˝ \C70/rm/m/n/12/80 ˝ \C70/rm/m/n/12/62 ~ \C70/rm/m/n/12/52 0 \C70/rm/m/n/12/4e ^^@ * \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/96 P \C70/rm/m/n/12/5b P \C70/rm/m/n/12/89 Ü \C70/rm/m/n/12/76 ÷\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/52 ^^Y \C70/rm/m/n/12/79 $\OML/cmm/m/it/12 X$\C70/rm/m/n/12/66 /
  []
 
 
-Overfull \hbox (2.30377pt too wide) in paragraph at lines 2135--2137
+Overfull \hbox (2.30377pt too wide) in paragraph at lines 2141--2143
 []\C70/rm/m/n/12/5b ˘ \C70/rm/m/n/12/62 ” Q \C70/rm/m/n/12/7a z \C70/rm/m/n/12/95 Ù$\OML/cmm/m/it/12 X$\C70/rm/m/n/12/4e 
  \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/4e ˚ \C70/rm/m/n/12/61 ^^O \C70/rm/m/n/12/4e ^^@ * \C70/rm/m/n/12/5e è \C70/rm/m/n/12/52 ^^W\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/82 Â \C70/rm/m/n/12/90 ˝ \C70/rm/m/n/12/80 ˝ \C70/rm/m/n/12/62 ~ \C70/rm/m/n/12/52 0 \C70/rm/m/n/12/4e ^^@ * \C70/rm/m/n/12/5b P \C70/rm/m/n/12/5e è \C70/rm/m/n/12/52 ^^W$\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 x[]\OMS/cmsy/m/n/12 g$\C70/rm/m/n/12/65 6 [ \C70/rm/m/n/12/4e é$\OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 2
  []
 
 
-Overfull \hbox (3.41945pt too wide) in paragraph at lines 2138--2145
+Overfull \hbox (3.41945pt too wide) in paragraph at lines 2144--2151
 \C70/rm/m/n/12/4e Ü\OT1/cmr/m/n/12 Bolzano-Weierstrass\C70/rm/m/n/12/5b ö \C70/rm/m/n/12/74 ^^F \C70/rm/m/n/12/54 å\OT1/cmr/m/n/12 Arzela-Ascoli\C70/rm/m/n/12/5b ö \C70/rm/m/n/12/74 ^^F \C70/rm/m/n/12/7b I \C70/rm/m/n/12/5b ˘ \C70/rm/m/n/12/4e é \C70/rm/m/n/12/5e è \C70/rm/m/n/12/52 ^^W \C70/rm/m/n/12/7d ' \C70/rm/m/n/12/81 Ù \C70/rm/m/n/12/60 ' \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/7e ” \C70/rm/m/n/12/8b ∫\OT1/cmr/m/n/12 ; \C70/rm/m/n/12/57 (
  []
 
 [103]
-Overfull \hbox (63.48781pt too wide) detected at line 2150
+Overfull \hbox (63.48781pt too wide) detected at line 2156
 []\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 U[]\OMS/cmsy/m/n/12 g ^^R \OML/cmm/m/it/12 X; \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 U[]\OMS/cmsy/m/n/12 g[]\OML/cmm/m/it/12 Y[] \OMS/cmsy/m/n/12 ) 9f\OML/cmm/m/it/12 U[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 i \OMS/cmsy/m/n/12 2 \OT1/cmr/m/n/12 [ [1\OML/cmm/m/it/12 ; n\OT1/cmr/m/n/12 ] ]\OMS/cmsy/m/n/12 g ^^R f\OML/cmm/m/it/12 U[]\OMS/cmsy/m/n/12 g[]\OML/cmm/m/it/12 Y[]
  []
 
 File: proofforreader.jpg Graphic file (type jpg)
 <use proofforreader.jpg>
-Package pdftex.def Info: proofforreader.jpg  used on input line 2164.
+Package pdftex.def Info: proofforreader.jpg  used on input line 2170.
 (pdftex.def)             Requested size: 194.22218pt x 235.62613pt.
 [104] [105] [106] [107]
 Á¨¨ÂçÅÂÖ´Á´†
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 2221.
+(hyperref)                removing `\\' on input line 2227.
 
 [108
 
@@ -1725,22 +1714,22 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Á¨¨ÂçÅ‰πùÁ´†
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 2222.
+(hyperref)                removing `\\' on input line 2228.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2225--2227
+Underfull \hbox (badness 10000) in paragraph at lines 2231--2233
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2237--2241
+Underfull \hbox (badness 10000) in paragraph at lines 2243--2247
 
  []
 
 [109
 
 ]
-Overfull \hbox (4.57643pt too wide) in paragraph at lines 2242--2244
+Overfull \hbox (4.57643pt too wide) in paragraph at lines 2248--2250
 []\C70/rm/m/n/12/82 Â$\OML/cmm/m/it/12 E$\C70/rm/m/n/12/66 / \C70/rm/m/n/12/57 ﬂ$\U/msb/m/n/12 K$\C70/rm/m/n/12/4e 
  \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/7e ø \C70/rm/m/n/12/60 ' \C70/rm/m/n/12/7a z \C70/rm/m/n/12/95 Ù|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/81 Í \C70/rm/m/n/12/54 ^^L \C70/rm/m/n/12/60 ^^A$\OML/cmm/m/it/12 u \OMS/cmsy/m/n/12 2 L\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 E\OT1/cmr/m/n/12 )$|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/54 ^^L \C70/rm/m/n/12/74 ^^F \C70/rm/m/n/12/82 Â \C70/rm/m/n/12/5b X \C70/rm/m/n/12/57 ($\OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 E \OMS/cmsy/m/n/12 n f\OT1/cmr/m/n/12 0\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; ^^U \OMS/cmsy/m/n/12 2
  []
@@ -1749,69 +1738,69 @@ Overfull \hbox (4.57643pt too wide) in paragraph at lines 2242--2244
 pdfTeX warning (ext4): destination with the same identifier (name{equation.19.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2244   \begin{equation}
+l.2250   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.19.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2244   \begin{equation}
+l.2250   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.19.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2244   \begin{equation}
+l.2250   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.19.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2244   \begin{equation}
+l.2250   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.19.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2256   \begin{equation}
+l.2262   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.19.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2256   \begin{equation}
+l.2262   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.19.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2256   \begin{equation}
+l.2262   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.19.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2256   \begin{equation}
+l.2262   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.19.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2267   \begin{equation}
+l.2273   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.19.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2267   \begin{equation}
+l.2273   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.19.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2267   \begin{equation}
+l.2273   \begin{equation}
                          
 pdfTeX warning (ext4): destination with the same identifier (name{equation.19.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2267   \begin{equation}
+l.2273   \begin{equation}
                          
 Overfull \hbox (20.40984pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/12 19.1 \C70/rm/m/sl/12/72 y \C70/rm/m/sl/12/5f Å \C70/rm/m/sl/12/50 < \C70/rm/m/sl/12/4e ^^N \C70/rm/m/sl/12/72 y \C70/rm/m/sl/12/5f Å \C70/rm/m/sl/12/54 ^^Q \C70/rm/m/sl/12/91 œ \OT1/cmr/m/sl/12 VECTEURS PROPRES ET VALEURS PROPRES \OT1/cmr/m/n/12 110
  []
 
 [110]
-Overfull \hbox (8.31775pt too wide) in paragraph at lines 2285--2288
+Overfull \hbox (8.31775pt too wide) in paragraph at lines 2291--2294
 \C70/rm/m/n/12/79 $\OML/cmm/m/it/12 ^^_[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 X\OT1/cmr/m/n/12 )$\C70/rm/m/n/12/4e : \C70/rm/m/n/12/77 È \C70/rm/m/n/12/96 5$\OML/cmm/m/it/12 M$\C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/72 y \C70/rm/m/n/12/5f Å \C70/rm/m/n/12/59 ^^Z \C70/rm/m/n/12/98 y \C70/rm/m/n/12/5f ^^O|\C70/rm/m/n/12/30 ^^B| \C70/rm/m/n/12/66 > \C70/rm/m/n/12/71 6|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/62 ^^Q \C70/rm/m/n/12/4e Ï \C70/rm/m/n/12/53 Ô \C70/rm/m/n/12/4e Â \C70/rm/m/n/12/62 ~ \C70/rm/m/n/12/52 0$\OMS/cmsy/m/n/12 9\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a[]; :::; a[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 K[]$\C70/rm/m/n/12/4f ^^?
  []
 
@@ -1819,34 +1808,34 @@ Overfull \hbox (8.31775pt too wide) in paragraph at lines 2285--2288
 pdfTeX warning (ext4): destination with the same identifier (name{equation.19.2.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2303   \end{equation}
+l.2309   \end{equation}
                        ] [112
 pdfTeX warning (ext4): destination with the same identifier (name{equation.19.2.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2332   \subsubsection
+l.2338   \subsubsection
                        {D√©finition}]
-Overfull \hbox (47.44954pt too wide) in paragraph at lines 2349--2352
+Overfull \hbox (47.44954pt too wide) in paragraph at lines 2355--2358
 []\C70/rm/m/n/12/57 ( \C70/rm/m/n/12/4e ^^@ õ \C70/rm/m/n/12/57 0 \C70/rm/m/n/12/65 π \C70/rm/m/n/12/53 Ô \C70/rm/m/n/12/80 ˝ \C70/rm/m/n/12/4f ^^Z \C70/rm/m/n/12/90 G \C70/rm/m/n/12/52 0 \C70/rm/m/n/12/59 Ç \C70/rm/m/n/12/4e  \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/88 h \C70/rm/m/n/12/79 : \C70/rm/m/n/12/65 π \C70/rm/m/n/12/6c ’|\C70/rm/m/n/12/ff ^^Z| \OT1/cmr/m/n/12 "\C70/rm/m/n/12/4e ^^@ * \C70/rm/m/n/12/77 È \C70/rm/m/n/12/96 5\OT1/cmr/m/n/12 A\C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/72 y \C70/rm/m/n/12/5f Å \C70/rm/m/n/12/50 < \C70/rm/m/n/12/4e :\OT1/cmr/m/n/12 4,4,3,3,3,2,2,1|\C70/rm/m/n/12/30 ^^B|
  []
 
 [113] [114]
-Underfull \hbox (badness 10000) in paragraph at lines 2374--2375
+Underfull \hbox (badness 10000) in paragraph at lines 2380--2381
 
  []
 
 
-Overfull \hbox (10.80049pt too wide) in paragraph at lines 2398--2400
+Overfull \hbox (10.80049pt too wide) in paragraph at lines 2404--2406
 []\C70/rm/m/n/12/51 ‡ \C70/rm/m/n/12/4f U \C70/rm/m/n/12/91 Õ \C70/rm/m/n/12/65 p \C70/rm/m/n/12/5c ^^O \C70/rm/m/n/12/4e é \C70/rm/m/n/12/7b I \C70/rm/m/n/12/4e é „ \C70/rm/m/n/12/65 p \C70/rm/m/n/12/91 Õ \C70/rm/m/n/12/65 p\OT1/cmr/m/n/12 . \C70/rm/m/n/12/79  \C70/rm/m/n/12/72 y \C70/rm/m/n/12/5f Å \C70/rm/m/n/12/50 <$\OML/cmm/m/it/12 ^^U$\C70/rm/m/n/12/5b ˘ \C70/rm/m/n/12/5e î \C70/rm/m/n/12/72 y \C70/rm/m/n/12/5f Å \C70/rm/m/n/12/7a z \C70/rm/m/n/12/95 Ù$\OML/cmm/m/it/12 E[]$\C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/7e Ù \C70/rm/m/n/12/65 p$[] \OML/cmm/m/it/12 E[]$\C70/rm/m/n/12/4e :
  []
 
 [115] [116]
-Underfull \hbox (badness 10000) in paragraph at lines 2434--2435
+Underfull \hbox (badness 10000) in paragraph at lines 2440--2441
 
  []
 
 [117] [118] [119] [120] [121]
-Overfull \hbox (2.57864pt too wide) in paragraph at lines 2575--2582
+Overfull \hbox (2.57864pt too wide) in paragraph at lines 2581--2588
 []$\OML/cmm/m/it/12 n$\C70/rm/m/n/12/96 6 \C70/rm/m/n/12/65 π \C70/rm/m/n/12/96 5$\OML/cmm/m/it/12 A$\C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/72 y \C70/rm/m/n/12/5f Å \C70/rm/m/n/12/59 ^^Z \C70/rm/m/n/12/98 y \C70/rm/m/n/12/5f ^^O \C70/rm/m/n/12/5c 1 \C70/rm/m/n/12/66 / \C70/rm/m/n/12/5b É \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/4e ^^@ * \C70/rm/m/n/12/96 ˆ \C70/rm/m/n/12/53 ^^V \C70/rm/m/n/12/59 ^^Z \C70/rm/m/n/12/98 y \C70/rm/m/n/12/5f ^^O|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/54 ^^L \C70/rm/m/n/12/74 ^^F|\C70/rm/m/n/12/ff ^^L|  $\OML/cmm/m/it/12 n$\C70/rm/m/n/12/96 6 \C70/rm/m/n/12/65 π \C70/rm/m/n/12/96 5$\OML/cmm/m/it/12 B$\C70/rm/m/n/12/76 Ñ
  []
 
@@ -1856,7 +1845,7 @@ Overfull \hbox (2.57864pt too wide) in paragraph at lines 2575--2582
 Á¨¨‰∫åÂçÅÁ´†
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 2595.
+(hyperref)                removing `\\' on input line 2601.
 
 [125
 
@@ -1864,151 +1853,213 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Á¨¨‰∫åÂçÅ‰∏ÄÁ´†
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 2596.
+(hyperref)                removing `\\' on input line 2602.
 
 [126
 
 ] [127]
-Overfull \hbox (1.88872pt too wide) in paragraph at lines 2674--2677
+Overfull \hbox (1.88872pt too wide) in paragraph at lines 2681--2684
 []\C70/rm/m/n/12/8b æ$\OML/cmm/m/it/12 l$\C70/rm/m/n/12/4e : \C70/rm/m/n/12/51 ˝ \C70/rm/m/n/12/65 p$\OML/cmm/m/it/12 f$\C70/rm/m/n/12/57 ($\OML/cmm/m/it/12 x[]$\C70/rm/m/n/12/59 ^^D \C70/rm/m/n/12/6c ø$[]$\C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/65 π \C70/rm/m/n/12/54 ^^Q \C70/rm/m/n/12/5b ¸ \C70/rm/m/n/12/65 p\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/66 > \C70/rm/m/n/12/71 6 \C70/rm/m/n/12/67 	$\OML/cmm/m/it/12 f$\C70/rm/m/n/12/57 ($\OML/cmm/m/it/12 x[]$\C70/rm/m/n/12/59 ^^D \C70/rm/m/n/12/6c ø$[]$\C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/65 π \C70/rm/m/n/12/54 ^^Q \C70/rm/m/n/12/5b ¸ \C70/rm/m/n/12/65 p \C70/rm/m/n/12/4e :$\OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 l$\OT1/cmr/m/n/12 .
  []
 
 [128]
-Overfull \hbox (22.67795pt too wide) in paragraph at lines 2682--2685
+Overfull \hbox (22.67795pt too wide) in paragraph at lines 2689--2691
 \OML/cmm/m/it/12 D \OMS/cmsy/m/n/12 ! \U/msb/m/n/12 R$\OT1/cmr/m/n/12 , $\OML/cmm/m/it/12 D$\C70/rm/m/n/12/66 /$\U/msb/m/n/12 R$\C70/rm/m/n/12/4e 
  \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/5f ^^@ \C70/rm/m/n/12/96 ∆\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/82 Â$\OML/cmm/m/it/12 f$\C70/rm/m/n/12/57 ( \C70/rm/m/n/12/70 π$\OML/cmm/m/it/12 x[]$\C70/rm/m/n/12/59 ^^D \C70/rm/m/n/12/6c ø \C70/rm/m/n/12/7b ,$\OML/cmm/m/it/12 i$\C70/rm/m/n/12/4e * \C70/rm/m/n/12/53 U \C70/rm/m/n/12/4f M \C70/rm/m/n/12/54 ^^Q \C70/rm/m/n/12/91 œ \C70/rm/m/n/12/76 Ñ$\OML/cmm/m/it/12 d$\C70/rm/m/n/12/65 π \C70/rm/m/n/12/54 ^^Q \C70/rm/m/n/12/5b ¸ \C70/rm/m/n/12/65 p \C70/rm/m/n/12/79  \C70/rm/m/n/12/4e :$\OML/cmm/m/it/12 f$\C70/rm/m/n/12/57 ($\OML/cmm/m/it/12 x[]$\C70/rm/m/n/12/59 ^^D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2691--2692
+Underfull \hbox (badness 10000) in paragraph at lines 2689--2691
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2700--2701
 
  []
 
 [129] [130] [131] [132]
-Overfull \hbox (2.85185pt too wide) in paragraph at lines 2815--2816
+Overfull \hbox (2.85185pt too wide) in paragraph at lines 2824--2826
 []\C70/rm/m/n/12/57 ( \C70/rm/m/n/12/52 ^^Z \C70/rm/m/n/12/62 M \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/8b ¡ \C70/rm/m/n/12/66 ^^N \C70/rm/m/n/12/4e -\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/62 ^^Q \C70/rm/m/n/12/4e Ï \C70/rm/m/n/12/5e v \C70/rm/m/n/12/6c ° \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/75 ( \C70/rm/m/n/12/52 0 \C70/rm/m/n/12/4e ¿ H \C70/rm/m/n/12/5b û \C70/rm/m/n/12/8d ( \C70/rm/m/n/12/4e 
 $\U/msb/m/n/12 R[]$\C70/rm/m/n/12/91 Ã \C70/rm/m/n/12/54 ^^Q \C70/rm/m/n/12/91 œ \C70/rm/m/n/12/50 < \C70/rm/m/n/12/51 ˝ \C70/rm/m/n/12/65 p \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/60 ' \C70/rm/m/n/12/8d (\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/80 ^^L
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2815--2816
+Underfull \hbox (badness 10000) in paragraph at lines 2824--2826
 
  []
 
 [133]
-Overfull \hbox (48.97568pt too wide) in paragraph at lines 2820--2822
+Overfull \hbox (48.97568pt too wide) in paragraph at lines 2830--2832
 \C70/rm/m/n/12/51 v \C70/rm/m/n/12/4e -$\OMS/cmsy/m/n/12 A$\C70/rm/m/n/12/66 /$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 V[]; N[]\OT1/cmr/m/n/12 )$\C70/rm/m/n/12/52 0$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 V[]; N[]\OT1/cmr/m/n/12 )$\C70/rm/m/n/12/4e 
  \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/7e ø \C70/rm/m/n/12/60 ' \C70/rm/m/n/12/66   \C70/rm/m/n/12/5c ^^D\OT1/cmr/m/n/12 ,$\OML/cmm/m/it/12 N[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 h\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 oN[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 h\OT1/cmr/m/n/12 ))$,\C70/rm/m/n/12/52 ^^Y \C70/rm/m/n/12/79 $\OML/cmm/m/it/12 f$\C70/rm/m/n/12/57 ($\OML/cmm/m/it/12 x$\C70/rm/m/n/12/59 ^^D\OT1/cmr/m/n/12 Fr^^Sechet\C70/rm/m/n/12/53 Ô
  []
 
-[134]
-Underfull \hbox (badness 10000) in paragraph at lines 2849--2850
+
+Underfull \hbox (badness 10000) in paragraph at lines 2834--2835
 
  []
 
+[134]
+Underfull \hbox (badness 10000) in paragraph at lines 2874--2875
 
-Overfull \hbox (7.05638pt too wide) in paragraph at lines 2872--2875
-\C70/rm/m/n/12/79  \C70/rm/m/n/12/51 v \C70/rm/m/n/12/4e :\OT1/cmr/m/n/12 Jacobi\C70/rm/m/n/12/77 È \C70/rm/m/n/12/96 5\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/62 ^^V\OT1/cmr/m/n/12 Jacobi\C70/rm/m/n/12/7b ó \C70/rm/m/n/12/5b P\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/8b ∞ \C70/rm/m/n/12/4f \$\OML/cmm/m/it/12 J$\OT1/cmr/m/n/12 . \C70/rm/m/n/12/82 Â$\OML/cmm/m/it/12 J \OMS/cmsy/m/n/12 2 M[]\OT1/cmr/m/n/12 (\U/msb/m/n/12 R\OT1/cmr/m/n/12 )$,\C70/rm/m/n/12/52 ^^Y \C70/rm/m/n/12/79 $[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 J\OT1/cmr/m/n/12 )$\C70/rm/m/n/12/4e :\OT1/cmr/m/n/12 Jacobi\C70/rm/m/n/12/88 L
  []
 
 [135]
-Overfull \hbox (23.79944pt too wide) in paragraph at lines 2883--2885
+Overfull \hbox (12.7309pt too wide) in paragraph at lines 2891--2894
+\C70/rm/m/n/12/79  \C70/rm/m/n/12/51 v \C70/rm/m/n/12/4e :\OT1/cmr/m/n/12 Jacobi\C70/rm/m/n/12/77 È \C70/rm/m/n/12/96 5\OT1/cmr/m/n/12 (Matrice Ja-co-bi-enne),\C70/rm/m/n/12/62 ^^V\OT1/cmr/m/n/12 Jacobi\C70/rm/m/n/12/7b ó \C70/rm/m/n/12/5b P\OT1/cmr/m/n/12 ,\C70/rm/m/n/12/8b ∞ \C70/rm/m/n/12/4f \$\OML/cmm/m/it/12 J$\OT1/cmr/m/n/12 . \C70/rm/m/n/12/82 Â$\OML/cmm/m/it/12 J \OMS/cmsy/m/n/12 2 M[]\OT1/cmr/m/n/12 (\U/msb/m/n/12 R\OT1/cmr/m/n/12 )$,\C70/rm/m/n/12/52 ^^Y
+ []
+
+
+Overfull \hbox (23.79944pt too wide) in paragraph at lines 2907--2909
 []\OT1/cmr/m/n/12 Jacobi\C70/rm/m/n/12/7b ó \C70/rm/m/n/12/5b P \C70/rm/m/n/12/6e · \C70/rm/m/n/12/8d ≥ \C70/rm/m/n/12/4e Â  \C70/rm/m/n/12/8f – \C70/rm/m/n/12/7b ó \C70/rm/m/n/12/6c ’ \C70/rm/m/n/12/52 ^^Y\OT1/cmr/m/n/12 : \C70/rm/m/n/12/5b ˘$\OML/cmm/m/it/12 f; g \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 D \OMS/cmsy/m/n/12 ! \U/msb/m/n/12 R[]\OML/cmm/m/it/12 ; D \OMS/cmsy/m/n/12 ^^R \U/msb/m/n/12 R[]\OML/cmm/m/it/12 ; A \OMS/cmsy/m/n/12 2 M[]\OT1/cmr/m/n/12 (\U/msb/m/n/12 R\OT1/cmr/m/n/12 )$,\C70/rm/m/n/12/67 	\OT1/cmr/m/n/12 : 
  []
 
 [136]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2914.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nabla' on input line 2914.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2914.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2914.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ll' on input line 2914.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2914.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2914.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gg' on input line 2914.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2914.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2930--2931
+
+ []
+
+[137]
+Underfull \hbox (badness 10000) in paragraph at lines 2956--2957
+
+ []
+
+
+Overfull \hbox (3.81627pt too wide) in paragraph at lines 2959--2960
+[]\C70/rm/m/n/12/4e 	 \C70/rm/m/n/12/7e Ù \C70/rm/m/n/12/76 Ù \C70/rm/m/n/12/89 “ \C70/rm/m/n/12/57 P \C70/rm/m/n/12/68 ^^G \C70/rm/m/n/12/7c ˚ \C70/rm/m/n/12/4e -$[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; z\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; z\OT1/cmr/m/n/12 )[] + \OML/cmm/m/it/12 Q\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; z\OT1/cmr/m/n/12 )[] + \OML/cmm/m/it/12 R\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; z\OT1/cmr/m/n/12 )[]$\C70/rm/m/n/12/76 Ñ
+ []
+
+[138] [139]
 Á¨¨‰∫åÂçÅ‰∫åÁ´†
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 2904.
+(hyperref)                removing `\\' on input line 2995.
 
-[137
+[140
 
 ]
 Á¨¨‰∫åÂçÅ‰∏âÁ´†
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 2905.
+(hyperref)                removing `\\' on input line 2996.
 
-[138
+[141
 
 ]
 Á¨¨‰∫åÂçÅÂõõÁ´†
-[139
-
-]
-Á¨¨‰∫åÂçÅ‰∫îÁ´†
-[140
-
-] [141
-
-]
-Á¨¨‰∫åÂçÅÂÖ≠Á´†
 [142
 
 ]
-Á¨¨‰∫åÂçÅ‰∏ÉÁ´†
+Á¨¨‰∫åÂçÅ‰∫îÁ´†
 [143
+
+] [144
+
+]
+Á¨¨‰∫åÂçÅÂÖ≠Á´†
+[145
+
+]
+Á¨¨‰∫åÂçÅ‰∏ÉÁ´†
+[146
 
 ]
 Á¨¨‰∫åÂçÅÂÖ´Á´†
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 2914.
+(hyperref)                removing `\\' on input line 3005.
 
-<groupe_chimie.png, id=3077, 2569.6pt x 2024.56375pt>
+<groupe_chimie.png, id=3121, 2569.6pt x 2024.56375pt>
 File: groupe_chimie.png Graphic file (type png)
 <use groupe_chimie.png>
-Package pdftex.def Info: groupe_chimie.png  used on input line 2917.
+Package pdftex.def Info: groupe_chimie.png  used on input line 3008.
 (pdftex.def)             Requested size: 385.42337pt x 303.67146pt.
-[144
+[147
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.28.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2922   \part
-              {ÈôÑÂΩï} <./groupe_chimie.png>] [145
+l.3013   \part
+              {ÈôÑÂΩï} <./groupe_chimie.png>] [148
 
 ]
 ÈôÑÂΩï A
-[146
+[149
 
 ]
 ÈôÑÂΩï B
-[147
+[150
 
 ]
 ÈôÑÂΩï C
-[148
+[151
 
 ]
 ÈôÑÂΩï D
-[149
+[152
 
 ]
 runsystem(makeindex repasser.idx)...executed safely (allowed).
 
- (./repasser.ind) [150
+ (./repasser.ind) [153
 
 
 ] (./repasser.aux)
 Package rerunfilecheck Info: File `repasser.out' has not changed.
-(rerunfilecheck)             Checksum: 0A7CA00C819C942F0FC18CACDA984A5C;47218.
+(rerunfilecheck)             Checksum: 5EAA1CE89915180483BBDCBF6B039590;48643.
  ) 
 Here is how much of TeX's memory you used:
- 19632 strings out of 476017
- 343892 string characters out of 5790772
- 1871660 words of memory out of 5000000
- 38243 multiletter control sequences out of 15000+600000
- 675332 words of font info for 636 fonts, out of 8000000 for 9000
+ 19436 strings out of 476017
+ 340311 string characters out of 5790772
+ 1875660 words of memory out of 5000000
+ 38040 multiletter control sequences out of 15000+600000
+ 676002 words of font info for 646 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 78i,16n,80p,1210b,541s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on repasser.pdf (171 pages, 2487658 bytes).
+ 78i,16n,80p,1210b,539s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><d:/latex/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on repasser.pdf (174 pages, 2511788 bytes).
 PDF statistics:
- 3960 PDF objects out of 4296 (max. 8388607)
- 3421 compressed objects within 35 object streams
- 775 named destinations out of 1000 (max. 500000)
- 3120 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4010 PDF objects out of 4296 (max. 8388607)
+ 3466 compressed objects within 35 object streams
+ 788 named destinations out of 1000 (max. 500000)
+ 3168 words of extra memory for PDF output out of 10000 (max. 10000000)
 
