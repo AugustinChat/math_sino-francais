@@ -1,0 +1,81 @@
+\ifx\allfiles\undefined
+\documentclass[12pt, a4paper, oneside]{ctexbook}
+%\usepackage{microtype}
+\usepackage{amsmath, esint,amsthm, amssymb, bm, color, framed, graphicx, imakeidx, geometry,
+hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,stmaryrd}
+%文内引用
+%插入书签:\label{myref:引用内容(英文字母,中文出现了编译错误)}
+%引用书签:\prettyref{myref:引用内容}
+
+\allowdisplaybreaks[4]
+
+%简化的指令
+%\renewcommand{\i}{\mathrm{i}}%虚数i
+\newcommand{\di }{\text{d}}%微分
+\newcommand{\pian }{\partial}%偏导数
+\newcommand{\die }{\textbf{d}}%外微分
+\newcommand{\fuyi }{^{-1}}%逆映射
+\newcommand{\card }{\text{card}}%势
+\newcommand{\R }{\mathbb{R}}%实数
+\newcommand{\Z }{\mathbb{Z}}%整数
+\newcommand{\RR }{$\R\ $}%实数(文本)
+\newcommand{\Rn }{$\R^n\ $}%实数(文本)
+\newcommand{\N }{\mathbb{N}}%自然数
+\renewcommand{\S}{\mathcal{S}}%S
+\newcommand{\fai }{\varphi}%常用的那个小phi
+\newcommand{\e }{\vec{e}}%向量e
+\newcommand{\Id }{\text{Id}}%单位元
+\newcommand{\continue }{\text{连续}}%连续
+\newcommand{\C }{\mathcal{C}}%连续函数类
+\newcommand{\Com }{\mathbb{C}}%复数
+\newcommand{\M }{\mathcal{M}}%矩阵
+\newcommand{\Hess }{\text{Hess}}%Hess矩阵
+\newcommand{\normmm}[1]{{\left\vert\kern-0.25ex\left\vert\kern-0.25ex\left\vert #1 
+   \right\vert\kern-0.25ex\right\vert\kern-0.25ex\right\vert}}%|||v|||三个竖线的范数
+%常用的文本里的字母
+\newcommand{\x }{$x$}\newcommand{\xo }{$x_0$}
+\newcommand{\y }{$y$}\newcommand{\yo }{$y_0$}
+\newcommand{\z }{$z$}\newcommand{\zo }{$z_0$}
+\newcommand{\n }{$n$}\newcommand{\f  }{$ f $}
+
+\title{
+\vspace{-2cm}
+  \begin{figure}[!t]%插入题目的图片
+    \centering
+    \includegraphics[width=14cm]{shulijichu-2.png}
+  \end{figure}
+  \vspace{-2cm}
+  {\Huge{\textbf{工程师学院数学理论基础\\
+Fondements des Théories Mathématiques de l'Ecole d'Ingénieur de Chimie Pékin\\
+第一部分:基础知识\\
+Partie I: Notions Élémentaires
+}}}
+}
+\author{Augustin}
+\date{最后更新于:\today}
+\linespread{1.5}
+\makeindex
+
+\setcounter{tocdepth}{1}%两个2说明只显示到subsection
+\setcounter{secnumdepth}{2}
+
+%\def\allfiles{}
+\begin{document}
+\newrefformat{myref}{第\ref{#1} 节}
+\vspace{-3cm}
+\maketitle
+\tableofcontents
+\else
+\part{基础知识\\ Notions Élémentaires}
+\fi
+%开始本部分正文
+\chapter{逻辑与证明\\ Logique et Démonstration}
+
+
+
+
+
+
+\ifx\allfiles\undefined
+\end{document}
+\fi

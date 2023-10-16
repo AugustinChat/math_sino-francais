@@ -1,0 +1,904 @@
+\contentsline {part}{第一部分\hspace {1em}基础知识\\ Notions Élémentaires}{1}{part.1}%
+\contentsline {chapter}{\numberline {第一章\hspace {.3em}}逻辑与证明\\ Logique et Démonstration}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}基本逻辑 Basic Logique}{2}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}命题逻辑 Logique propositionnelle}{2}{subsection.1.1.1}%
+\contentsline {subsubsection}{逻辑析取:或 la disjonction: ou}{3}{subsubsection*.2}%
+\contentsline {subsubsection}{逻辑合取:与 la conjonction: et }{3}{subsubsection*.3}%
+\contentsline {subsubsection}{逻辑否定:非 la négation: non}{3}{subsubsection*.4}%
+\contentsline {subsubsection}{逻辑蕴含 l'implication}{3}{subsubsection*.5}%
+\contentsline {subsubsection}{逻辑等价 l'équivalence}{3}{subsubsection*.6}%
+\contentsline {subsection}{\numberline {1.1.2}逻辑公理 Axiomes de la logique}{3}{subsection.1.1.2}%
+\contentsline {subsubsection}{$AL_1$}{3}{subsubsection*.7}%
+\contentsline {subsubsection}{$AL_2$}{4}{subsubsection*.8}%
+\contentsline {subsubsection}{$AL_3$}{4}{subsubsection*.9}%
+\contentsline {subsubsection}{$AL_4$}{4}{subsubsection*.10}%
+\contentsline {subsection}{\numberline {1.1.3}De Morgan定律 Lois de De Morgan}{4}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}量词 Quantificateur}{4}{subsection.1.1.4}%
+\contentsline {subsubsection}{全称量词 Quantification Universelle}{4}{subsubsection*.11}%
+\contentsline {subsubsection}{存在量词 Quantification Existentielle}{4}{subsubsection*.12}%
+\contentsline {section}{\numberline {1.2}证明 Démonstration}{5}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}逻辑变换 Transformations logiques}{5}{subsection.1.2.1}%
+\contentsline {subsubsection}{逆命题 Implication Réciproque}{5}{subsubsection*.13}%
+\contentsline {subsubsection}{否命题 }{5}{subsubsection*.14}%
+\contentsline {subsubsection}{逆否命题 Proposition Contraposée}{5}{subsubsection*.15}%
+\contentsline {subsection}{\numberline {1.2.2}三段论 Syllogisme}{5}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}举例证明 Preuve par exemple}{6}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}逆否证明 Preuve par contraposée}{6}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}反证法 Preuve par l'absurde}{6}{subsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.2.6}归纳法 Preuve par récurrence}{7}{subsection.1.2.6}%
+\contentsline {subsection}{\numberline {1.2.7}分类讨论 Preuve par cas}{7}{subsection.1.2.7}%
+\contentsline {section}{\numberline {1.3}严格逻辑公式 Formules strictes}{7}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Définition: Formule stricte}{7}{subsection.1.3.1}%
+\contentsline {subsubsection}{Exemple}{8}{subsubsection*.16}%
+\contentsline {subsection}{\numberline {1.3.2}Définition: 子公式 Sous-formule stricte}{8}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Définition: 公式的长度 Longueur d'une formule}{8}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Définition: 公式的前缀 Préfixe d'une formule}{8}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.5}括号的平衡 Équilibre des parenthèses}{9}{subsection.1.3.5}%
+\contentsline {subsection}{\numberline {1.3.6}括号的关联 Relation entre les parenthèses}{9}{subsection.1.3.6}%
+\contentsline {subsubsection}{Démonstration}{9}{subsubsection*.17}%
+\contentsline {subsection}{\numberline {1.3.7}Définition: 公式的大小 Taille d'une formule}{9}{subsection.1.3.7}%
+\contentsline {subsection}{\numberline {1.3.8}严格前缀引理 Lemme des préfixes stricts}{10}{subsection.1.3.8}%
+\contentsline {subsubsection}{Démonstration}{10}{subsubsection*.18}%
+\contentsline {subsection}{\numberline {1.3.9}Proposition}{10}{subsection.1.3.9}%
+\contentsline {subsubsection}{Démonstration}{10}{subsubsection*.19}%
+\contentsline {subsection}{\numberline {1.3.10}优先级 Priorité}{11}{subsection.1.3.10}%
+\contentsline {subsubsection}{优先级顺序 Ordre de priorité des connecteurs}{11}{subsubsection*.20}%
+\contentsline {subsubsection}{Remarque}{12}{subsubsection*.21}%
+\contentsline {section}{\numberline {1.4}公式的意义 Sens des formules}{12}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}连接词的真假 Valeur de vérité des connecteurs}{12}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}公式的值 Valeur d'une formule}{13}{subsection.1.4.2}%
+\contentsline {subsubsection}{Définition: 赋值 Assignation}{13}{subsubsection*.22}%
+\contentsline {subsubsection}{Définition: 公式的值 Valeur d'une formule}{13}{subsubsection*.23}%
+\contentsline {section}{\numberline {1.5}替换和取代 Substitution et remplacement}{14}{section.1.5}%
+\contentsline {section}{\numberline {1.6}标准形式 Formes normales}{14}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Boole代数 Algèbre de Boole}{15}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Boole函数 Fonctions booléennes}{15}{section.1.8}%
+\contentsline {section}{\numberline {1.9}二进制决策图计算器 Binary Decision Diagram based Calculator}{15}{section.1.9}%
+\contentsline {section}{\numberline {1.10}一阶逻辑 Logique du premier ordre}{15}{section.1.10}%
+\contentsline {chapter}{\numberline {第二章\hspace {.3em}}集合\\ Ensembles}{16}{chapter.2}%
+\contentsline {section}{\numberline {2.1}集合}{16}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Définition}{16}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}集合的特性}{16}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}索引族 Famille Indexée}{17}{subsection.2.1.3}%
+\contentsline {subsubsection}{Exemple}{17}{subsubsection*.24}%
+\contentsline {subsection}{\numberline {2.1.4}子集 Sous-ensemble}{17}{subsection.2.1.4}%
+\contentsline {subsubsection}{Proposition}{17}{subsubsection*.25}%
+\contentsline {subsection}{\numberline {2.1.5}幂集 Ensemble Puissance}{17}{subsection.2.1.5}%
+\contentsline {section}{\numberline {2.2}二元关系 Relation Binaire}{18}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}有序对 Couple}{18}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Définition}{18}{subsection.2.2.2}%
+\contentsline {subsubsection}{Exemple}{18}{subsubsection*.26}%
+\contentsline {subsection}{\numberline {2.2.3}关系的性质}{18}{subsection.2.2.3}%
+\contentsline {subsubsection}{自反性 Relation Réflexive}{18}{subsubsection*.27}%
+\contentsline {subsubsection}{非自反性 Relation Irréflexive}{18}{subsubsection*.28}%
+\contentsline {subsubsection}{对称性 Relation Symétrique}{19}{subsubsection*.29}%
+\contentsline {subsubsection}{反对称性 Relation Antisymétrique}{19}{subsubsection*.30}%
+\contentsline {subsubsection}{非对称性 Relation Asymétrique}{19}{subsubsection*.31}%
+\contentsline {subsubsection}{传递性 Relation Transitive}{19}{subsubsection*.32}%
+\contentsline {subsection}{\numberline {2.2.4}等价关系 Relation d'Équivalence}{19}{subsection.2.2.4}%
+\contentsline {subsubsection}{Exemple}{19}{subsubsection*.33}%
+\contentsline {subsubsection}{等价类 Classe d'Équivalence}{19}{subsubsection*.34}%
+\contentsline {subsection}{\numberline {2.2.5}序关系 Relation d'Ordre}{20}{subsection.2.2.5}%
+\contentsline {subsubsection}{全序关系 Relation d'Ordre Total}{20}{subsubsection*.35}%
+\contentsline {subsubsection}{良序关系 Relation Bien Ordonné}{20}{subsubsection*.36}%
+\contentsline {subsubsection}{偏序关系 Relation d'Ordre Partiel}{20}{subsubsection*.37}%
+\contentsline {subsubsection}{预序关系 Relation Préordre}{21}{subsubsection*.38}%
+\contentsline {section}{\numberline {2.3}集合的运算 Opérateur}{21}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}交集 Intersection}{21}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}并集 Union/Réunion}{21}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Remarque: 交集与并集的性质 Propriété de l'lntersection et de l'union}{21}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}集合的分配律 Distributivité}{22}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}补集 Complémentaire}{22}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.6}差集 Différence}{22}{subsection.2.3.6}%
+\contentsline {subsubsection}{对称差 Différence symétrique}{22}{subsubsection*.39}%
+\contentsline {subsection}{\numberline {2.3.7}笛卡尔积 Produit Cartésien}{23}{subsection.2.3.7}%
+\contentsline {subsubsection}{Exemple}{23}{subsubsection*.40}%
+\contentsline {subsection}{\numberline {2.3.8}De Morgan定律的集合形式}{23}{subsection.2.3.8}%
+\contentsline {section}{\numberline {2.4}公理化的集合论}{24}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Russell悖论}{24}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Zermelo-Fraenkel集合论:ZF公理体系}{24}{subsection.2.4.2}%
+\contentsline {subsubsection}{外延性公理 Axiome d'extensionnalité}{25}{subsubsection*.41}%
+\contentsline {subsubsection}{正规公理 Axiome de fondation/régularité}{25}{subsubsection*.42}%
+\contentsline {subsubsection}{分类公理 Schéma d'axiomes de compréhension/séparation}{25}{subsubsection*.43}%
+\contentsline {subsubsection}{配对公理 Axiome de la paire}{25}{subsubsection*.44}%
+\contentsline {subsubsection}{并集公理 Axiome de la réunion}{26}{subsubsection*.45}%
+\contentsline {subsubsection}{替换公理 Schéma d'axiomes de remplacement}{26}{subsubsection*.46}%
+\contentsline {subsubsection}{无穷公理 Axiome de l'infini}{26}{subsubsection*.47}%
+\contentsline {subsubsection}{幂集公理 Axiome de l'ensemble des parties}{26}{subsubsection*.48}%
+\contentsline {subsubsection}{良序定理 Théorème de Zermelo/du bon ordre}{27}{subsubsection*.49}%
+\contentsline {subsection}{\numberline {2.4.3}选择公理 l'Axiome du choix: ZFC公理体系}{27}{subsection.2.4.3}%
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}映射\\ Applications}{28}{chapter.3}%
+\contentsline {chapter}{\numberline {第四章\hspace {.3em}}运算与代数结构\\ Opérations et Structure Algébrique}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}运算}{29}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Définition}{29}{subsection.4.1.1}%
+\contentsline {subsubsection}{Exemple}{30}{subsubsection*.50}%
+\contentsline {subsection}{\numberline {4.1.2}结合律 Associative}{30}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}交换律 Commutative}{30}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}中性元/单位元 l'élément neutre/identité}{30}{subsection.4.1.4}%
+\contentsline {subsubsection}{Exemple}{31}{subsubsection*.51}%
+\contentsline {subsubsection}{Exemple}{31}{subsubsection*.52}%
+\contentsline {subsubsection}{Exemple}{31}{subsubsection*.53}%
+\contentsline {subsubsection}{Proposition:单位元唯一}{31}{subsubsection*.54}%
+\contentsline {subsubsection}{Démonstration}{31}{subsubsection*.55}%
+\contentsline {subsubsection}{Remarque}{31}{subsubsection*.56}%
+\contentsline {subsection}{\numberline {4.1.5}可逆元/可对称元 Symétrique}{32}{subsection.4.1.5}%
+\contentsline {section}{\numberline {4.2}符合结合律的有单位元运算}{32}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}可对称元唯一性}{32}{subsection.4.2.1}%
+\contentsline {subsubsection}{Démonstration}{32}{subsubsection*.57}%
+\contentsline {subsection}{\numberline {4.2.2}可对称的运算不变性}{32}{subsection.4.2.2}%
+\contentsline {subsubsection}{Démonstration}{33}{subsubsection*.58}%
+\contentsline {subsection}{\numberline {4.2.3}解的唯一性}{33}{subsection.4.2.3}%
+\contentsline {subsubsection}{Démonstration}{33}{subsubsection*.59}%
+\contentsline {section}{\numberline {4.3}代数结构 Structure Algébrique}{33}{section.4.3}%
+\contentsline {subsubsection}{Exemple}{33}{subsubsection*.60}%
+\contentsline {subsubsection}{Exemple}{34}{subsubsection*.61}%
+\contentsline {subsection}{\numberline {4.3.1}封闭性}{34}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}群 Groupe}{35}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Définition}{35}{subsection.4.4.1}%
+\contentsline {subsubsection}{Exemple}{35}{subsubsection*.62}%
+\contentsline {subsection}{\numberline {4.4.2}阶 Ordre}{35}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}乘法表 Table de multiplication}{36}{subsection.4.4.3}%
+\contentsline {subsubsection}{$C_3$群}{36}{subsubsection*.63}%
+\contentsline {subsection}{\numberline {4.4.4}重排定理 Théorème de réarrangement}{37}{subsection.4.4.4}%
+\contentsline {subsubsection}{Démonstration}{37}{subsubsection*.64}%
+\contentsline {subsection}{\numberline {4.4.5}生成元 Générateur}{37}{subsection.4.4.5}%
+\contentsline {subsubsection}{循环群 Groupe cyclique}{37}{subsubsection*.65}%
+\contentsline {subsubsection}{有限群的生成元与秩 Générateur et rang d'un groupe fini}{38}{subsubsection*.66}%
+\contentsline {subsubsection}{Proposition}{38}{subsubsection*.67}%
+\contentsline {section}{\numberline {4.5}从原群到群 De magma à groupe}{38}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}原群 Magma}{38}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}半群 Demi-groupe}{38}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}幺半群 Monoïde}{38}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}拟群 Quasigroupe}{39}{subsection.4.5.4}%
+\contentsline {section}{\numberline {4.6}群论基础 La Théorie Rudimentaire des Groupes}{39}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}共轭关系 Conjugaison}{40}{subsection.4.6.1}%
+\contentsline {subsubsection}{Proposition}{40}{subsubsection*.68}%
+\contentsline {subsubsection}{Démonstration}{40}{subsubsection*.69}%
+\contentsline {subsubsection}{共轭类 Action par conjugaison}{40}{subsubsection*.70}%
+\contentsline {subsubsection}{Proposition}{40}{subsubsection*.71}%
+\contentsline {subsubsection}{Proposition}{41}{subsubsection*.72}%
+\contentsline {subsubsection}{Proposition}{41}{subsubsection*.73}%
+\contentsline {subsubsection}{Proposition}{41}{subsubsection*.74}%
+\contentsline {subsubsection}{Proposition}{41}{subsubsection*.75}%
+\contentsline {subsection}{\numberline {4.6.2}子群 Sous-groupe}{41}{subsection.4.6.2}%
+\contentsline {subsubsection}{Définition}{41}{subsubsection*.76}%
+\contentsline {subsubsection}{Proposition}{41}{subsubsection*.77}%
+\contentsline {subsubsection}{Remarque}{41}{subsubsection*.78}%
+\contentsline {subsubsection}{Proposition}{42}{subsubsection*.79}%
+\contentsline {subsection}{\numberline {4.6.3}陪集 Classe suivant un sous-groupe}{42}{subsection.4.6.3}%
+\contentsline {subsubsection}{Définition}{42}{subsubsection*.80}%
+\contentsline {subsubsection}{陪集分解 Décomposition en classes suivant un sous-groupe}{42}{subsubsection*.81}%
+\contentsline {subsubsection}{Proposition}{42}{subsubsection*.82}%
+\contentsline {subsubsection}{Proposition}{42}{subsubsection*.83}%
+\contentsline {subsubsection}{Proposition}{43}{subsubsection*.84}%
+\contentsline {subsubsection}{Proposition}{43}{subsubsection*.85}%
+\contentsline {subsubsection}{Proposition}{43}{subsubsection*.86}%
+\contentsline {subsection}{\numberline {4.6.4}群论的Lagrange定理 Théorème de Lagrange}{43}{subsection.4.6.4}%
+\contentsline {subsubsection}{Démonstration}{43}{subsubsection*.87}%
+\contentsline {subsubsection}{Proposition}{43}{subsubsection*.88}%
+\contentsline {subsubsection}{Proposition}{43}{subsubsection*.89}%
+\contentsline {subsubsection}{Fermat小定理 Théorème de Fermat}{43}{subsubsection*.90}%
+\contentsline {subsubsection}{Démonstration}{44}{subsubsection*.91}%
+\contentsline {subsection}{\numberline {4.6.5}正规子群 Sous-groupe normal}{44}{subsection.4.6.5}%
+\contentsline {subsubsection}{Définition}{44}{subsubsection*.92}%
+\contentsline {subsubsection}{等价条件}{44}{subsubsection*.93}%
+\contentsline {subsection}{\numberline {4.6.6}商群 Groupe quotient}{45}{subsection.4.6.6}%
+\contentsline {subsubsection}{子群的乘法}{45}{subsubsection*.94}%
+\contentsline {subsubsection}{Définition}{45}{subsubsection*.95}%
+\contentsline {subsubsection}{Démonstration}{45}{subsubsection*.96}%
+\contentsline {subsubsection}{Proposition}{45}{subsubsection*.97}%
+\contentsline {subsubsection}{Proposition}{45}{subsubsection*.98}%
+\contentsline {subsection}{\numberline {4.6.7}同态 Homomorphisme}{46}{subsection.4.6.7}%
+\contentsline {subsubsection}{Définition}{46}{subsubsection*.99}%
+\contentsline {subsubsection}{Exemple}{46}{subsubsection*.100}%
+\contentsline {subsubsection}{Proposition}{46}{subsubsection*.101}%
+\contentsline {subsubsection}{自同态 Endomorphisme}{46}{subsubsection*.102}%
+\contentsline {subsubsection}{态射 Morphisme}{46}{subsubsection*.103}%
+\contentsline {subsection}{\numberline {4.6.8}同构 Isomorphisme}{47}{subsection.4.6.8}%
+\contentsline {subsubsection}{Proposition}{47}{subsubsection*.104}%
+\contentsline {subsubsection}{自同构 Automorphisme}{47}{subsubsection*.105}%
+\contentsline {subsubsection}{Remarque: 同构与相等}{47}{subsubsection*.106}%
+\contentsline {subsection}{\numberline {4.6.9}核 Noyau}{47}{subsection.4.6.9}%
+\contentsline {subsubsection}{Définition}{47}{subsubsection*.107}%
+\contentsline {subsubsection}{Proposition}{47}{subsubsection*.108}%
+\contentsline {subsubsection}{Proposition}{48}{subsubsection*.109}%
+\contentsline {section}{\numberline {4.7}环 Anneau}{48}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Définition}{48}{subsection.4.7.1}%
+\contentsline {subsubsection}{Exemple}{49}{subsubsection*.110}%
+\contentsline {subsubsection}{Exemple: 多项式环}{49}{subsubsection*.111}%
+\contentsline {subsubsection}{Exemple: 矩阵环}{49}{subsubsection*.112}%
+\contentsline {subsection}{\numberline {4.7.2}环的性质}{50}{subsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.7.3}特殊的环}{50}{subsection.4.7.3}%
+\contentsline {subsubsection}{整环 Anneau Intègre}{50}{subsubsection*.113}%
+\contentsline {subsubsection}{唯一分解环 Anneau Factoriel,UFD}{50}{subsubsection*.114}%
+\contentsline {subsubsection}{主理想 Idéal Principal}{50}{subsubsection*.115}%
+\contentsline {section}{\numberline {4.8}域 Corps}{51}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Définition}{51}{subsection.4.8.1}%
+\contentsline {subsubsection}{Exemple}{51}{subsubsection*.116}%
+\contentsline {subsubsection}{Exemple}{51}{subsubsection*.117}%
+\contentsline {subsection}{\numberline {4.8.2}域的性质}{51}{subsection.4.8.2}%
+\contentsline {subsubsection}{非零元素的集合}{51}{subsubsection*.118}%
+\contentsline {subsubsection}{特征 Caractéristique}{52}{subsubsection*.119}%
+\contentsline {subsubsection}{有序域 Corps Ordonné}{52}{subsubsection*.120}%
+\contentsline {subsubsection}{交换环的理想}{52}{subsubsection*.121}%
+\contentsline {chapter}{\numberline {第五章\hspace {.3em}}从自然数到有理数\\ Des nombres naturels aux nombres rationnels}{53}{chapter.5}%
+\contentsline {section}{\numberline {5.1}自然数集的公理化 Axiomatique de l'ensemble des nombres naturels}{53}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Peano公理 Axiome de Peano}{53}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}自然数集中的加法运算 Addition dans l'ensemble des nombres naturels}{54}{subsection.5.1.2}%
+\contentsline {subsubsection}{关于加法的一些结论}{55}{subsubsection*.122}%
+\contentsline {section}{\numberline {5.2}自然数集上的序关系 Relations d'ordre sur l'ensemble des nombres naturels}{56}{section.5.2}%
+\contentsline {section}{\numberline {5.3}整数集的构造 Construction de l'ensemble des nombres entiers}{56}{section.5.3}%
+\contentsline {section}{\numberline {5.4}整数集中的运算 Opérations dans l'ensemble des nombres entiers}{56}{section.5.4}%
+\contentsline {section}{\numberline {5.5}整数集上的序关系 Relations d'ordre sur l'ensemble des nombres entiers}{56}{section.5.5}%
+\contentsline {section}{\numberline {5.6}有理数集的构造 Construction de l'ensemble des nombres rationnels}{56}{section.5.6}%
+\contentsline {section}{\numberline {5.7}数域 Corps}{56}{section.5.7}%
+\contentsline {section}{\numberline {5.8}有理数域上的序关系 Relations d'ordre sur l'ensemble des nombres rationnels}{56}{section.5.8}%
+\contentsline {chapter}{\numberline {第六章\hspace {.3em}}实数\\ Nombres Reéls}{57}{chapter.6}%
+\contentsline {section}{\numberline {6.1}实数域的构造 Construction de l'ensemble des nombres réels}{57}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Dedekind分割 Coupure de Dedekind}{57}{section.6.2}%
+\contentsline {section}{\numberline {6.3}实数集上的序关系 Relations d'ordre sur l'ensemble des nombres réels}{57}{section.6.3}%
+\contentsline {section}{\numberline {6.4}实数域的完备性 Complétude de l'ensemble des nombres réels}{57}{section.6.4}%
+\contentsline {chapter}{\numberline {第七章\hspace {.3em}}可数性\\ Dénoembrabilité}{58}{chapter.7}%
+\contentsline {section}{\numberline {7.1}基数 La cardinalité}{58}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Définition}{58}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}有限集 Finite}{58}{subsection.7.1.2}%
+\contentsline {subsubsection}{Proposition}{58}{subsubsection*.123}%
+\contentsline {subsubsection}{Démonstration}{59}{subsubsection*.124}%
+\contentsline {subsection}{\numberline {7.1.3}Proposition}{59}{subsection.7.1.3}%
+\contentsline {subsubsection}{Démonstration}{59}{subsubsection*.125}%
+\contentsline {section}{\numberline {7.2}可数性 Dénoembrabilité}{59}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Définition}{59}{subsection.7.2.1}%
+\contentsline {subsubsection}{可数集的基数}{60}{subsubsection*.126}%
+\contentsline {subsection}{\numberline {7.2.2}Exemple}{60}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Proposition}{60}{subsection.7.2.3}%
+\contentsline {subsubsection}{Démonstration}{60}{subsubsection*.127}%
+\contentsline {section}{\numberline {7.3}无限集的可数性 Dénoembrabilité des ensembles infinis}{61}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Définition}{61}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Exemple}{61}{subsection.7.3.2}%
+\contentsline {subsubsection}{Démonstration}{62}{subsubsection*.128}%
+\contentsline {subsection}{\numberline {7.3.3}可数集的笛卡尔积 Countable Union of Countable Sets}{62}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}可数子集}{62}{subsection.7.3.4}%
+\contentsline {subsubsection}{Démonstration}{62}{subsubsection*.129}%
+\contentsline {subsection}{\numberline {7.3.5}最小基数 Cardinalité minimale}{63}{subsection.7.3.5}%
+\contentsline {subsubsection}{Démonstration}{63}{subsubsection*.130}%
+\contentsline {subsection}{\numberline {7.3.6}子集可数关系 }{63}{subsection.7.3.6}%
+\contentsline {subsection}{\numberline {7.3.7}Proposition:可数集可数并可数}{63}{subsection.7.3.7}%
+\contentsline {subsubsection}{Démonstration}{63}{subsubsection*.131}%
+\contentsline {subsubsection}{Remarque}{63}{subsubsection*.132}%
+\contentsline {subsubsection}{Proposition}{63}{subsubsection*.133}%
+\contentsline {subsubsection}{Proposition}{64}{subsubsection*.134}%
+\contentsline {subsection}{\numberline {7.3.8}Proposition:可数集元组可数}{64}{subsection.7.3.8}%
+\contentsline {subsubsection}{Démonstration}{64}{subsubsection*.135}%
+\contentsline {subsection}{\numberline {7.3.9}Proposition:有理数集可数}{64}{subsection.7.3.9}%
+\contentsline {subsection}{\numberline {7.3.10}Proposition:无理数集不可数}{64}{subsection.7.3.10}%
+\contentsline {subsection}{\numberline {7.3.11}Cantor-Bernstein定理 Théorème de Cantor-Bernstein}{64}{subsection.7.3.11}%
+\contentsline {section}{\numberline {7.4}代数数和超越数 Nombres algébriques et nombres transcendants}{65}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Définition}{65}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Proposition}{65}{subsection.7.4.2}%
+\contentsline {subsubsection}{Démonstration}{65}{subsubsection*.136}%
+\contentsline {section}{\numberline {7.5}连续统 Continuum}{65}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Définition}{65}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Exemple}{65}{subsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.5.3}Cantor定理 Théorème de Cantor}{66}{subsection.7.5.3}%
+\contentsline {subsubsection}{Démonstration}{66}{subsubsection*.137}%
+\contentsline {subsubsection}{Proposition}{66}{subsubsection*.138}%
+\contentsline {subsection}{\numberline {7.5.4}可数集幂集的势}{66}{subsection.7.5.4}%
+\contentsline {subsubsection}{Démonstration}{66}{subsubsection*.139}%
+\contentsline {subsection}{\numberline {7.5.5}连续统假设 Hypothèse du continu}{67}{subsection.7.5.5}%
+\contentsline {chapter}{\numberline {第八章\hspace {.3em}}复数与Euclide空间\\Nombre Complexe et Espace Euclidien}{68}{chapter.8}%
+\contentsline {chapter}{\numberline {第九章\hspace {.3em}}初等数论\\ Théorie Élémentaire des Nombres}{69}{chapter.9}%
+\contentsline {section}{\numberline {9.1}素数和最大公因子 Nombres premiers et Plus Grand Commun Diviseur}{69}{section.9.1}%
+\contentsline {section}{\numberline {9.2}同余 Congruence}{69}{section.9.2}%
+\contentsline {section}{\numberline {9.3}乘性函数 Fonction Multiplicative}{69}{section.9.3}%
+\contentsline {section}{\numberline {9.4}原根 Racine Primitive}{69}{section.9.4}%
+\contentsline {section}{\numberline {9.5}二次剩余 Quadratic Residue}{69}{section.9.5}%
+\contentsline {section}{\numberline {9.6}Gauss整数 Gauss Entier}{69}{section.9.6}%
+\contentsline {part}{第二部分\hspace {1em}数学分析里的空间\\ Espaces dans l'Analyse}{70}{part.2}%
+\contentsline {chapter}{\numberline {第十章\hspace {.3em}}数列与数项级数\\Suites et Séries}{71}{chapter.10}%
+\contentsline {chapter}{\numberline {第十一章\hspace {.3em}}$\mathbb {R}$上的一元函数\\ Fonctions d'Une Variable Réelle}{72}{chapter.11}%
+\contentsline {chapter}{\numberline {第十二章\hspace {.3em}}Riemann积分\\ Intégrale de Riemann}{73}{chapter.12}%
+\contentsline {chapter}{\numberline {第十三章\hspace {.3em}}函数列与函数项级数\\Suites et Séries de Fonctions}{74}{chapter.13}%
+\contentsline {section}{\numberline {13.1}函数列与函数项级数}{74}{section.13.1}%
+\contentsline {subsection}{\numberline {13.1.1}Définition}{74}{subsection.13.1.1}%
+\contentsline {subsection}{\numberline {13.1.2}Remarque:二者的关系}{75}{subsection.13.1.2}%
+\contentsline {section}{\numberline {13.2}逐点收敛 Convergence simple}{75}{section.13.2}%
+\contentsline {subsection}{\numberline {13.2.1}Définition}{75}{subsection.13.2.1}%
+\contentsline {subsection}{\numberline {13.2.2}Proposition:逐点收敛的算子交换}{75}{subsection.13.2.2}%
+\contentsline {subsubsection}{极限算子}{76}{subsubsection*.140}%
+\contentsline {subsubsection}{求导算子}{76}{subsubsection*.141}%
+\contentsline {subsubsection}{Riemann积分算子}{76}{subsubsection*.142}%
+\contentsline {section}{\numberline {13.3}一致收敛 Convergence uniforme}{76}{section.13.3}%
+\contentsline {subsection}{\numberline {13.3.1}界 La borne}{76}{subsection.13.3.1}%
+\contentsline {subsubsection}{Définition}{76}{subsubsection*.143}%
+\contentsline {subsubsection}{Remarque:有界}{77}{subsubsection*.144}%
+\contentsline {subsection}{\numberline {13.3.2}Définition}{77}{subsection.13.3.2}%
+\contentsline {subsection}{\numberline {13.3.3}Proposition:连续性的传递}{77}{subsection.13.3.3}%
+\contentsline {subsection}{\numberline {13.3.4}Proposition:等价条件}{77}{subsection.13.3.4}%
+\contentsline {subsection}{\numberline {13.3.5}判断一致收敛}{78}{subsection.13.3.5}%
+\contentsline {subsubsection}{方法1.}{78}{subsubsection*.145}%
+\contentsline {subsubsection}{方法2.}{78}{subsubsection*.146}%
+\contentsline {subsection}{\numberline {13.3.6}Proposition: 一致收敛的算子交换}{78}{subsection.13.3.6}%
+\contentsline {subsubsection}{极限算子1.}{78}{subsubsection*.147}%
+\contentsline {subsubsection}{极限算子2.}{79}{subsubsection*.148}%
+\contentsline {subsubsection}{Riemann 积分算子}{79}{subsubsection*.149}%
+\contentsline {subsubsection}{求导算子}{79}{subsubsection*.150}%
+\contentsline {section}{\numberline {13.4}依范数收敛 Convergence normale}{79}{section.13.4}%
+\contentsline {subsection}{\numberline {13.4.1}Définition}{80}{subsection.13.4.1}%
+\contentsline {subsection}{\numberline {13.4.2}Remarque:一致收敛与依范数收敛}{80}{subsection.13.4.2}%
+\contentsline {subsection}{\numberline {13.4.3}Proposition}{80}{subsection.13.4.3}%
+\contentsline {chapter}{\numberline {第十四章\hspace {.3em}}一致收敛判别法}{81}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Cauchy判别法}{81}{section.14.1}%
+\contentsline {subsubsection}{Proposition:收敛于0}{81}{subsubsection*.151}%
+\contentsline {subsubsection}{Proposition:绝对收敛}{81}{subsubsection*.152}%
+\contentsline {section}{\numberline {14.2}Weierstrass判别法}{82}{section.14.2}%
+\contentsline {section}{\numberline {14.3}Abel-Dirichlet判别法}{82}{section.14.3}%
+\contentsline {subsection}{\numberline {14.3.1}Dirichlet判别法}{82}{subsection.14.3.1}%
+\contentsline {subsection}{\numberline {14.3.2}Abel判别法}{82}{subsection.14.3.2}%
+\contentsline {chapter}{\numberline {第十五章\hspace {.3em}}度量空间\\Espace métrique}{83}{chapter.15}%
+\contentsline {section}{\numberline {15.1}度量空间}{83}{section.15.1}%
+\contentsline {subsection}{\numberline {15.1.1}Définition}{83}{subsection.15.1.1}%
+\contentsline {subsection}{\numberline {15.1.2}Exemple: $\mathbb {R}$上的绝对值}{84}{subsection.15.1.2}%
+\contentsline {subsection}{\numberline {15.1.3}Exemple:离散度量}{84}{subsection.15.1.3}%
+\contentsline {subsection}{\numberline {15.1.4}Exemple: Levenshtein度量}{84}{subsection.15.1.4}%
+\contentsline {section}{\numberline {15.2}度量空间中的点与集合}{85}{section.15.2}%
+\contentsline {subsection}{\numberline {15.2.1}有界集与无界集}{85}{subsection.15.2.1}%
+\contentsline {subsection}{\numberline {15.2.2}Proposition:有界集有限并有界}{85}{subsection.15.2.2}%
+\contentsline {subsubsection}{Démonstration}{85}{subsubsection*.153}%
+\contentsline {subsubsection}{Remarque}{85}{subsubsection*.154}%
+\contentsline {subsection}{\numberline {15.2.3}邻域 Le voisinage}{85}{subsection.15.2.3}%
+\contentsline {subsection}{\numberline {15.2.4}极限点}{86}{subsection.15.2.4}%
+\contentsline {subsubsection}{Exemple}{86}{subsubsection*.155}%
+\contentsline {subsubsection}{Proposition}{86}{subsubsection*.156}%
+\contentsline {subsubsection}{Proposition}{86}{subsubsection*.157}%
+\contentsline {subsection}{\numberline {15.2.5}闭集}{86}{subsection.15.2.5}%
+\contentsline {subsection}{\numberline {15.2.6}内点}{86}{subsection.15.2.6}%
+\contentsline {subsection}{\numberline {15.2.7}稠密集 La densité}{87}{subsection.15.2.7}%
+\contentsline {subsubsection}{Proposition}{87}{subsubsection*.158}%
+\contentsline {subsubsection}{Proposition}{87}{subsubsection*.159}%
+\contentsline {subsection}{\numberline {15.2.8}完备集}{87}{subsection.15.2.8}%
+\contentsline {subsubsection}{Exemple}{87}{subsubsection*.160}%
+\contentsline {subsubsection}{Proposition}{87}{subsubsection*.161}%
+\contentsline {section}{\numberline {15.3}开集与闭集的性质}{88}{section.15.3}%
+\contentsline {subsection}{\numberline {15.3.1}开集}{88}{subsection.15.3.1}%
+\contentsline {subsubsection}{Exemple}{88}{subsubsection*.162}%
+\contentsline {subsection}{\numberline {15.3.2}Proposition:邻域是开集}{88}{subsection.15.3.2}%
+\contentsline {subsubsection}{Démonstration}{88}{subsubsection*.163}%
+\contentsline {subsection}{\numberline {15.3.3}开集的补集}{89}{subsection.15.3.3}%
+\contentsline {subsubsection}{Démonstration}{89}{subsubsection*.164}%
+\contentsline {subsubsection}{Proposition}{89}{subsubsection*.165}%
+\contentsline {subsection}{\numberline {15.3.4}Proposition: 开集的无限并与并集的无限交}{89}{subsection.15.3.4}%
+\contentsline {subsection}{\numberline {15.3.5}Proposition: 开集的有限交与并集的有限并}{89}{subsection.15.3.5}%
+\contentsline {subsection}{\numberline {15.3.6}闭包 L'adhérence}{90}{subsection.15.3.6}%
+\contentsline {subsubsection}{Exemple}{90}{subsubsection*.166}%
+\contentsline {subsubsection}{Remarque}{90}{subsubsection*.167}%
+\contentsline {subsection}{\numberline {15.3.7}Proposition}{90}{subsection.15.3.7}%
+\contentsline {subsection}{\numberline {15.3.8}Proposition}{90}{subsection.15.3.8}%
+\contentsline {subsection}{\numberline {15.3.9}Proposition}{90}{subsection.15.3.9}%
+\contentsline {subsubsection}{Démonstration}{91}{subsubsection*.168}%
+\contentsline {subsubsection}{Remarque}{91}{subsubsection*.169}%
+\contentsline {section}{\numberline {15.4}相对开集/相对闭集}{91}{section.15.4}%
+\contentsline {subsubsection}{Exemple}{91}{subsubsection*.170}%
+\contentsline {subsection}{\numberline {15.4.1}相对开集}{91}{subsection.15.4.1}%
+\contentsline {subsection}{\numberline {15.4.2}Proposition}{91}{subsection.15.4.2}%
+\contentsline {subsection}{\numberline {15.4.3}相对闭集}{92}{subsection.15.4.3}%
+\contentsline {section}{\numberline {15.5}紧集}{92}{section.15.5}%
+\contentsline {subsection}{\numberline {15.5.1}开覆盖}{92}{subsection.15.5.1}%
+\contentsline {subsubsection}{有限子覆盖}{92}{subsubsection*.171}%
+\contentsline {subsection}{\numberline {15.5.2}紧集}{92}{subsection.15.5.2}%
+\contentsline {subsection}{\numberline {15.5.3}相对紧致}{92}{subsection.15.5.3}%
+\contentsline {subsection}{\numberline {15.5.4}紧集的性质}{92}{subsection.15.5.4}%
+\contentsline {section}{\numberline {15.6}Heine-Borel定理}{92}{section.15.6}%
+\contentsline {subsection}{\numberline {15.6.1}闭区间套性质}{93}{subsection.15.6.1}%
+\contentsline {subsubsection}{Démonstration}{93}{subsubsection*.172}%
+\contentsline {subsection}{\numberline {15.6.2}$k$维格子}{93}{subsection.15.6.2}%
+\contentsline {subsubsection}{Exemple}{93}{subsubsection*.173}%
+\contentsline {subsection}{\numberline {15.6.3}$k$维格子的嵌套性质}{94}{subsection.15.6.3}%
+\contentsline {subsubsection}{Démonstration}{94}{subsubsection*.174}%
+\contentsline {subsection}{\numberline {15.6.4}$k$维格子的紧致性}{94}{subsection.15.6.4}%
+\contentsline {subsubsection}{Démonstration}{94}{subsubsection*.175}%
+\contentsline {subsection}{\numberline {15.6.5}Proposition}{94}{subsection.15.6.5}%
+\contentsline {subsection}{\numberline {15.6.6}Heine-Borel定理}{94}{subsection.15.6.6}%
+\contentsline {subsubsection}{Démonstration}{94}{subsubsection*.176}%
+\contentsline {subsection}{\numberline {15.6.7}实紧集的极限点}{95}{subsection.15.6.7}%
+\contentsline {subsubsection}{Démonstration}{95}{subsubsection*.177}%
+\contentsline {subsection}{\numberline {15.6.8}Weierstrass定理}{95}{subsection.15.6.8}%
+\contentsline {section}{\numberline {15.7}完备集与连通集}{95}{section.15.7}%
+\contentsline {subsection}{\numberline {15.7.1}Cantor三分集}{95}{subsection.15.7.1}%
+\contentsline {subsection}{\numberline {15.7.2}分离集}{95}{subsection.15.7.2}%
+\contentsline {section}{\numberline {15.8}压缩映射 Applications contractante}{95}{section.15.8}%
+\contentsline {chapter}{\numberline {第十六章\hspace {.3em}}赋范空间\\Espace Vectoriel Normé}{96}{chapter.16}%
+\contentsline {section}{\numberline {16.1}范数 La norme}{96}{section.16.1}%
+\contentsline {subsection}{\numberline {16.1.1}Définition}{96}{subsection.16.1.1}%
+\contentsline {subsection}{\numberline {16.1.2}Remarque:线性}{97}{subsection.16.1.2}%
+\contentsline {subsection}{\numberline {16.1.3}Proposition:范数诱导的度量}{97}{subsection.16.1.3}%
+\contentsline {subsection}{\numberline {16.1.4}平移不变性}{97}{subsection.16.1.4}%
+\contentsline {section}{\numberline {16.2}$L^P$范数}{97}{section.16.2}%
+\contentsline {subsection}{\numberline {16.2.1}Définition}{97}{subsection.16.2.1}%
+\contentsline {subsection}{\numberline {16.2.2}开球 La boule ouverte}{98}{subsection.16.2.2}%
+\contentsline {subsubsection}{Définition}{98}{subsubsection*.178}%
+\contentsline {subsection}{\numberline {16.2.3}单位球与等距线}{98}{subsection.16.2.3}%
+\contentsline {subsection}{\numberline {16.2.4}函数空间上的$L^P$范数}{99}{subsection.16.2.4}%
+\contentsline {subsubsection}{Définition}{99}{subsubsection*.179}%
+\contentsline {subsubsection}{Remarque}{99}{subsubsection*.180}%
+\contentsline {section}{\numberline {16.3}空间的完备化}{99}{section.16.3}%
+\contentsline {subsection}{\numberline {16.3.1}实数：七个等价命题}{99}{subsection.16.3.1}%
+\contentsline {subsection}{\numberline {16.3.2}收敛}{100}{subsection.16.3.2}%
+\contentsline {subsubsection}{Définition}{100}{subsubsection*.181}%
+\contentsline {subsection}{\numberline {16.3.3}Proposition}{101}{subsection.16.3.3}%
+\contentsline {subsection}{\numberline {16.3.4}Proposition}{101}{subsection.16.3.4}%
+\contentsline {subsection}{\numberline {16.3.5}Cauchy列与收敛}{101}{subsection.16.3.5}%
+\contentsline {subsubsection}{Définition}{101}{subsubsection*.182}%
+\contentsline {subsubsection}{Proposition}{101}{subsubsection*.183}%
+\contentsline {subsubsection}{Proposition}{101}{subsubsection*.184}%
+\contentsline {subsubsection}{Proposition}{101}{subsubsection*.185}%
+\contentsline {subsection}{\numberline {16.3.6}再论闭包与稠密集}{102}{subsection.16.3.6}%
+\contentsline {subsubsection}{闭包}{102}{subsubsection*.186}%
+\contentsline {subsubsection}{Proposition}{102}{subsubsection*.187}%
+\contentsline {subsubsection}{稠密集}{102}{subsubsection*.188}%
+\contentsline {subsubsection}{Bonus}{102}{subsubsection*.189}%
+\contentsline {subsection}{\numberline {16.3.7}完备空间与完备化 }{103}{subsection.16.3.7}%
+\contentsline {subsubsection}{Définition}{103}{subsubsection*.190}%
+\contentsline {section}{\numberline {16.4}等价度量与等价范数 }{103}{section.16.4}%
+\contentsline {subsection}{\numberline {16.4.1}双Lipschitz条件 }{103}{subsection.16.4.1}%
+\contentsline {subsection}{\numberline {16.4.2}等价范数 La norme équivalente}{103}{subsection.16.4.2}%
+\contentsline {subsubsection}{Définition}{103}{subsubsection*.191}%
+\contentsline {subsubsection}{Remarque}{104}{subsubsection*.192}%
+\contentsline {subsubsection}{Proposition}{104}{subsubsection*.193}%
+\contentsline {chapter}{\numberline {第十七章\hspace {.3em}}内积 Produit Scalaire}{105}{chapter.17}%
+\contentsline {subsection}{\numberline {17.0.1}Définition}{105}{subsection.17.0.1}%
+\contentsline {subsection}{\numberline {17.0.2}Cauchy-Schwatz不等式}{105}{subsection.17.0.2}%
+\contentsline {subsection}{\numberline {17.0.3}内积诱导的范数}{105}{subsection.17.0.3}%
+\contentsline {subsection}{\numberline {17.0.4}平行四边形等式}{105}{subsection.17.0.4}%
+\contentsline {chapter}{\numberline {第十八章\hspace {.3em}}拓扑空间\\ Espace Topologique}{106}{chapter.18}%
+\contentsline {section}{\numberline {18.1}拓扑空间}{106}{section.18.1}%
+\contentsline {subsection}{\numberline {18.1.1}Définition}{106}{subsection.18.1.1}%
+\contentsline {subsection}{\numberline {18.1.2}Remarque:其他的公理化}{107}{subsection.18.1.2}%
+\contentsline {subsection}{\numberline {18.1.3}Proposition:闭集}{107}{subsection.18.1.3}%
+\contentsline {subsection}{\numberline {18.1.4}Exemple}{107}{subsection.18.1.4}%
+\contentsline {subsection}{\numberline {18.1.5}离散拓扑 Topologie discrète}{107}{subsection.18.1.5}%
+\contentsline {subsection}{\numberline {18.1.6}密着拓扑 Topologie grossiète}{107}{subsection.18.1.6}%
+\contentsline {subsection}{\numberline {18.1.7}度量诱导的拓扑}{108}{subsection.18.1.7}%
+\contentsline {subsection}{\numberline {18.1.8}有限补拓扑 Topologie des compléments finis}{108}{subsection.18.1.8}%
+\contentsline {subsection}{\numberline {18.1.9}子空间拓扑}{108}{subsection.18.1.9}%
+\contentsline {subsubsection}{Démonstration}{108}{subsubsection*.194}%
+\contentsline {subsubsection}{Exemple}{108}{subsubsection*.195}%
+\contentsline {section}{\numberline {18.2}拓扑空间里的点集}{109}{section.18.2}%
+\contentsline {subsection}{\numberline {18.2.1}邻域}{109}{subsection.18.2.1}%
+\contentsline {subsection}{\numberline {18.2.2}内点}{109}{subsection.18.2.2}%
+\contentsline {subsection}{\numberline {18.2.3}极限点与闭包点}{109}{subsection.18.2.3}%
+\contentsline {subsection}{\numberline {18.2.4}外点与边界点}{109}{subsection.18.2.4}%
+\contentsline {subsection}{\numberline {18.2.5}熟悉的命题}{110}{subsection.18.2.5}%
+\contentsline {subsubsection}{Démonstration}{110}{subsubsection*.196}%
+\contentsline {section}{\numberline {18.3}拓扑空间里的收敛 }{110}{section.18.3}%
+\contentsline {subsection}{\numberline {18.3.1}Définition}{110}{subsection.18.3.1}%
+\contentsline {subsubsection}{Exemple}{110}{subsubsection*.197}%
+\contentsline {subsubsection}{Remarque:收敛不唯一}{111}{subsubsection*.198}%
+\contentsline {subsection}{\numberline {18.3.2}Hausdorff条件:$T_2$公理}{111}{subsection.18.3.2}%
+\contentsline {subsubsection}{Proposition}{111}{subsubsection*.199}%
+\contentsline {subsubsection}{Démonstration}{112}{subsubsection*.200}%
+\contentsline {subsubsection}{Proposition}{112}{subsubsection*.201}%
+\contentsline {subsection}{\numberline {18.3.3}Hausdorff空间里的闭集}{112}{subsection.18.3.3}%
+\contentsline {subsubsection}{Démonstration}{112}{subsubsection*.202}%
+\contentsline {subsubsection}{Proposition}{112}{subsubsection*.203}%
+\contentsline {subsubsection}{Proposition}{113}{subsubsection*.204}%
+\contentsline {subsection}{\numberline {18.3.4}Fréchet条件:$T_1$公理}{113}{subsection.18.3.4}%
+\contentsline {subsection}{\numberline {18.3.5}$T_0$公理与Kolmogorov体系}{113}{subsection.18.3.5}%
+\contentsline {section}{\numberline {18.4}拓扑公理体系 Systeme d'axiomes topologiques}{114}{section.18.4}%
+\contentsline {subsection}{\numberline {18.4.1}$T_0$ Kolmogorov 公理 Axiome de Kolmogorov}{114}{subsection.18.4.1}%
+\contentsline {subsection}{\numberline {18.4.2}$T_1$ 公理 Axiome de Fréchet}{114}{subsection.18.4.2}%
+\contentsline {subsection}{\numberline {18.4.3}$T_2$ Hausdorff 公理 Axiome de Hausdorff}{114}{subsection.18.4.3}%
+\contentsline {subsection}{\numberline {18.4.4}$T_3$ 正规公理 Axiome régulier}{114}{subsection.18.4.4}%
+\contentsline {subsection}{\numberline {18.4.5}$T_4$ 公理 Axiome complètement régulier}{114}{subsection.18.4.5}%
+\contentsline {subsection}{\numberline {18.4.6}$T_5$ 公理 Axiome complètement régulier de Hausdorff}{114}{subsection.18.4.6}%
+\contentsline {subsection}{\numberline {18.4.7}$T_6$ 公理 Axiome dénombrable}{114}{subsection.18.4.7}%
+\contentsline {subsection}{\numberline {18.4.8}$T_7$ 公理 Premier axiome dénombrable}{114}{subsection.18.4.8}%
+\contentsline {subsection}{\numberline {18.4.9}$T_8$ 公理 Deuxième axiome dénombrable}{114}{subsection.18.4.9}%
+\contentsline {subsection}{\numberline {18.4.10}$T_9$ 公理 Axiome de Lindelöf}{114}{subsection.18.4.10}%
+\contentsline {section}{\numberline {18.5}连续性与映射}{114}{section.18.5}%
+\contentsline {subsection}{\numberline {18.5.1}Définition}{114}{subsection.18.5.1}%
+\contentsline {subsection}{\numberline {18.5.2}拓扑的选择与连续性}{115}{subsection.18.5.2}%
+\contentsline {subsection}{\numberline {18.5.3}由公理推导而来的等价命题}{115}{subsection.18.5.3}%
+\contentsline {subsubsection}{Démonstration}{115}{subsubsection*.205}%
+\contentsline {subsection}{\numberline {18.5.4}Exemple}{116}{subsection.18.5.4}%
+\contentsline {subsubsection}{常值映射 }{116}{subsubsection*.206}%
+\contentsline {subsubsection}{包含映射 }{116}{subsubsection*.207}%
+\contentsline {subsubsection}{复合映射 }{116}{subsubsection*.208}%
+\contentsline {subsubsection}{限制映射 }{117}{subsubsection*.209}%
+\contentsline {subsubsection}{陪域缩小}{117}{subsubsection*.210}%
+\contentsline {subsubsection}{陪域扩大}{117}{subsubsection*.211}%
+\contentsline {subsection}{\numberline {18.5.5}局部表示与粘接原理 }{118}{subsection.18.5.5}%
+\contentsline {subsubsection}{Démonstration}{118}{subsubsection*.212}%
+\contentsline {section}{\numberline {18.6}同胚 Homeomorphisme}{119}{section.18.6}%
+\contentsline {subsection}{\numberline {18.6.1}Définition}{119}{subsection.18.6.1}%
+\contentsline {subsection}{\numberline {18.6.2}Exemple}{119}{subsection.18.6.2}%
+\contentsline {subsection}{\numberline {18.6.3}Remarque}{119}{subsection.18.6.3}%
+\contentsline {subsection}{\numberline {18.6.4}Exemple: 反例}{120}{subsection.18.6.4}%
+\contentsline {subsection}{\numberline {18.6.5}Proposition}{120}{subsection.18.6.5}%
+\contentsline {subsection}{\numberline {18.6.6}Exemple: 反例}{120}{subsection.18.6.6}%
+\contentsline {subsection}{\numberline {18.6.7}Proposition}{121}{subsection.18.6.7}%
+\contentsline {section}{\numberline {18.7}紧致性与列紧性 Compacité et séquentialité}{121}{section.18.7}%
+\contentsline {subsection}{\numberline {18.7.1}拓扑不变量 Topological invariant}{121}{subsection.18.7.1}%
+\contentsline {subsection}{\numberline {18.7.2}Remarque}{121}{subsection.18.7.2}%
+\contentsline {subsection}{\numberline {18.7.3}Définition: 紧致}{122}{subsection.18.7.3}%
+\contentsline {subsection}{\numberline {18.7.4}Définition: 序列紧致}{122}{subsection.18.7.4}%
+\contentsline {subsection}{\numberline {18.7.5}Remarque}{122}{subsection.18.7.5}%
+\contentsline {subsection}{\numberline {18.7.6}Proposition}{122}{subsection.18.7.6}%
+\contentsline {subsection}{\numberline {18.7.7}Exemple}{123}{subsection.18.7.7}%
+\contentsline {subsubsection}{1. $\mathbb {R}$既不紧,也不列紧}{123}{subsubsection*.213}%
+\contentsline {subsubsection}{2. $(0,1]$既不紧,也不列紧}{123}{subsubsection*.214}%
+\contentsline {subsubsection}{3. $\{0\}\cup \{\frac {1}{n}|n\in \mathbb {N}\}$既紧,也列紧}{123}{subsubsection*.215}%
+\contentsline {subsection}{\numberline {18.7.8}紧集的投影}{124}{subsection.18.7.8}%
+\contentsline {subsection}{\numberline {18.7.9}Proposition}{124}{subsection.18.7.9}%
+\contentsline {subsection}{\numberline {18.7.10}Proposition}{124}{subsection.18.7.10}%
+\contentsline {section}{\numberline {18.8}闭集刻画的紧致集}{124}{section.18.8}%
+\contentsline {subsection}{\numberline {18.8.1}Remarque: 有限交性质}{124}{subsection.18.8.1}%
+\contentsline {subsection}{\numberline {18.8.2}Proposition}{125}{subsection.18.8.2}%
+\contentsline {subsubsection}{Démonstration}{125}{subsubsection*.216}%
+\contentsline {subsection}{\numberline {18.8.3}Proposition}{125}{subsection.18.8.3}%
+\contentsline {subsubsection}{Démonstration}{125}{subsubsection*.217}%
+\contentsline {subsection}{\numberline {18.8.4}Proposition}{125}{subsection.18.8.4}%
+\contentsline {subsubsection}{Démonstration}{125}{subsubsection*.218}%
+\contentsline {subsubsection}{Exemple: 反例}{125}{subsubsection*.219}%
+\contentsline {section}{\numberline {18.9}同伦 Homotopie}{126}{section.18.9}%
+\contentsline {section}{\numberline {18.10}拓扑不变量 Topologie invariante}{126}{section.18.10}%
+\contentsline {section}{\numberline {18.11}连通集 Connexité}{126}{section.18.11}%
+\contentsline {part}{第三部分\hspace {1em}代数与矩阵\\ Algèbre et Matrice}{127}{part.3}%
+\contentsline {chapter}{\numberline {第十九章\hspace {.3em}}线性空间 \\Espace Vectoriel}{128}{chapter.19}%
+\contentsline {chapter}{\numberline {第二十章\hspace {.3em}}多项式理论\\ Théorie des Polynômes}{129}{chapter.20}%
+\contentsline {chapter}{\numberline {第二十一章\hspace {.3em}}矩阵 \\ Matrice}{130}{chapter.21}%
+\contentsline {chapter}{\numberline {第二十二章\hspace {.3em}}矩阵的简化\\Reduction}{131}{chapter.22}%
+\contentsline {section}{\numberline {22.1}特征值与特征向量 Vecteurs Propres et Valeurs Propres}{131}{section.22.1}%
+\contentsline {subsection}{\numberline {22.1.1}Définition}{131}{subsection.22.1.1}%
+\contentsline {subsubsection}{Remarque}{132}{subsubsection*.220}%
+\contentsline {subsection}{\numberline {22.1.2}Proposition:特征空间的性质}{132}{subsection.22.1.2}%
+\contentsline {subsubsection}{线性子空间}{132}{subsubsection*.221}%
+\contentsline {subsubsection}{核空间}{132}{subsubsection*.222}%
+\contentsline {subsubsection}{非零维度}{132}{subsubsection*.223}%
+\contentsline {section}{\numberline {22.2}特征多项式 Polynôme caractéristique}{133}{section.22.2}%
+\contentsline {subsection}{\numberline {22.2.1}Définition}{133}{subsection.22.2.1}%
+\contentsline {subsubsection}{Démonstration}{133}{subsubsection*.224}%
+\contentsline {subsection}{\numberline {22.2.2}Remarque:域上的特征值}{134}{subsection.22.2.2}%
+\contentsline {subsection}{\numberline {22.2.3}二阶特征多项式}{134}{subsection.22.2.3}%
+\contentsline {subsection}{\numberline {22.2.4}秩为1的自同态}{134}{subsection.22.2.4}%
+\contentsline {subsection}{\numberline {22.2.5}多项式的分裂域}{134}{subsection.22.2.5}%
+\contentsline {subsubsection}{Définition}{135}{subsubsection*.225}%
+\contentsline {subsubsection}{Exemple 1}{135}{subsubsection*.226}%
+\contentsline {subsubsection}{Exemple 2}{135}{subsubsection*.227}%
+\contentsline {subsection}{\numberline {22.2.6}代数重数La multiplicité}{135}{subsection.22.2.6}%
+\contentsline {subsubsection}{Définition}{135}{subsubsection*.228}%
+\contentsline {subsubsection}{Exemple 1}{136}{subsubsection*.229}%
+\contentsline {section}{\numberline {22.3}相似矩阵 Matrice semblable}{136}{section.22.3}%
+\contentsline {subsection}{\numberline {22.3.1}Définition}{136}{subsection.22.3.1}%
+\contentsline {subsubsection}{Remarque}{136}{subsubsection*.230}%
+\contentsline {subsection}{\numberline {22.3.2}Proposition:相似矩阵的特征多项式相等}{136}{subsection.22.3.2}%
+\contentsline {subsubsection}{Démonstration}{137}{subsubsection*.231}%
+\contentsline {subsubsection}{Proposition}{137}{subsubsection*.232}%
+\contentsline {subsection}{\numberline {22.3.3}Remarque:特征多项式相等不一定相似}{137}{subsection.22.3.3}%
+\contentsline {subsection}{\numberline {22.3.4}Proposition}{137}{subsection.22.3.4}%
+\contentsline {subsubsection}{Démonstration}{138}{subsubsection*.233}%
+\contentsline {section}{\numberline {22.4}对角化 Diagonalisation}{138}{section.22.4}%
+\contentsline {subsection}{\numberline {22.4.1}对角矩阵 Matrice diagonale}{138}{subsection.22.4.1}%
+\contentsline {subsubsection}{Définition}{138}{subsubsection*.234}%
+\contentsline {subsubsection}{Exemple}{138}{subsubsection*.235}%
+\contentsline {subsection}{\numberline {22.4.2}可对角化的 Diagonalisable}{138}{subsection.22.4.2}%
+\contentsline {subsubsection}{Définition}{138}{subsubsection*.236}%
+\contentsline {subsubsection}{对角化 diagonaliser}{139}{subsubsection*.237}%
+\contentsline {subsection}{\numberline {22.4.3}直和 La somme directe}{139}{subsection.22.4.3}%
+\contentsline {subsubsection}{子空间的和}{139}{subsubsection*.238}%
+\contentsline {subsubsection}{Définition}{139}{subsubsection*.239}%
+\contentsline {subsubsection}{Exemple}{139}{subsubsection*.240}%
+\contentsline {subsubsection}{Proposition:两个子空间的直和}{140}{subsubsection*.241}%
+\contentsline {subsubsection}{Proposition:直和的维度}{140}{subsubsection*.242}%
+\contentsline {section}{\numberline {22.5}判断可对角化Critères de diagonalisabilité}{140}{section.22.5}%
+\contentsline {subsection}{\numberline {22.5.1}特征空间直和}{140}{subsection.22.5.1}%
+\contentsline {subsection}{\numberline {22.5.2}自同态的可对角化与直和}{140}{subsection.22.5.2}%
+\contentsline {subsection}{\numberline {22.5.3}矩阵的可对角化与直和}{141}{subsection.22.5.3}%
+\contentsline {subsection}{\numberline {22.5.4}Proposition:势与可对角化}{141}{subsection.22.5.4}%
+\contentsline {subsection}{\numberline {22.5.5}对角化过程}{141}{subsection.22.5.5}%
+\contentsline {section}{\numberline {22.6}实对称矩阵 Matrice symétrique réelle}{141}{section.22.6}%
+\contentsline {subsection}{\numberline {22.6.1}Définition}{141}{subsection.22.6.1}%
+\contentsline {subsection}{\numberline {22.6.2}实特征值}{142}{subsection.22.6.2}%
+\contentsline {subsubsection}{Démonstration}{142}{subsubsection*.243}%
+\contentsline {subsection}{\numberline {22.6.3}特征向量的正交}{142}{subsection.22.6.3}%
+\contentsline {subsubsection}{Démonstration}{142}{subsubsection*.244}%
+\contentsline {section}{\numberline {22.7}零化多项式 Polynôme annulateur}{143}{section.22.7}%
+\contentsline {subsection}{\numberline {22.7.1}Définition}{143}{subsection.22.7.1}%
+\contentsline {subsection}{\numberline {22.7.2}Cayley-Hamilton定理}{143}{subsection.22.7.2}%
+\contentsline {subsubsection}{Démonstration}{144}{subsubsection*.245}%
+\contentsline {subsection}{\numberline {22.7.3}相似矩阵的零化多项式}{144}{subsection.22.7.3}%
+\contentsline {subsection}{\numberline {22.7.4}零化多项式的简单根}{145}{subsection.22.7.4}%
+\contentsline {chapter}{\numberline {第二十三章\hspace {.3em}}二次曲面 Surface du second degré}{146}{chapter.23}%
+\contentsline {subsection}{\numberline {23.0.1}Définition}{146}{subsection.23.0.1}%
+\contentsline {subsection}{\numberline {23.0.2}三元二次曲面}{146}{subsection.23.0.2}%
+\contentsline {subsubsection}{椭球面类}{146}{subsubsection*.246}%
+\contentsline {subsubsection}{双曲面/锥面类}{146}{subsubsection*.247}%
+\contentsline {subsubsection}{抛物面类}{147}{subsubsection*.248}%
+\contentsline {subsection}{\numberline {23.0.3}二元二次曲面}{147}{subsection.23.0.3}%
+\contentsline {subsection}{\numberline {23.0.4}一元二次曲面}{147}{subsection.23.0.4}%
+\contentsline {chapter}{\numberline {第二十四章\hspace {.3em}}张量 Tensor}{148}{chapter.24}%
+\contentsline {part}{第四部分\hspace {1em}微积分理论\\ Calcul Differentiel et Calcul Intégral}{149}{part.4}%
+\contentsline {chapter}{\numberline {第二十五章\hspace {.3em}}多元函数微分学\\ Différenciation Multifonctionnelle}{150}{chapter.25}%
+\contentsline {section}{\numberline {25.1}可微函数 Fonction Différentiable}{150}{section.25.1}%
+\contentsline {subsection}{\numberline {25.1.1}Définition}{150}{subsection.25.1.1}%
+\contentsline {subsubsection}{可微一定连续}{151}{subsubsection*.249}%
+\contentsline {subsection}{\numberline {25.1.2}微分 Différentielle}{151}{subsection.25.1.2}%
+\contentsline {subsubsection}{Proposition}{151}{subsubsection*.250}%
+\contentsline {subsection}{\numberline {25.1.3}连续可微 Continûment Différentiable}{152}{subsection.25.1.3}%
+\contentsline {section}{\numberline {25.2}$\mathbb {R}^n$上的微分 Différentielle sur $\mathbb {R}^n$}{152}{section.25.2}%
+\contentsline {subsection}{\numberline {25.2.1}$\mathbb {R}^n$上的可微函数 }{152}{subsection.25.2.1}%
+\contentsline {subsection}{\numberline {25.2.2}偏导数 Dérivées partielles}{152}{subsection.25.2.2}%
+\contentsline {subsection}{\numberline {25.2.3}偏导与微分}{153}{subsection.25.2.3}%
+\contentsline {subsubsection}{Proposition}{153}{subsubsection*.251}%
+\contentsline {subsection}{\numberline {25.2.4}线性主部}{154}{subsection.25.2.4}%
+\contentsline {subsection}{\numberline {25.2.5}Remarque: 偏导数不可看作两项相除}{154}{subsection.25.2.5}%
+\contentsline {subsubsection}{Exemple}{154}{subsubsection*.252}%
+\contentsline {subsection}{\numberline {25.2.6}Exemple: Vandermonde 行列式}{155}{subsection.25.2.6}%
+\contentsline {subsubsection}{Démonstration.1}{155}{subsubsection*.253}%
+\contentsline {subsubsection}{Démonstration.2}{156}{subsubsection*.254}%
+\contentsline {subsection}{\numberline {25.2.7}分量函数的可微性}{156}{subsection.25.2.7}%
+\contentsline {subsubsection}{Démonstration}{156}{subsubsection*.255}%
+\contentsline {subsection}{\numberline {25.2.8}方向导数 Dérivée Directionnelle}{157}{subsection.25.2.8}%
+\contentsline {subsubsection}{Remarque}{157}{subsubsection*.256}%
+\contentsline {subsubsection}{方向导数的化简}{157}{subsubsection*.257}%
+\contentsline {subsection}{\numberline {25.2.9}一阶微分形式不变性}{157}{subsection.25.2.9}%
+\contentsline {subsubsection}{Exemple}{158}{subsubsection*.258}%
+\contentsline {section}{\numberline {25.3}关于连续性的讨论 Discussion sur la continuité}{159}{section.25.3}%
+\contentsline {subsection}{\numberline {25.3.1}Remarque}{159}{subsection.25.3.1}%
+\contentsline {section}{\numberline {25.4}Jacobi矩阵 Matrice Jacobienne}{159}{section.25.4}%
+\contentsline {subsection}{\numberline {25.4.1}Définition}{159}{subsection.25.4.1}%
+\contentsline {subsubsection}{Remarque}{160}{subsubsection*.259}%
+\contentsline {subsection}{\numberline {25.4.2}线性映射的微分}{160}{subsection.25.4.2}%
+\contentsline {subsubsection}{Démonstration}{160}{subsubsection*.260}%
+\contentsline {subsection}{\numberline {25.4.3}Jacobi算子的运算法则}{160}{subsection.25.4.3}%
+\contentsline {section}{\numberline {25.5}$\nabla $ 算子 Opérateur $\ll $ nabla $\gg $ }{160}{section.25.5}%
+\contentsline {subsection}{\numberline {25.5.1}梯度 Gradient}{161}{subsection.25.5.1}%
+\contentsline {subsubsection}{Exemple}{161}{subsubsection*.261}%
+\contentsline {subsubsection}{Remarque}{161}{subsubsection*.262}%
+\contentsline {subsection}{\numberline {25.5.2}散度 Divergence}{162}{subsection.25.5.2}%
+\contentsline {subsubsection}{Exemple}{162}{subsubsection*.263}%
+\contentsline {subsection}{\numberline {25.5.3}旋度 Rotationnel}{162}{subsection.25.5.3}%
+\contentsline {subsubsection}{Exemple}{163}{subsubsection*.264}%
+\contentsline {subsection}{\numberline {25.5.4}Laplace算子 Opérateur Laplacien}{164}{subsection.25.5.4}%
+\contentsline {subsection}{\numberline {25.5.5}Gauss散度定理 Théorème de flux-divergence}{165}{subsection.25.5.5}%
+\contentsline {section}{\numberline {25.6}有限增长定理 Théorème des Accroissements Finis}{166}{section.25.6}%
+\contentsline {subsection}{\numberline {25.6.1}Remarque: Rolle定理}{166}{subsection.25.6.1}%
+\contentsline {subsection}{\numberline {25.6.2}单实变函数的推广 Cas d'une variable réelle}{167}{subsection.25.6.2}%
+\contentsline {subsubsection}{Démonstration}{167}{subsubsection*.265}%
+\contentsline {subsubsection}{Proposition}{168}{subsubsection*.266}%
+\contentsline {subsection}{\numberline {25.6.3}更一般的推广 Cas général}{168}{subsection.25.6.3}%
+\contentsline {subsubsection}{Démonstration}{168}{subsubsection*.267}%
+\contentsline {subsubsection}{Proposition}{169}{subsubsection*.268}%
+\contentsline {subsection}{\numberline {25.6.4}Proposition: sur les ouverts connexes}{169}{subsection.25.6.4}%
+\contentsline {subsubsection}{Remarque: 连通子集 sous-ensemble connexe}{169}{subsubsection*.269}%
+\contentsline {subsubsection}{Théorème}{169}{subsubsection*.270}%
+\contentsline {subsubsection}{Démonstration}{169}{subsubsection*.271}%
+\contentsline {subsection}{\numberline {25.6.5}Proposition: sur $\mathcal {C}^1$ }{169}{subsection.25.6.5}%
+\contentsline {section}{\numberline {25.7}局部反演定理/反函数定理 Théorème d'Inversion Locale}{170}{section.25.7}%
+\contentsline {subsection}{\numberline {25.7.1}微分同胚 Difféomorphisme}{170}{subsection.25.7.1}%
+\contentsline {subsubsection}{Remarque}{170}{subsubsection*.272}%
+\contentsline {subsubsection}{Exemple}{170}{subsubsection*.273}%
+\contentsline {subsubsection}{Exemple}{170}{subsubsection*.274}%
+\contentsline {subsubsection}{Proposition}{171}{subsubsection*.275}%
+\contentsline {subsubsection}{Démonstration}{171}{subsubsection*.276}%
+\contentsline {subsubsection}{Proposition}{171}{subsubsection*.277}%
+\contentsline {subsubsection}{Proposition}{171}{subsubsection*.278}%
+\contentsline {subsection}{\numberline {25.7.2}Banach不动点定理 Théorème de Banach-Picard}{171}{subsection.25.7.2}%
+\contentsline {subsubsection}{Démonstration}{172}{subsubsection*.279}%
+\contentsline {subsection}{\numberline {25.7.3}反函数定理 Théorème d'inversion globale}{172}{subsection.25.7.3}%
+\contentsline {subsubsection}{Démonstration}{172}{subsubsection*.280}%
+\contentsline {subsection}{\numberline {25.7.4}$\mathbb {R}^n$上的反函数 Cas de $\mathbb {R}^n$}{172}{subsection.25.7.4}%
+\contentsline {section}{\numberline {25.8}隐函数定理 Théorème des Fonctions Implicites}{172}{section.25.8}%
+\contentsline {subsection}{\numberline {25.8.1}隐函数 Fonction implicite}{172}{subsection.25.8.1}%
+\contentsline {subsubsection}{Exemple}{173}{subsubsection*.281}%
+\contentsline {subsection}{\numberline {25.8.2}隐函数定理}{173}{subsection.25.8.2}%
+\contentsline {subsubsection}{Démonstration}{173}{subsubsection*.282}%
+\contentsline {subsection}{\numberline {25.8.3}Proposition}{174}{subsection.25.8.3}%
+\contentsline {subsubsection}{Démonstration}{174}{subsubsection*.283}%
+\contentsline {section}{\numberline {25.9}二阶微分 Différentielle seconde}{175}{section.25.9}%
+\contentsline {subsection}{\numberline {25.9.1}二次可微函数}{175}{subsection.25.9.1}%
+\contentsline {subsubsection}{Proposition}{175}{subsubsection*.284}%
+\contentsline {subsection}{\numberline {25.9.2}二阶微分}{175}{subsection.25.9.2}%
+\contentsline {subsubsection}{Remarque}{175}{subsubsection*.285}%
+\contentsline {subsubsection}{Exemple}{175}{subsubsection*.286}%
+\contentsline {subsection}{\numberline {25.9.3}Schwarz微分定理 Théorème de Schwarz}{176}{subsection.25.9.3}%
+\contentsline {subsubsection}{Démonstration}{176}{subsubsection*.287}%
+\contentsline {subsection}{\numberline {25.9.4}在有限维空间上 En dimension finie}{176}{subsection.25.9.4}%
+\contentsline {subsection}{\numberline {25.9.5}Hess矩阵 Matrice Hessienne}{177}{subsection.25.9.5}%
+\contentsline {subsection}{\numberline {25.9.6}Schwarz定理有限维推广}{177}{subsection.25.9.6}%
+\contentsline {subsubsection}{Remarque}{177}{subsubsection*.288}%
+\contentsline {section}{\numberline {25.10}高阶微分 Différentielles d'Ordre Supérieur}{177}{section.25.10}%
+\contentsline {subsection}{\numberline {25.10.1}Définition}{177}{subsection.25.10.1}%
+\contentsline {subsubsection}{Remarque}{178}{subsubsection*.289}%
+\contentsline {subsubsection}{Proposition}{178}{subsubsection*.290}%
+\contentsline {subsection}{\numberline {25.10.2}$n$阶可微的传递性}{178}{subsection.25.10.2}%
+\contentsline {subsubsection}{Démonstration}{178}{subsubsection*.291}%
+\contentsline {subsubsection}{Proposition}{178}{subsubsection*.292}%
+\contentsline {subsection}{\numberline {25.10.3}对称映射 Application Symétrique}{178}{subsection.25.10.3}%
+\contentsline {subsubsection}{Proposition}{179}{subsubsection*.293}%
+\contentsline {section}{\numberline {25.11}高阶偏导数 Dérivées Partielles d'Ordre Supérieur}{180}{section.25.11}%
+\contentsline {subsection}{\numberline {25.11.1}偏导算子极限的换序}{180}{subsection.25.11.1}%
+\contentsline {subsubsection}{Exemple}{181}{subsubsection*.294}%
+\contentsline {subsubsection}{偏导算子的极限}{181}{subsubsection*.295}%
+\contentsline {subsection}{\numberline {25.11.2}二元函数偏导换序}{182}{subsection.25.11.2}%
+\contentsline {subsubsection}{Démonstration}{182}{subsubsection*.296}%
+\contentsline {subsubsection}{Remarque}{182}{subsubsection*.297}%
+\contentsline {subsubsection}{Remarque}{183}{subsubsection*.298}%
+\contentsline {subsection}{\numberline {25.11.3}Proposition: 多元函数偏导换序}{183}{subsection.25.11.3}%
+\contentsline {section}{\numberline {25.12}高阶Taylor展开 Formules de Taylor}{183}{section.25.12}%
+\contentsline {subsection}{\numberline {25.12.1}积分余项展开 Formule de Taylor avec reste intégral}{183}{subsection.25.12.1}%
+\contentsline {subsubsection}{Remarque}{183}{subsubsection*.299}%
+\contentsline {subsubsection}{Remarque}{184}{subsubsection*.300}%
+\contentsline {subsubsection}{Proposition}{184}{subsubsection*.301}%
+\contentsline {subsubsection}{Définition}{184}{subsubsection*.302}%
+\contentsline {subsubsection}{Formule}{184}{subsubsection*.303}%
+\contentsline {subsubsection}{Exemple}{185}{subsubsection*.304}%
+\contentsline {subsection}{\numberline {25.12.2}Lagrange余项展开 Formule de Taylor-Lagrange}{185}{subsection.25.12.2}%
+\contentsline {subsubsection}{Proposition}{185}{subsubsection*.305}%
+\contentsline {subsubsection}{Démonstration}{185}{subsubsection*.306}%
+\contentsline {subsubsection}{Formule}{185}{subsubsection*.307}%
+\contentsline {subsubsection}{Démonstration}{186}{subsubsection*.308}%
+\contentsline {subsection}{\numberline {25.12.3}Formule de Taylor-Young}{186}{subsection.25.12.3}%
+\contentsline {subsubsection}{Démonstration}{186}{subsubsection*.309}%
+\contentsline {section}{\numberline {25.13}极值 Extrema}{186}{section.25.13}%
+\contentsline {subsection}{\numberline {25.13.1}自由极值 Extrema Libres}{186}{subsection.25.13.1}%
+\contentsline {subsubsection}{极大值 minimum local}{186}{subsubsection*.310}%
+\contentsline {subsubsection}{最大值 maximum globale}{186}{subsubsection*.311}%
+\contentsline {subsubsection}{极小值 maximum local}{186}{subsubsection*.312}%
+\contentsline {subsubsection}{最小值 minimum globale}{187}{subsubsection*.313}%
+\contentsline {subsubsection}{Remarque}{187}{subsubsection*.314}%
+\contentsline {subsubsection}{Proposition}{187}{subsubsection*.315}%
+\contentsline {subsection}{\numberline {25.13.2}Lagrange乘数 Multiplicateurs de Lagrange}{187}{subsection.25.13.2}%
+\contentsline {subsubsection}{相关极值 Extrema Liés}{187}{subsubsection*.316}%
+\contentsline {subsubsection}{Proposition: Lagrange乘数}{188}{subsubsection*.317}%
+\contentsline {subsection}{\numberline {25.13.3}凸函数 Fonctions Convexes}{188}{subsection.25.13.3}%
+\contentsline {subsubsection}{Définition}{188}{subsubsection*.318}%
+\contentsline {subsubsection}{Proposition}{188}{subsubsection*.319}%
+\contentsline {subsubsection}{Proposition}{189}{subsubsection*.320}%
+\contentsline {subsubsection}{凸函数的共轭函数 Fonction convexe conjugée}{189}{subsubsection*.321}%
+\contentsline {subsection}{\numberline {25.13.4}变分法简介 Introduction au calcul des variations}{189}{subsection.25.13.4}%
+\contentsline {subsubsection}{Proposition}{191}{subsubsection*.322}%
+\contentsline {section}{\numberline {25.14}微分形式 Formes différentielles}{192}{section.25.14}%
+\contentsline {subsection}{\numberline {25.14.1}矢量场和1-形式微分 Champs de vecteurs et 1-formes différentielles}{192}{subsection.25.14.1}%
+\contentsline {subsubsection}{Définition}{192}{subsubsection*.323}%
+\contentsline {subsubsection}{Exemple}{192}{subsubsection*.324}%
+\contentsline {subsubsection}{Remarque}{192}{subsubsection*.325}%
+\contentsline {subsubsection}{恰当的1-形式}{192}{subsubsection*.326}%
+\contentsline {subsection}{\numberline {25.14.2}高阶微分形式 Formes différentielles d'ordre supérieur}{193}{subsection.25.14.2}%
+\contentsline {subsubsection}{Définition}{193}{subsubsection*.327}%
+\contentsline {subsubsection}{Proposition}{193}{subsubsection*.328}%
+\contentsline {subsubsection}{Définition}{193}{subsubsection*.329}%
+\contentsline {subsubsection}{Remarque}{194}{subsubsection*.330}%
+\contentsline {subsection}{\numberline {25.14.3}外积 Produit extérieur}{194}{subsection.25.14.3}%
+\contentsline {subsubsection}{Définition}{194}{subsubsection*.331}%
+\contentsline {subsubsection}{Remarque}{195}{subsubsection*.332}%
+\contentsline {subsection}{\numberline {25.14.4}拉回 Tiré en arrière / Pullback}{196}{subsection.25.14.4}%
+\contentsline {subsubsection}{Définition}{196}{subsubsection*.333}%
+\contentsline {subsubsection}{Définition}{196}{subsubsection*.334}%
+\contentsline {subsubsection}{Exemple}{197}{subsubsection*.335}%
+\contentsline {subsubsection}{纯形式 Forme pure}{197}{subsubsection*.336}%
+\contentsline {subsubsection}{Proposition}{198}{subsubsection*.337}%
+\contentsline {subsubsection}{Démonstration}{198}{subsubsection*.338}%
+\contentsline {subsection}{\numberline {25.14.5}外微分 Différentielle extérieure}{198}{subsection.25.14.5}%
+\contentsline {subsubsection}{Définition}{198}{subsubsection*.339}%
+\contentsline {subsubsection}{Proposition}{198}{subsubsection*.340}%
+\contentsline {subsubsection}{Démonstration}{199}{subsubsection*.341}%
+\contentsline {subsubsection}{Définition}{199}{subsubsection*.342}%
+\contentsline {subsubsection}{Remarque}{199}{subsubsection*.343}%
+\contentsline {section}{\numberline {25.15}Poincaré定理 Théorème de Poincaré}{200}{section.25.15}%
+\contentsline {subsection}{\numberline {25.15.1}单连通 Simplement connexe}{200}{subsection.25.15.1}%
+\contentsline {subsubsection}{Définition}{200}{subsubsection*.344}%
+\contentsline {subsubsection}{Proposition}{200}{subsubsection*.345}%
+\contentsline {subsection}{\numberline {25.15.2}Proposition}{201}{subsection.25.15.2}%
+\contentsline {subsection}{\numberline {25.15.3}Proposition: Poincaré定理的一种变体}{201}{subsection.25.15.3}%
+\contentsline {subsection}{\numberline {25.15.4}Poincaré定理}{201}{subsection.25.15.4}%
+\contentsline {subsubsection}{Remarque:经典微分算子}{202}{subsubsection*.346}%
+\contentsline {section}{\numberline {25.16}Frobenius定理 Théorème de Frobenius}{202}{section.25.16}%
+\contentsline {subsection}{\numberline {25.16.1}Frobenius定理}{203}{subsection.25.16.1}%
+\contentsline {subsubsection}{Démonstration}{203}{subsubsection*.347}%
+\contentsline {subsubsection}{Remarque}{203}{subsubsection*.348}%
+\contentsline {chapter}{\numberline {第二十六章\hspace {.3em}}重积分\\ Intégrale multiple}{204}{chapter.26}%
+\contentsline {chapter}{\numberline {第二十七章\hspace {.3em}}微分方程入门\\ Introduction: Équations Différentielles}{205}{chapter.27}%
+\contentsline {section}{\numberline {27.1}课程内容复习}{205}{section.27.1}%
+\contentsline {subsection}{\numberline {27.1.1}Théorème 1. 微分方程的解}{205}{subsection.27.1.1}%
+\contentsline {subsection}{\numberline {27.1.2}Proposition 1. 一阶线性微分方程的解}{206}{subsection.27.1.2}%
+\contentsline {subsection}{\numberline {27.1.3}Proposition 2. 方程的线性解空间}{206}{subsection.27.1.3}%
+\contentsline {subsection}{\numberline {27.1.4}Proposition 3. 方程的特解:常数变易法}{206}{subsection.27.1.4}%
+\contentsline {subsection}{\numberline {27.1.5}Théorème 2. 一维Cauchy-Lipschitz定理}{206}{subsection.27.1.5}%
+\contentsline {subsection}{\numberline {27.1.6}Définition 2. $n$阶微分方程}{207}{subsection.27.1.6}%
+\contentsline {subsection}{\numberline {27.1.7}Proposition 4. $n$阶微分方程的矩阵形式}{207}{subsection.27.1.7}%
+\contentsline {subsection}{\numberline {27.1.8}Définition 3. 微分方程组}{207}{subsection.27.1.8}%
+\contentsline {subsection}{\numberline {27.1.9}Théorème 3. 矩阵方程的Cauchy-Lipschitz定理}{208}{subsection.27.1.9}%
+\contentsline {subsection}{\numberline {27.1.10}Proposition 5. 矩阵方程的线性解空间}{208}{subsection.27.1.10}%
+\contentsline {subsection}{\numberline {27.1.11}Proposition 6. 矩阵方程的通解}{208}{subsection.27.1.11}%
+\contentsline {subsection}{\numberline {27.1.12}Proposition 7. 多项式矩阵方程的特解}{208}{subsection.27.1.12}%
+\contentsline {subsection}{\numberline {27.1.13}Proposition 8. 二阶矩阵方程解的形式}{209}{subsection.27.1.13}%
+\contentsline {subsubsection}{a.}{209}{subsubsection*.349}%
+\contentsline {subsubsection}{b.}{209}{subsubsection*.350}%
+\contentsline {subsubsection}{c.}{209}{subsubsection*.351}%
+\contentsline {chapter}{\numberline {第二十八章\hspace {.3em}}Fourier级数\\Série de Fourier}{210}{chapter.28}%
+\contentsline {chapter}{\numberline {第二十九章\hspace {.3em}}Lebesgue测度与Lebesgue积分\\ Mesure de Lebesgue et Intégrale de Lebesgue}{211}{chapter.29}%
+\contentsline {chapter}{\numberline {第三十章\hspace {.3em}}测度论初步\\Preliminaires de Théorie de la Mesure}{212}{chapter.30}%
+\contentsline {chapter}{\numberline {第三十一章\hspace {.3em}}概率与位势\\ Probabilités et potentiels}{213}{chapter.31}%
+\contentsline {part}{第五部分\hspace {1em}抽象代数初步 \\Preliminaires d'Algèbre Abstraite}{214}{part.5}%
+\contentsline {chapter}{\numberline {第三十二章\hspace {.3em}}群论 Théorie des groupes}{215}{chapter.32}%
+\contentsline {chapter}{\numberline {第三十三章\hspace {.3em}}环论 Théorie des anneaux}{216}{chapter.33}%
+\contentsline {chapter}{\numberline {第三十四章\hspace {.3em}}域论 Théorie des corps}{217}{chapter.34}%
+\contentsline {chapter}{\numberline {第三十五章\hspace {.3em}}Galois理论 Théorie de Galois}{218}{chapter.35}%
+\contentsline {part}{第六部分\hspace {1em}泛函分析初步 \\Preliminaires d'Analyse Fonctionnelle}{219}{part.6}%
+\contentsline {chapter}{\numberline {第三十六章\hspace {.3em}}引入 Introduction}{220}{chapter.36}%
+\contentsline {chapter}{\numberline {第三十七章\hspace {.3em}}赋范线性空间 Espace vectoriel normé}{221}{chapter.37}%
+\contentsline {chapter}{\numberline {第三十八章\hspace {.3em}}算子和泛函 Opérateurs et fonctionnelles}{222}{chapter.38}%
+\contentsline {chapter}{\numberline {第三十九章\hspace {.3em}}Banach空间 Espace de Banach}{223}{chapter.39}%
+\contentsline {chapter}{\numberline {第四十章\hspace {.3em}}Hilbert空间 Espace de Hilbert}{224}{chapter.40}%
+\contentsline {chapter}{\numberline {第四十一章\hspace {.3em}}弱拓扑 Weak topologie}{225}{chapter.41}%
+\contentsline {chapter}{\numberline {第四十二章\hspace {.3em}}谱理论 Théorie spectrale}{226}{chapter.42}%
+\contentsline {chapter}{\numberline {第四十三章\hspace {.3em}}紧算子 Compacts}{227}{chapter.43}%
+\contentsline {part}{第七部分\hspace {1em}数学应用\\ Applications Mathématiques}{228}{part.7}%
+\contentsline {chapter}{\numberline {第四十四章\hspace {.3em}}误差与不确定度\\Erreurs et Incertitudes}{230}{chapter.44}%
+\contentsline {section}{\numberline {44.1}全微分误差估计}{230}{section.44.1}%
+\contentsline {chapter}{\numberline {第四十五章\hspace {.3em}}量纲分析\\ Analyse Quantitative}{231}{chapter.45}%
+\contentsline {chapter}{\numberline {第四十六章\hspace {.3em}}概率论入门\\Introduction: La Probabilité}{232}{chapter.46}%
+\contentsline {chapter}{\numberline {第四十七章\hspace {.3em}}简单数学模型\\ Modèle Mathématique Simple}{233}{chapter.47}%
+\contentsline {chapter}{\numberline {第四十八章\hspace {.3em}}离散优化模型\\ Modèles d'Optimisation Discrets}{234}{chapter.48}%
+\contentsline {chapter}{\numberline {第四十九章\hspace {.3em}}连续优化模型\\ Modèle d'Optimisation Continue}{235}{chapter.49}%
+\contentsline {chapter}{\numberline {第五十章\hspace {.3em}}数学物理方程\\ Équations Mathématiques Physiques}{236}{chapter.50}%
+\contentsline {section}{\numberline {50.1}波动方程 Équation des Ondes}{236}{section.50.1}%
+\contentsline {subsection}{\numberline {50.1.1}Introduction}{236}{subsection.50.1.1}%
+\contentsline {subsubsection}{波 Onde}{236}{subsubsection*.352}%
+\contentsline {subsubsection}{传播方程 Équation de propagation}{237}{subsubsection*.353}%
+\contentsline {subsubsection}{正弦信号波 signal sinusoïdal}{237}{subsubsection*.354}%
+\contentsline {subsubsection}{波的平均值 valeur moyenne d'une onde}{237}{subsubsection*.355}%
+\contentsline {subsubsection}{波的均方根值/有效值 valeur efficace d'une onde}{237}{subsubsection*.356}%
+\contentsline {subsubsection}{Parseval定理 Théorème de Parseval}{237}{subsubsection*.357}%
+\contentsline {subsubsection}{信号的复数表示 Notation complexe d'un signal}{238}{subsubsection*.358}%
+\contentsline {subsubsection}{Fresnel图 Representation de Fresnel}{238}{subsubsection*.359}%
+\contentsline {subsection}{\numberline {50.1.2}弦的横向振动 Vibration Transversale des Cordes}{238}{subsection.50.1.2}%
+\contentsline {subsection}{\numberline {50.1.3}杆的纵向振动(连续模型) Vibration longitudinale des barres(modèle continu)}{239}{subsection.50.1.3}%
+\contentsline {subsubsection}{Young氏模量 Module de Young}{239}{subsubsection*.360}%
+\contentsline {subsection}{\numberline {50.1.4}杆的纵向振动(离散模型) Vibration longitudinale des barres(modèle discret)}{240}{subsection.50.1.4}%
+\contentsline {section}{\numberline {50.2}d'Alembert方程的渐进解 Solutions progressives de l'équation de d'Alembert}{240}{section.50.2}%
+\contentsline {subsubsection}{化简}{240}{subsubsection*.361}%
+\contentsline {subsubsection}{Exemple}{241}{subsubsection*.362}%
+\contentsline {subsection}{\numberline {50.2.1}Onde progressive sinusoïdal (dim=1) }{241}{subsection.50.2.1}%
+\contentsline {subsubsection}{Remarque:relation de dispersion}{241}{subsubsection*.363}%
+\contentsline {subsection}{\numberline {50.2.2}波的干涉 Interférence entre deux ondes}{242}{subsection.50.2.2}%
+\contentsline {subsubsection}{相长干涉 Interférence constructive}{242}{subsubsection*.364}%
+\contentsline {subsubsection}{相消干涉 Interférence destructive}{242}{subsubsection*.365}%
+\contentsline {subsubsection}{différence de marche}{242}{subsubsection*.366}%
+\contentsline {subsubsection}{干涉条纹}{242}{subsubsection*.367}%
+\contentsline {subsection}{\numberline {50.2.3}波的衍射 Diffraction d'une onde}{243}{subsection.50.2.3}%
+\contentsline {subsubsection}{波的衍射条件}{243}{subsubsection*.368}%
+\contentsline {subsection}{\numberline {50.2.4}驻波 Onde stationnaire}{243}{subsection.50.2.4}%
+\contentsline {section}{\numberline {50.3}热方程}{243}{section.50.3}%
+\contentsline {subsection}{\numberline {50.3.1}Fourier定律}{243}{subsection.50.3.1}%
+\contentsline {subsubsection}{Proposition}{244}{subsubsection*.369}%
+\contentsline {subsection}{\numberline {50.3.2}连续性方程}{244}{subsection.50.3.2}%
+\contentsline {subsubsection}{Proposition}{245}{subsubsection*.370}%
+\contentsline {subsubsection}{Proposition}{245}{subsubsection*.371}%
+\contentsline {section}{\numberline {50.4}稳态方程}{245}{section.50.4}%
+\contentsline {section}{\numberline {50.5}定解条件}{246}{section.50.5}%
+\contentsline {subsection}{\numberline {50.5.1}波动方程定解}{246}{subsection.50.5.1}%
+\contentsline {subsection}{\numberline {50.5.2}热方程定解}{246}{subsection.50.5.2}%
+\contentsline {chapter}{\numberline {第五十一章\hspace {.3em}}对称群与分子对称性\\ Groupe Symétrique et Symétrie Moléculaire}{247}{chapter.51}%
+\contentsline {section}{\numberline {51.1}分子对称性和对称群}{248}{section.51.1}%
+\contentsline {section}{\numberline {51.2}群的表示}{248}{section.51.2}%
+\contentsline {section}{\numberline {51.3}对称性匹配的线性组合}{248}{section.51.3}%
+\contentsline {section}{\numberline {51.4}分子轨道理论}{248}{section.51.4}%
+\contentsline {section}{\numberline {51.5}配体场理论}{248}{section.51.5}%
+\contentsline {chapter}{\numberline {第五十二章\hspace {.3em}}概率与位势\\ Probabilités et potentiels}{249}{chapter.52}%
+\contentsline {chapter}{\numberline {第五十三章\hspace {.3em}}场论\\ Théorie des Champs}{250}{chapter.53}%
+\contentsline {chapter}{\numberline {第五十四章\hspace {.3em}}电磁场\\Champs Électromagnétiques}{251}{chapter.54}%
+\contentsline {chapter}{\numberline {第五十五章\hspace {.3em}}引力场\\ Champ Gravitationnel}{252}{chapter.55}%
+\contentsline {chapter}{\numberline {第五十六章\hspace {.3em}}流体场\\Champs de Fluides}{253}{chapter.56}%
+\contentsline {section}{\numberline {56.1}理想流体}{253}{section.56.1}%
+\contentsline {section}{\numberline {56.2}实际流体}{253}{section.56.2}%
+\contentsline {section}{\numberline {56.3}层流与湍流}{253}{section.56.3}%
+\contentsline {section}{\numberline {56.4}流体边界层}{253}{section.56.4}%
+\contentsline {part}{第八部分\hspace {1em}附录 Annexe}{254}{part.8}%
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}函数表 Table de fonction}{255}{appendix.A}%
+\contentsline {section}{\numberline {A.1}积分函数表 }{255}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Fourier变换函数表 }{255}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Laplace变换函数表 }{255}{section.A.3}%
+\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}三段论 Syllogisme}{256}{appendix.B}%
+\contentsline {chapter}{\numberline {附录 C\hspace {.3em}}证明方法 Méthode de démonstration}{257}{appendix.C}%
+\contentsline {chapter}{\numberline {附录 D\hspace {.3em}}代码 Code}{258}{appendix.D}%

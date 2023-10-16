@@ -1,0 +1,244 @@
+\documentclass[12pt, a4paper, oneside]{ctexbook}
+\def\allfiles{}
+%\usepackage{microtype}
+\usepackage{amsmath, esint,amsthm, amssymb, bm, color, framed, graphicx, imakeidx,  geometry,
+hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,stmaryrd}
+%文内引用
+%插入书签:\label{myref:引用内容(英文字母,中文出现了编译错误)}
+%引用书签:\prettyref{myref:引用内容}
+
+%法语部分宏包目前还有问题
+%\usepackage[T1]{fontenc}
+%\usepackage[french]{babel}
+%\usepackage[autolanguage]{numprint}
+%\usepackage{wrapfig}
+%\usepackage{multirow}
+%\usepackage{hyphenat}
+%\hyphenation{mate-mática recu-perar}
+\allowdisplaybreaks[4]
+
+%简化的指令
+%\renewcommand{\i}{\mathrm{i}}%虚数i
+\newcommand{\di }{\text{d}}%微分
+\newcommand{\pian }{\partial}%偏导数
+\newcommand{\die }{\textbf{d}}%外微分
+\newcommand{\fuyi }{^{-1}}%逆映射
+\newcommand{\card }{\text{card}}%势
+\newcommand{\R }{\mathbb{R}}%实数
+\newcommand{\Z }{\mathbb{Z}}%整数
+\newcommand{\RR }{$\R\ $}%实数(文本)
+\newcommand{\Rn }{$\R^n\ $}%实数(文本)
+\newcommand{\N }{\mathbb{N}}%自然数
+\renewcommand{\S}{\mathcal{S}}%S
+\newcommand{\fai }{\varphi}%常用的那个小phi
+\newcommand{\e }{\vec{e}}%向量e
+\newcommand{\Id }{\text{Id}}%单位元
+\newcommand{\continue }{\text{连续}}%连续
+\newcommand{\C }{\mathcal{C}}%连续函数类
+\newcommand{\Com }{\mathbb{C}}%复数
+\newcommand{\M }{\mathcal{M}}%矩阵
+\newcommand{\Hess }{\text{Hess}}%Hess矩阵
+\newcommand{\normmm}[1]{{\left\vert\kern-0.25ex\left\vert\kern-0.25ex\left\vert #1 
+   \right\vert\kern-0.25ex\right\vert\kern-0.25ex\right\vert}}%|||v|||三个竖线的范数
+%常用的文本里的字母
+\newcommand{\x }{$x$}\newcommand{\xo }{$x_0$}
+\newcommand{\y }{$y$}\newcommand{\yo }{$y_0$}
+\newcommand{\z }{$z$}\newcommand{\zo }{$z_0$}
+\newcommand{\n }{$n$}\newcommand{\f  }{$ f $}
+
+\title{
+  \begin{figure}[!t]%插入题目的图片
+    \centering
+    \includegraphics[width=14cm]{shulijichu-2.png}
+  \end{figure}
+  {\Huge{\textbf{工程师学院数学理论基础\\
+Fondements des Théories Mathématiques de l'Ecole d'Ingénieur de Chimie Pékin}}}\\
+版本0.3.15(持续更新中)}
+\author{Augustin}
+\date{最后更新于:\today}
+\linespread{1.5}
+\makeindex
+
+\setcounter{tocdepth}{1}%两个2说明只显示到subsection
+\setcounter{secnumdepth}{2}
+
+
+\begin{document}
+\newrefformat{myref}{第\ref{#1} 节}
+
+\maketitle
+
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\begin{center}
+    \Huge\textbf{前言}
+\end{center}~\
+\noindent
+\textbf{特别声明:}
+本讲义目前为未完成版,存在大量问题等待修正,因此请在阅读时仔细甄别.如有发现错误或任何建议,欢迎发送至zyl@buct.edu.cn\\
+\begin{figure}[H]%插入题目的图片
+  \centering
+  \includegraphics[scale=0.6]{xianshangxian_zaiyouhua.jpg}
+\end{figure}
+
+
+\indent
+这本东西起源于我自己的各种杂七杂八的笔记,我想把它们整理起来,系统化并且数字化,于是在大三上学期有了一个基本的雏形.
+后来我想,为什么不干脆再扩充一些,搞个讲义出来呢？这样还可以给别人看,多棒.
+于是大三寒假我开始慢慢扩充这本讲义,也许会一直写下去,直到哪天我没了兴趣.
+
+\begin{figure}[H]%插入题目的图片
+  \centering
+  \includegraphics[scale=0.5]{abstract.png}
+  \caption{数学分析部分知识关系(图源自法语wiki)}
+  \label{myref:abstract}
+\end{figure}
+
+知识是网状的,而书是线性的.特别是,当你用维基百科对比一本教科书的时候,最能体现这个观点.
+书的线性内容决定了作者不可能一开始就默认读者知道某个概念的所有相关概念,所以延伸性和复杂性都远远不够;而对于维基百科,就会有各种延申,每一个不知道的概念都可以点进去学习,就像是查字典.
+因此任何一本书的内容都是一个线性的体系,后面的内容承接前面的内容,体现不了知识的复杂性,书的顺序也只是作者认为合理的顺序,不一定代表最适合每个读者的顺序.
+所以我给出的也只是我觉得可以说得通的顺序.事实上存在大量平行的内容,相互之间怎么排列都可以.
+(待更新)
+
+本讲义大概有两种内容,即课程内容和课程的前置与延申内容.
+对于课程内容,还是希望上课好好听讲,因此写的东西仅仅作为一个参考预习、复习的样例,说白了就是让你知道你学的是什么.方便读者在详细的不懂得地方可以多问老师或者自己找课程学习；
+对于课外的内容,由于学院本身对于数学的要求不高,所以也只是介绍一下,并不深入.有兴趣的自己去找课程和书就行.这部分更像是一个简介,让你知道还有什么是我们没有学的,其中有哪些学一下更好.
+对于讲义的参考资料,欢迎大家自己去找来看,这些东西远远比我写的精彩.我做的一点微小的工作其实就是把这些精华筛选一下,挑出我们课程用得上的东西,然后排列组合罢了.\\
+
+\noindent
+附部分讲义的参考资料与推荐阅读的资料：\\
+出版物:
+\begin{itemize}
+  \item Proofs from THE BOOK,Martin Aigner \& Günter M. Ziegler,Springer
+  \item The Princeton Companion to Applied Mathematics,Nicholas J. Higham,Princeton University Press
+  \item Calcul Différentiel et Équations Différentielles,Sylvie Benzoni-Gavage,DUNOD
+  \item Calcul Différentiel et Calcul Intégral,Noureddine El Jaouhari,DUNOD
+  \item Topologie générale et espaces normés,Nawfal El Hage Hassan,DUNOD
+  \item Les Maths en Physique,Jean-Pierre Provost et Gérard vallée,DUNOD
+  \item Analyse Fonctionnelle et Théorie des Opérateurs,Josette Charles et al.,DUNOD
+  \item Mathématiques pour l'Ingénieur,Yves Leroyer et Patrice Tesson,DUNOD
+  \item Analyse Complexe pour la Licence 3,Patrice Tauvel,DUNOD
+  \item Calcul Différentiel,Gilles CHARRON et Pierre PARENT,Cheneliere Education
+  \item Algèbre Linéaire, Algèbre Bilinéaire,Mohamed Houimdi,Ellipses
+  \item Éléments d'analyse et d'algèbre(et de théorie des nombres),Pierre Colmez,les Éditions de l'École Polytechnique
+  \item Graduate Texts in Mathematics 73,S.Axler et al.,Springer
+  \item Précis d'analyse réelle,Vilmos KOMORNIK, Ellipses
+  \item The Princeton Companion to Applied Mathematics,Nicholas j. Higham,Princeton University Press
+  \item Vector Calculus, Linear Algebra and Diffrerenial Forms: A Unified Approach,John H, Hubbard,Matrix Editions
+  \item Théorie Analytique de la Chaleur,Jean-Baptiste Joseph Fourier,CAMBRIDGE
+  \item Organic Chemistry,Jonathan Clayden te al.,OXFORD
+  \item Chemical Applications of Symmetry and Group Theory,Rakshit Ameta \& Suresh C.Ameta,CRC Press
+  \item Chemical Applications of Group Theory, F. Albert Cotton,
+  \item 微积分和数学分析引论,R.科朗 \& F.约翰,科学出版社
+  \item 数学分析原理,Walter Rudin,机械工业出版社
+  \item 普林斯顿微积分读本,Adrian Banner,人民邮电出版社
+  \item 普林斯顿线性代数读本,拉菲·格林贝格,人民邮电出版社
+  \item 普林斯顿概率论读本,史蒂文·J.米勒,人民邮电出版社
+  \item 代数学教程,R·戈德门特,高等教育出版社
+  \item 陶哲轩实分析,陶哲轩,人民邮电出版社
+  \item 数学分析中的问题和反例,汪林,高等教育出版社
+  \item 拓扑空间与线性拓扑空间中的反例,汪林,高等教育出版社
+  \item 实分析中的反例,汪林,高等教育出版社
+  \item 泛函分析中的反例,汪林,高等教育出版社
+  \item 拓扑学教程,G·肖盖,高等教育出版社
+  \item 抽象代数基础,丘维声,高等教育出版社
+  \item 代数的历史,约翰·德比希尔,人民邮电出版社
+  \item 概率论基础教程,Sheldon M. Ross,机械工业出版社
+  \item 数学建模,Frank R. Giordano etc.,机械工业出版社
+  \item 数学分析,B.A.卓里奇,高等教育出版社
+\end{itemize}
+网络资料:
+\begin{itemize}
+  \item \href{https://space.bilibili.com/391930545}{Maki的完美算术教室},以及\href{https://www.maki-math.com/#/}{Maki-math.com}
+  \item \href{https://www.zhihu.com/people/xavir-79/posts}{xavir}
+  \item \href{https://space.bilibili.com/1632276842}{Ayumu爱讲数学}
+  \item \href{https://space.bilibili.com/29977151}{James课后习题解答}
+  \item \href{https://space.bilibili.com/6073855}{Druid小德}
+  \item \href{https://space.bilibili.com/3156848}{kumiko想要学分析}
+  \item \href{https://space.bilibili.com/586867165}{柚柚柚子235}
+  \item \href{https://space.bilibili.com/20883932}{轩兔}
+  \item \href{https://space.bilibili.com/184538069}{castelu}
+  \item \href{https://space.bilibili.com/88461692}{3Blue1Brown}
+  \item \href{https://space.bilibili.com/415941398}{返朴科普}
+  \item \href{https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5}{中文}、\href{https://en.wikipedia.org/wiki/Main_Page}{英语}和\href{https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal}{法语}的维基百科
+\end{itemize}
+
+
+~\\
+\begin{flushright}
+    \begin{tabular}{c}
+        Augustin\\
+        2022年12月31日
+    \end{tabular}
+\end{flushright}
+
+
+\newpage
+\begin{center}
+  \begin{figure}[H]%插入题目的图片
+    \centering
+    \includegraphics[scale=0.3]{theo_math.png}
+  \end{figure}
+  \Huge\textbf{版本更新说明}
+\end{center}~\
+
+
+\noindent
+\textbf{更新内容:}
+\begin{itemize}
+  %\item 删除了一些一年内不太可能学到的内容
+  \item 应用部分内容调整
+  %\item 把概率相关的内容调整进入应用
+  \item 添加了一些法语原文表述
+  \item 重写了逻辑
+  \item 重写了可数性
+\end{itemize}
+
+\noindent
+\textbf{计划中的更新:}
+\begin{itemize}
+  \item 尝试加入更多图片.等假期慢慢搞.
+  \item 尝试给出一些习题.
+  \item 补充证明.
+  \item 对于重要的概念,补充完法语原文
+  \item 对代数部分内容重新整理
+  \item Bonus.
+  \item 规范符号$\rightarrow,\mapsto $等等.
+\end{itemize}
+
+
+
+
+\newpage
+\pagenumbering{Roman}
+\setcounter{page}{1}
+\tableofcontents
+
+\newpage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\include{1.tex}
+\include{2.tex}
+\include{3.tex}
+\include{4.tex}
+\include{5.tex}
+\include{6.tex}
+\include{7.tex}
+
+
+
+  \part{附录 Annexe}
+  \appendix
+  \chapter{函数表 Table de fonction}
+  \section{积分函数表 }
+  \section{Fourier变换函数表 }
+  \section{Laplace变换函数表 }
+  \chapter{三段论 Syllogisme}
+  \chapter{证明方法 Méthode de démonstration}
+  \chapter{代码 Code}
+
+  \printindex
+\end{document}
+

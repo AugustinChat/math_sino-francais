@@ -1,0 +1,517 @@
+\ifx\allfiles\undefined
+\documentclass[12pt, a4paper, oneside]{ctexbook}
+%\usepackage{microtype}
+\usepackage{amsmath, esint,amsthm, amssymb, bm, color, framed, graphicx, imakeidx, geometry,
+hyperref, mathrsfs,lipsum,fancyhdr,indentfirst,array,tabularx,float,prettyref,stmaryrd}
+%文内引用
+%插入书签:\label{myref:引用内容(英文字母,中文出现了编译错误)}
+%引用书签:\prettyref{myref:引用内容}
+
+\allowdisplaybreaks[4]
+
+%简化的指令
+%\renewcommand{\i}{\mathrm{i}}%虚数i
+\newcommand{\di }{\text{d}}%微分
+\newcommand{\pian }{\partial}%偏导数
+\newcommand{\die }{\textbf{d}}%外微分
+\newcommand{\fuyi }{^{-1}}%逆映射
+\newcommand{\card }{\text{card}}%势
+\newcommand{\R }{\mathbb{R}}%实数
+\newcommand{\Z }{\mathbb{Z}}%整数
+\newcommand{\RR }{$\R\ $}%实数(文本)
+\newcommand{\Rn }{$\R^n\ $}%实数(文本)
+\newcommand{\N }{\mathbb{N}}%自然数
+\renewcommand{\S}{\mathcal{S}}%S
+\newcommand{\fai }{\varphi}%常用的那个小phi
+\newcommand{\e }{\vec{e}}%向量e
+\newcommand{\Id }{\text{Id}}%单位元
+\newcommand{\continue }{\text{连续}}%连续
+\newcommand{\C }{\mathcal{C}}%连续函数类
+\newcommand{\Com }{\mathbb{C}}%复数
+\newcommand{\M }{\mathcal{M}}%矩阵
+\newcommand{\Hess }{\text{Hess}}%Hess矩阵
+\newcommand{\normmm}[1]{{\left\vert\kern-0.25ex\left\vert\kern-0.25ex\left\vert #1 
+   \right\vert\kern-0.25ex\right\vert\kern-0.25ex\right\vert}}%|||v|||三个竖线的范数
+%常用的文本里的字母
+\newcommand{\x }{$x$}\newcommand{\xo }{$x_0$}
+\newcommand{\y }{$y$}\newcommand{\yo }{$y_0$}
+\newcommand{\z }{$z$}\newcommand{\zo }{$z_0$}
+\newcommand{\n }{$n$}\newcommand{\f  }{$ f $}
+
+\title{
+\vspace{-2cm}
+  \begin{figure}[!t]%插入题目的图片
+    \centering
+    \includegraphics[width=14cm]{shulijichu-2.png}
+  \end{figure}
+  \vspace{-2cm}
+  {\Huge{\textbf{工程师学院数学理论基础\\
+Fondements des Théories Mathématiques de l'Ecole d'Ingénieur de Chimie Pékin\\
+第三部分:代数与矩阵\\
+Partie III: Algèbre et Matrice
+}}}
+}
+\author{Augustin}
+\date{最后更新于:\today}
+\linespread{1.5}
+\makeindex
+
+\setcounter{tocdepth}{1}%两个2说明只显示到subsection
+\setcounter{secnumdepth}{2}
+
+%\def\allfiles{}
+\begin{document}
+\newrefformat{myref}{第\ref{#1} 节}
+\vspace{-3cm}
+\maketitle
+\tableofcontents
+\else
+\part{代数与矩阵\\ Algèbre et Matrice}
+\fi
+%开始本部分正文
+\chapter{线性空间 \\Espace Vectoriel}
+
+\chapter{多项式理论\\ Théorie des Polynômes}
+\chapter{矩阵 \\ Matrice}
+\chapter{矩阵的简化\\Reduction}
+\section{特征值与特征向量 Vecteurs Propres et Valeurs Propres}
+  在线性空间中,有一些有趣的线性变换(线性算子)和向量.这些向量经过这些变换前后都处在同一条直线上,仅仅是改变了长度或方向.
+  能使向量拥有这种特质的线性变换往往也有许多优秀的性质可以研究,也就是本章的重点.\\
+  
+  对于这些经过变换前后都处在同一条直线上的向量,称其为对应线性变换的特征向量(le vecteur vropre),
+  变换后改变的方向与大小所对应的标量称为线性变换的特征值(la valeur propre),
+  将具有相同特征值的特征向量与一个同维数的零向量组成一个集合,称为线性变换的特征空间(l'espace propre).
+  \subsection{Définition}
+  设$n\in\mathbb{N} , M\in \mathcal{M}_n(\mathbb{K})$.
+  若存在$x\in \mathcal{M}_{n,1}(\mathbb{K})\setminus\{0\}, \lambda\in\mathbb{K}$使得：
+  \begin{equation}
+    \notag
+    Mx=\lambda x
+  \end{equation}
+  则称$\lambda$为矩阵$M$的特征值,$x$为矩阵$M$的特征向量,
+  $E_\lambda=\{x\in\mathcal{M}_{n,1}(\mathbb{K})\}$为矩阵$M$的特征空间,
+  称特征值集$\sigma_{\mathbb{K}}(M)$为矩阵$M$的谱(le spectre).\\
+
+  若$E$是域$\mathbb{K}$上的线性空间,自同态$u\in \mathcal{L} (E)$,同理
+  若存在$x\in E\setminus\{0\}, \lambda\in\mathbb{K}$使得：
+  \begin{equation}
+    \notag
+    u(x)=\lambda x
+  \end{equation}
+  则称$\lambda$为矩阵$M$的特征值,$x$为矩阵$M$的特征向量,
+  $E_\lambda=\{x\in E\}$为矩阵$M$的特征空间,
+  称特征值集$\sigma_{\mathbb{K}}(M)$为矩阵$M$的谱.事实上,如果$E$是有限维空间,两种定义是等价的.
+  \subsubsection{Remarque}
+  还记得\prettyref{myref:tezheng}介绍的“特征”的概念吗?想一下我们为什么要管这里的$\lambda$叫“特征”值.
+  \subsection{Proposition:特征空间的性质}
+  \subsubsection{线性子空间}
+  $E_\lambda$是一个线性子空间(sous-espace vectoriel),满足:
+  \begin{equation}
+    \notag
+    E_\lambda:
+    \begin{cases}
+    \lambda_i+\lambda_j\in E_\lambda \\
+    m\lambda_i\in E_\lambda \\
+    E_\lambda\neq \varnothing 
+    \end{cases}
+  \end{equation}
+  \subsubsection{核空间}
+  $E_\lambda$是$M-\lambda I_n$的核空间,即：
+  \begin{equation}
+    \notag
+    E_\lambda=\ker(M-\lambda I_n)=\{x|(M-\lambda I_n)x=0_n\}
+  \end{equation}
+  \subsubsection{非零维度}
+  根据特征空间的定义,其至少包含一个非0向量,故$\dim E_\lambda \ge 1$.
+
+
+\section{特征多项式 Polynôme caractéristique}
+  当我们知道了特征值和特征向量,自然就会想问：如何找到矩阵的特征值和特征向量呢？
+  随机抽向量和数一个一个计算显然不可能.为了更加便捷,我们需要通过特征多项式来寻找特征值和特征向量.
+  \subsection{Définition}
+  设$n\in\mathbb{N} , M\in \mathcal{M}_n(\mathbb{K})$,有：
+  \begin{equation}
+    \notag
+    \chi _M(X)=\det(XI_n-M)\footnote{
+      需说明的是,许多教材里把特征多项式定义成$\det(M-XI_n)$,计算时需注意反号.两种形式并不影响各种结论.
+    }
+  \end{equation}
+  称$\chi _M(X)$为矩阵$M$的特征多项式.
+  显然,我们可以找到$\exists(a_0,...,a_{n-1})\in\mathbb{K}^n$使得:
+  \begin{equation}
+    \notag
+    \chi _M(X)=X^n+\sum_{k=0}^{n-1}a_kX^k
+  \end{equation}
+  这就是一般的特征多项式的形式.并且,特征多项式的解即为矩阵的特征值.
+  一般而言,对布于任何交换环上的方阵都能定义特征多项式.
+  \subsubsection{Démonstration}
+  \begin{equation}
+    \notag
+    \begin{aligned}
+    & \chi _M(\lambda)=\det(\lambda I_n-M)=0\\
+    & \Rightarrow \ker(M-\lambda I_n)\neq\{0\}\\
+    & \Rightarrow (M-\lambda I_n)x=\{0\}\\
+    & \Rightarrow \lambda\in\sigma_{\mathbb{K}}(M)\\
+    \end{aligned}
+  \end{equation}
+  \subsection{Remarque:域上的特征值}
+  在计算矩阵特征值时必须考虑域$\mathbb{K}$的限制.同一个矩阵在不同的域上可能有不同的谱.例如：
+  $$
+  \begin{aligned}
+    R=\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}\\
+  \end{aligned}
+  $$
+  有特征多项式$\chi _R(X)=X^2-1$:\\
+  若在实数域上$R\in \mathcal{M}_2(\R)$则$\sigma_{\R}(R)=\varnothing$,\\
+  若在实数域上$R\in \mathcal{M}_2(\mathbb{C})$则$\sigma_{\mathbb{C}}(R)=\{i,-i\}$.
+  \subsection{二阶特征多项式}
+  对二阶矩阵$\mathcal{M}_2(\mathbb{K})$,特征多项式可以简化为：
+  $$
+  \chi _R(X)=X^2-\mbox{tr}(M)X+\det(M)
+  $$
+  \subsection{秩为1的自同态}
+  对自同态$u\in\mathcal{L} (\R^n)$,若$u$的秩为1,则特征多项式可以简化为：
+  $$
+  \chi _u(X)=X^{n-1}(X-\mbox{tr}(u))
+  $$
+  \subsection{多项式的分裂域}
+  本节只对分裂域(根域)作简单介绍,详细内容过于复杂,不在本课程讨论范围内.
+  在抽象代数中,一个系数域为$\mathbb {K}$ 的多项式${P(x)}$的分裂域(根域)是
+  $\mathbb {K} $的“最小”的一个扩域$\mathbb{L}$,
+  使得在其中$P(x)$可以被分解为一次因式$x-r_{i}$的乘积,
+  其中的$r_{i}$是$\mathbb{L}$中元素.
+  一个$\mathbb {K} $上的多项式并不一定只有一个分裂域,
+  但它所有的分裂域都是同构的,也就是在同构意义上,$\mathbb {K} $上的多项式的分裂域是唯一的.
+  \subsubsection{Définition}
+  若存在$(c,\alpha_1,\dots,\alpha_n)\in\mathbb{K}^{n+1}$使得：
+  $$
+    P(X)=c\prod_{i=1}^{n} (X-\alpha_i)
+  $$
+  称$P$在$\mathbb {K} $上是分裂的(scindé).这意味着$P$所有的根都在$\mathbb {K} $上.为了更好地理解分裂域,我们举几个例子：
+  \subsubsection{Exemple 1}
+  $$
+    P(X)=(X^2-2)
+  $$
+  $P$在$\mathbb {R} $和$\mathbb {C} $上都可分裂成$P(X)=(X+\sqrt{2})(X-\sqrt{2})$.
+  \subsubsection{Exemple 2}
+  $$
+    Q(X)=(X^2+4)
+  $$
+  $Q$在$\mathbb {C} $上可分裂成$Q(X)=(X+2i)(X-2i)$,但是在R上不可分裂.
+  \subsection{代数重数La multiplicité}
+  在一些地方可能会遇到如下的表示方法："一个矩阵A的特征值为4,4,3,3,3,2,2,1."
+  事实上,我们可以直接得出A的特征值是\{4,3,2,1\},那为什么要对数字进行重复呢？
+  根据特征多项式的解法,很容易猜测,重复的次数就是特征值作为根出现的次数,也即代数重数.
+  \subsubsection{Définition}
+  设多项式$P\in\mathbb {K} [X], \alpha\in\mathbb {K}$,若存在$Q\in\mathbb {K} [X]$使得
+  $$
+    P(X)=(X-\alpha)^mQ(X)\mbox{且}Q(\alpha)=\neq 0
+  $$
+  称$m$为根$\alpha$的代数重数.在特征多项式中,记特征值$\lambda$的代数重数为$\mu(\lambda)$.
+  \subsubsection{Exemple 1}
+  $$
+  P(X)=(X-1)^{14}-(X-51)^4
+  $$
+  其中根1的代数重数为14,根51的代数重数为4.
+\section{相似矩阵 Matrice semblable}
+  \subsection{Définition}
+  设$A$和$B$都属于域$\mathbb {K}$ 上的\n 阶方阵,即$\mathcal{M}_n(\mathbb{K})$.
+  若存在$P\in\mathcal{G} \mathcal{L} _n\mathbb{K}$使得：
+  $$
+    A=PBP^{-1}
+  $$
+  称$A$和$B$是相似的(semblable).易知相似是一种等价关系.
+  \subsubsection{Remarque}
+  嘿!还记得\prettyref{myref:conjugaison}提到的共轭关系吗?这就是共轭关系在矩阵里的应用!
+  \subsection{Proposition:相似矩阵的特征多项式相等}
+  设$A$和$B$是相似矩阵,$\chi_A(X)$和$\chi_B(X)$分别是他们的特征多项式,则有：
+  $$
+  \chi_A(X)=\chi_B(X)
+  $$
+  \subsubsection{Démonstration}
+  $$
+  \begin{aligned}
+  &  \chi _A(X)=\det(XI_n-A)=\det(XI_n-PBP^{-1})=\det(XPI_nP^{-1}-PBP^{-1})\\
+  &  =\det(P(XI_nP^{-1}-BP^{-1}))=\det(P(XI_n-B)P^{-1})\\
+  &  =\det(P)\det(XI_n-B)\det(P^{-1})\\
+  &  =\det(XI_n-B)=\chi _B(X)
+    \end{aligned}
+  $$
+  \subsubsection{Proposition}
+  若$A$和$B$是相似矩阵,则同理有$\sigma_{\mathbb{K}}(A)=\sigma_{\mathbb{K}}(B)$
+  \subsection{Remarque:特征多项式相等不一定相似}
+  
+  \begin{equation}
+    \notag
+    A=\begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}
+    B=\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}
+  \end{equation}
+  两者的特征多项式都是$(X-1)^2$但明显二者无法相似转化.
+  \subsection{Proposition}
+  几何重数小于等于代数重数.
+  称特征值$\lambda$对应特征空间$E_\lambda$的维数$\dim E_\lambda$为该特征值的几何重数,则有：
+  $$
+    \forall\lambda\in\sigma_{\mathbb{K}}(M), \dim E_\lambda\leq\mu\lambda
+  $$
+
+
+  如果将代数重数视为一种维数,即它是相应广义特征空间的维数,也就是当自然数k足够大的时候矩阵$(\lambda I_n-A)^k$的核空间.
+  也就是说,它是所有“广义特征向量”组成的空间,其中一个广义特征向量满足如果$(\lambda I_n-A)$作用连续作用足够多次就“最终”会成为零向量.
+  任何特征向量都是一个广义特征向量,因此任一个特征空间都被包含于相应的广义特征空间.
+  这给了一个几何重数总是小于或等于代数重数的简单证明.
+  \subsubsection{Démonstration}
+  暂略,写不动了,休息一会.
+\section{对角化 Diagonalisation}
+  \subsection{对角矩阵 Matrice diagonale}
+  \subsubsection{Définition}
+  设矩阵$A=(a_{i,j})_{(i,j)\in[\![1,n]\!]}\in\mathcal{M}_n(\mathbb{K})$,若：
+  $$
+    \forall(i,j)\in[\![1,n]\!], i\neq j\Rightarrow a_{i,j}=0
+  $$
+  称矩阵$A$是对角矩阵.
+  记$\mbox{Diag}_n(\mathbb{K})$为$\mathcal{M}_n(\mathbb{K})$上的对角矩阵组成的集合.
+  \subsubsection{Exemple}
+  $$
+  A=\begin{pmatrix} 114 & 0 & 0 \\ 0 & 514 & 0 \\ 0 & 0 & 0 \end{pmatrix}
+  $$
+  $A$是$\mathcal{M}_3(\R)$上的对角矩阵.
+  \subsection{可对角化的 Diagonalisable}
+  \subsubsection{Définition}
+  对于$\mathcal{M}_n(\mathbb{K})$上的矩阵$M$,
+  若存在$(D,P)\in\mbox{Diag}_n(\mathbb{K})\times\mathcal{G} \mathcal{L} _n(\mathbb{K})$使得
+  $$
+  M=DPD^{-1}
+  $$
+  则称矩阵$M$是可对角化的.
+  \subsubsection{对角化 diagonaliser}
+  对一个矩阵$A$,对角化意味着给出一组$(D,P)\in\mbox{Diag}_n(\mathbb{K})\times\mathcal{G} \mathcal{L} _n(\mathbb{K})$.\\
+
+  对一个自同态$u$,对角化意味着给出$E$中的一组基$\mathcal{B}$,使得在这组基下自同态对应的矩阵是对角矩阵.
+  \subsection{直和 La somme directe}
+  \subsubsection{子空间的和}
+  设$F_1,\dots,F_p$是域$\mathbb{K}$上线性空间$E$的一组子空间.其和：
+  $$
+  F_1+\dots+F_p
+  $$
+  表示所有$x$组成的集合,其中：
+  $$
+  \exists(x_1,\dots,x_p)\in F_1\times\dots\times F_p, x=\sum_{i=1}^{p}x_i
+  $$
+  \subsubsection{Définition}
+  设$F_1,\dots,F_p$是域$\mathbb{K}$上线性空间$E$的一组子空间.对任意$x\in(F_1+\dots+F_p)$,若:
+  $$
+    \exists!(x_1,\dots,x_p)\in F_1\times\dots\times F_p,  
+    x=\sum_{i=1}^{p}x_1
+  $$
+  称这组子空间直和,记为：
+  $$
+    \bigoplus _{i=1}^pF_i=F_1\oplus\dots\oplus F_p
+  $$
+  \subsubsection{Exemple}
+  \begin{equation}
+    \notag
+    e_1=\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}
+    e_2=\begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}
+    e_3=\begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}
+  \end{equation}
+  这三个向量张成的空间是直和的,且为$\R^3$.记为：
+  $$
+  \R^3=\mbox{vect}(e_1)\oplus\mbox{vect}(e_2)\oplus\mbox{vect}(e_3)
+  $$
+  \subsubsection{Proposition:两个子空间的直和}
+  $$
+  F_1\oplus F_2 \Leftrightarrow F_1\cap F_2=\{0_E\}
+  $$
+  \subsubsection{Proposition:直和的维度}
+  若$\bigoplus _{i=1}^pF_i=F_1\oplus\dots\oplus F_p$,则有：
+  $$
+  \sum_{i=1}^{n}\dim(F_i)=\dim(F_1+\dots+F_p)
+  $$
+  \section{判断可对角化Critères de diagonalisabilité}
+  \subsection{特征空间直和}
+  设$\mathcal{M}_n(\mathbb{K})$上的矩阵$M$有特征值$\lambda_1,\dots,\lambda_p$,则特征空间直和.即有：
+  $$
+  \bigoplus _{i=1}^pF_i=E_{\lambda_1}\oplus\dots\oplus E_{\lambda_p}
+  $$
+  \subsection{自同态的可对角化与直和}
+  设$E$是域$\mathbb{K}$上的\n 维线性空间,$u\in\mathcal{L} (E)$,则以下命题等价:
+  \begin{flalign*}
+    \begin{aligned}
+      & \mbox{1.{ }}u\mbox{在域$\mathbb{K}$上可对角化}\\
+      & \mbox{2.{ }}E=\bigoplus_{\lambda\in\sigma_{\mathbb{K}}(u)}E_\lambda\\
+      & \mbox{3.{ }}n=\sum_{\lambda\in\sigma_{\mathbb{K}}(u)}\dim(E_\lambda)\\
+      \end{aligned}
+  \end{flalign*}
+  \subsection{矩阵的可对角化与直和}
+  设$M$是$\mathcal{M}_n(\mathbb{K})$上的矩阵,则以下命题等价:
+  \begin{flalign*}
+    \begin{aligned}
+      & \mbox{1.{ }}M\mbox{在域$\mathbb{K}$上可对角化}\\
+      & \mbox{2.{ }}\mathcal{M}_{n,1}(\mathbb{K})=\bigoplus_{\lambda\in\sigma_{\mathbb{K}}(M)}E_\lambda\\
+      & \mbox{3.{ }}n=\sum_{\lambda\in\sigma_{\mathbb{K}}(M)}\dim(E_\lambda)\\
+      \end{aligned}
+  \end{flalign*}
+  \subsection{Proposition:势与可对角化}
+  设$M$是$\mathcal{M}_n(\mathbb{K})$上的矩阵,
+  若$n=\text{card}(\sigma_{\mathbb{K}}(M))$,则$M$可对角化.反之不一定.
+  \subsection{对角化过程}
+  本节略,主要是一些小技巧.记得先算$\sigma_{\mathbb{K}}(M)$,特征值顺着$D$的对角线往下填.
+  再求$E_\lambda$,按特征值的填写顺序排列出$P$,最后求$P^{-1}$即可.在这个过程中,可以从另一个角度理解为什么几何重数小于等于代数重数.、
+  如果几何重数大了,$P$就无法按对应的特征值写成一个方阵.
+
+
+
+\section{实对称矩阵 Matrice symétrique réelle}
+  \subsection{Définition}
+  实对称矩阵很好理解,就是矩阵的各个元素都是实数,并且沿着主对角线两端对称.具体定义如下：\\
+  对$M\in\mathcal{M}_n(\R)$,若满足：
+  $$
+  \forall(i,j)\in[\![1,n]\!]^2,\text{{ }}m_{i,j}=m_{j,i}
+  $$
+  则称$M$为实对称矩阵.显然对于实对称矩阵$M=^\top M$.\n 阶实对称矩阵组成的集合记为$S_n(\R)$.
+  \subsection{实特征值}
+  实对称矩阵的所有特征值都是实数.
+  \subsubsection{Démonstration}
+  \begin{flalign*}
+    \begin{aligned}
+      & Ax=\lambda x\\
+      & \Rightarrow ^\top \bar{x} Ax=^\top \bar{x}\lambda x=\lambda^\top \bar{x}x\\
+      & \Rightarrow \lambda^\top \bar{x}x=A^\top \bar{x}x=\overline{A^\top \bar{x}x} =A^\top x\bar{x}=\bar{\lambda}^\top x\bar{x}\\
+      & \Rightarrow \lambda^\top \bar{x}x=\bar{\lambda}^\top x\bar{x}\\
+      & \Rightarrow \lambda=\bar{\lambda}\in\R
+      \end{aligned}
+  \end{flalign*}
+  \subsection{特征向量的正交}
+  实对称矩阵不同特征值对应的特征向量相互正交.
+  \subsubsection{Démonstration}
+  \begin{flalign*}
+    \begin{aligned}%怎么输入左上角标？这样打起来很不好看啊
+      & ^\top aMb=^{t}(^\top aMb)=^\top b^\top Ma=^\top bMa \Rightarrow ^\top a\lambda_bb=^\top b\lambda_aa\\
+      & \Rightarrow \lambda_b\cdot^\top ab=\lambda_a\cdot^\top ba\\
+      & \neg(^\top ab=0)\\
+      & \Rightarrow \frac{\lambda_b}{\lambda_a}=\frac{^\top ba}{^\top ab}=\frac{^\top (^\top ba)}{^\top ab}=1\\
+      & \Rightarrow \lambda_b=\lambda_a\Rightarrow \perp \\
+      & \Rightarrow ^\top ab=0
+      \end{aligned}
+  \end{flalign*}
+  
+
+\section{零化多项式 Polynôme annulateur}
+  理论上,学习零化多项式之前需要学习矩阵多项式(polynôme de matrice),但是课程中直接将其提了一嘴就省略了.
+  实际上这部分内容再本章的应用中也不是特别重要.所以以后有空我再补充相关内容.
+  \subsection{Définition}
+  设$M\in\mathcal{M}_n(\mathbb{K})$且$P\in\mathbb{K}[X]$,若有：
+  $$
+  P(M)=0
+  $$
+  则称多项式$P$是矩阵$M$的零化多项式.
+  \subsection{Cayley-Hamilton定理}
+  \n 阶方阵$M$的特征多项式就是它的一个零化多项式.即$\chi _M(M)=0$.或写作：
+  $$
+  \forall\lambda\in\sigma_{\mathbb{K}}(M), P(\lambda)=0
+  $$
+  记零化多项式的根组成的集合为$\mathcal{Z} (P)$则
+  显然有$\sigma_{\mathbb{K}}(M)\subseteq\mathcal{Z} (P)$.
+  \subsubsection{Démonstration}
+  \begin{flalign*}
+    \begin{aligned}
+      & Ma=\lambda a,a\neq 0\\
+      & P(M)=\sum_{k=0}^{a}a_kM^k=0_n\\
+      & \Rightarrow \sum_{k=0}^{a}a_kM^ka=0_{n,1}\\
+      & \text{其中,} M^ka=M^{k-1}Ma=\lambda M^{k-1}a=\dots=\lambda^ka\\
+      & \Rightarrow \sum_{k=0}^{a}a_k\lambda^ka=0_{n,1}\\
+      & \Rightarrow \sum_{k=0}^{a}a_k\lambda^k=0_n\\
+      & \Rightarrow  P(\lambda)=0 \\
+      \end{aligned}
+  \end{flalign*}
+  \subsection{相似矩阵的零化多项式}
+  \n 阶方阵$A$的特征多项式就是它的一个零化多项式,同理,
+  \n 阶方阵$B$的特征多项式也是它的一个零化多项式.
+  若$A$与$B$相似,我们知道相似矩阵的特征多项式相等,特征多项式又都是该矩阵的零化多项式,
+  自然可以知道,相似矩阵的零化多项式相同.\footnote{
+    更多角度和结论可以参考：
+    \href{https://zhuanlan.zhihu.com/p/379739220}{https://zhuanlan.zhihu.com/p/379739220}
+    }
+  \subsection{零化多项式的简单根}
+  矩阵$M\in\mathcal{M}_n(\mathbb{K})$可对角化,当且仅当存在一个A的零化多项式可以被分裂得到简单根(racine simple).
+  此时零化多项式可以写成：
+  \begin{flalign*}
+    \begin{aligned}
+      & P=\mathbb{K}[X]=\prod_{i=1}^{n}(x-a_i)\\
+      & \text{满足:}\\
+      & 1.\text{{ }} \forall P(x)=0, x\in\mathbb{K}\\
+      & 2.\text{{ }} \forall(a_i,a_j)_{(i,j)\in[\![1,n]\!]^2},a_i\neq a_j
+      \end{aligned}
+  \end{flalign*}
+\chapter{二次曲面 Surface du second degré}
+  这里的内容要放到别的地方去,记得修改
+  \subsection{Définition}
+  从代数的理论中,我们可以证明二次曲面一共具有以下17种.将其分为三大类:
+  \subsection{三元二次曲面}
+    \subsubsection{椭球面类}
+    $$
+    \text{椭球面： }\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1
+    $$
+    $$
+    \text{虚椭球面： }\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=-1
+    $$
+    $$
+    \text{点： }\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=0
+    $$
+    \subsubsection{双曲面/锥面类}
+    $$
+    \text{单叶双曲面： }\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=1
+    $$
+    $$
+    \text{双叶双曲面： }\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=-1
+    $$
+    $$
+    \text{二次锥面： }\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=0
+    $$
+    \subsubsection{抛物面类}
+    $$
+    \text{椭圆抛物面： }\frac{x^2}{p}+\frac{y^2}{q}=2z
+    $$
+    $$
+    \text{双曲抛物面： }\frac{x^2}{p}-\frac{y^2}{q}=2z
+    $$
+  \subsection{二元二次曲面}
+    $$
+    \text{椭圆柱： }\frac{x^2}{a^2}+\frac{y^2}{b^2}=1
+    $$
+    $$
+    \text{虚椭圆柱： }\frac{x^2}{a^2}+\frac{y^2}{b^2}=-1
+    $$
+    $$
+    \text{直线： }\frac{x^2}{a^2}+\frac{y^2}{b^2}=0
+    $$
+    $$
+    \text{双曲柱面： }\frac{x^2}{a^2}-\frac{y^2}{b^2}=1
+    $$
+    $$
+    \text{相交平面： }\frac{x^2}{a^2}-\frac{y^2}{b^2}=0
+    $$
+    $$
+    \text{抛物柱面： }x^2=2py
+    $$
+  \subsection{一元二次曲面}
+    $$
+    \text{平行平面： }x^2=a^2
+    $$
+    $$
+    \text{虚平行平面： }x^2=-a^2
+    $$
+    $$
+    \text{重合平面： }x^2=0
+    $$
+  \chapter{张量 Tensor}
+
+
+
+
+
+
+
+\ifx\allfiles\undefined
+\end{document}
+\fi
